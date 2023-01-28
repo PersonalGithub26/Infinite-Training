@@ -1,0 +1,25 @@
+package infinite.Agentjsfhiber;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class AgentDaoImp implements AgentDAO{
+	SessionFactory sf;
+	Session session;
+	Query query;
+	@Override
+	public List<Agent> showAgent() {
+		sf=SessionHelper.getConnection();
+		session=sf.openSession();
+		query=session.createQuery("from agent");
+		List<Agent> list = query.list();
+		
+		return list;
+	}
+	
+	
+
+}

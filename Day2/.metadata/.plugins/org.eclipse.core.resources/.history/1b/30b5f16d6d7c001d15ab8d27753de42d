@@ -1,0 +1,16 @@
+package com.java.abs;
+
+public class DevEmployee extends Employee{
+
+	public DevEmployee(int empNo, String empName, double basic) {
+		super(empNo, empName, basic);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public Employee showEmploy(Employee employee) {
+		// TODO Auto-generated method stub
+		return employee;
+	}
+
+}

@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+D:\Java_Training\Java_Training\Day20-12-01-HibRestriction\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3812470629.index
+549314394.index
+3821993093.index
+309722552.index
+2683992692.index
+2416301695.index
+357564432.index
+2950155388.index
+1645256243.index

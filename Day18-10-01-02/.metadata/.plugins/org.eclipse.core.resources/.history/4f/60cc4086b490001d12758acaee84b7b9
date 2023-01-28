@@ -1,0 +1,25 @@
+package infinite.JsfJdbc;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+
+import java.sql.SQLException;
+import java.util.List;
+
+@ManagedBean
+@ViewScoped
+public class EmployeeBean {
+    private EmployeeDAO employDao = new EmployeeDaoImp();
+    private List<Employee> employeeList;
+
+    public List<Employee> getEmployeeList() throws ClassNotFoundException, SQLException {
+       
+            employeeList = employDao.showEmployeeDao();
+        
+        return employeeList;
+    }
+
+    public void setEmployeeList(List<Employee> employeeList) {
+        this.employeeList = employeeList;
+    }
+}

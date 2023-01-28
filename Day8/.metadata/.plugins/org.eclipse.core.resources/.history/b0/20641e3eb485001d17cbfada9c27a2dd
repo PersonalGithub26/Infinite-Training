@@ -1,0 +1,10 @@
+package com.java.jUnitDemos;
+
+public class Data {
+	
+	public String sayHello()
+	{
+		return "Welcome to Junit testcase";
+	}
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:form>
+		
+				<center>
+                <h2><h:outputText value="FeedBack Form"/></h2>
+ Student name :
+<h:inputText id="stdName" value="#{feedback.studentName}"></h:inputText>
+<br/><br/>
+       
+ 
+       Instructor : 
+               	<h:selectOneMenu value="#{FbDao.instructor}" onchange="submit()"
+	valueChangeListener="#{FbDao.instructorLocaleCodeChanged}">
+    <f:selectItems value="#{FbDao.showAllInstructor()}"/>
+</h:selectOneMenu>
+Selected value is : 
+<h:outputText value="#{FbDao.instructor}"/>
+<br/><br/>
+
+<!--  Subjects name : 
+              	<h:selectOneMenu value="#{FbDao.subjectname}" onchange="submit()">  
+   <f:selectItems value="#{FbDao.searchSubByInstructor(String instructor))}"/>
+</h:selectOneMenu> -->
+
+Feedback :
+<h:selectOneRadio value = "#{feedback.fbValue}"> 
+   <f:selectItem itemValue = "EXCELLENT" itemLabel = "EXCELLENT" /> 
+   <f:selectItem itemValue = "GOOD" itemLabel = "GOOD" />
+   <f:selectItem itemValue = "ADEQUATE" itemLabel = "ADEQUATE" />
+   <f:selectItem itemValue = "INADEQUATE" itemLabel = "INADEQUATE" />
+</h:selectOneRadio>  
+ <h:commandButton value="Add Feedback" action="#{FbDao.addFeedback(feedback.studentName,FbDao.instructor,feedback.fbValue)}"/>
+ 
+	</center></h:form>
+</html>

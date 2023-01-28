@@ -1,0 +1,53 @@
+.tablebackground{
+	background-color:red;
+	/*  margin-top:30px;*/
+	height:60%;
+	width:50%;
+	border-radius:10px;
+	border-color:#fff;
+	padding:10px;
+}
+
+body{
+	background-repeat: no-repeat;
+	
+ 
+
+}
+
+#menucard{
+	background-color:red;
+	color:#fff;
+}
+
+.totalamount{
+	text-align: center;
+    background-color: green;
+    font-weight: 650;
+    color: red;
+    height: 30px;
+    width: 70px;
+    padding: 10px;
+    margin-left: 600px;
+    margin-top: 30px
+}
+
+.items{
+	text-align:center;
+}
+
+.mainheading{
+	text-align:center;
+	font-size:30px;
+	color:blue;
+	background-color: #fff;
+}
+h2
+{
+	color: blue;
+}
+
+.button {
+  position: absolute;
+  bottom: 1;
+}

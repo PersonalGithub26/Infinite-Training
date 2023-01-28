@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+		<h:form>
+			<ui:include src="CustomerMenu.xhtml"/>
+			<center>
+				<h2><h:outputText value="Customer Wallet"></h2>
+				<h:dataTable value="#{wDao.showWallet(customerInfo.custId)">
+				
+				</h:dataTable>
+			</center>
+		</h:form>
+		
+	</html>

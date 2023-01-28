@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<ol>type="1">
+		<li>chandu</li>
+		<li>srinivas</li>
+		<li>Srikanth</li>
+		<li>pavan</li>
+		<li>ajay</li>
+	
+	</ol>
+	
+	<hr/>
+		<ol>type = "A" start = "5"
+		<li>chandu</li>
+		<li>srinivas</li>
+		<li>Srikanth</li>
+		<li>pavan</li>
+		<li>ajay</li>
+		</ol>
+		</hr>
+</body>
+</html>

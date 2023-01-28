@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+      
+      
+ <script>
+ 
+const PC Architecture = {theory:42, practicle:14};
+const PC Hardware 1 = {theory:90, practicle:50};
+const PC Hardware 2 = {theory:69, practicle:41};
+const mids= {theory:107, practicle:93};
+const C# = {theory:84, practicle:56};
+const Data Structures = {theory:60, practicle:0};
+const Operating System = {theory:80, practicle:70};
+const SQL Server = {theory:66, practicle:34};
+const Networking = {theory:94, practicle:156};
+const ads= {theory:0, practicle:0};
+const Value Added Services = {theory:27, practicle:11};
+
+th=1;
+pr=2;
+
+document.getElementById("theory").value=th;
+document.getElementById("practicle").value=pr;
+
+
+ </script>
+
+
+
+<h:form>
+
+
+Restaurant name:
+<h:selectOneMenu  value="#{clgdao.localCode}" onchange="submit()"
+	valueChangeListener="#{clgdao.eventHappened}" >
+    <f:selectItems value="#{clgdao.showInstructorNames()}"/>
+</h:selectOneMenu><br/><br/>
+<h:outputText value="#{clgdao.localCode}"/>
+
+subjects:
+<h:selectOneMenu value="#{marks.localCode}" onchange="submit()"
+	valueChangeListener="#{marks.markEvent}">
+	
+    <f:selectItems value="#{clgdao.showSubjectNames()}"/>
+</h:selectOneMenu>
+<h:outputText value="#{marks.localCode}"/><br/><br/>
+
+Theory:
+<p:inputText id="theory" value="#{marks.theory}">
+	  </p:inputText><br/><br/>
+
+Practicle:
+<p:inputText id="practicle" value="#{marks.practicle}">
+	  </p:inputText><br/><br/>
+
+
+<p:commandButton value="rrrr" style="margin:20px"
+		action="#{marks.refresh()}" ajax="false" />
+
+</h:form>
+	
+
+</html>

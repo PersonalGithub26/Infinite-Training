@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script >
+	function show()
+	{
+		var str ="Welcome to Khanampally";
+		var result = "";
+		
+		result += "Length of a String is " + str.length + "<br/>";
+		result += "First Occurance od char 'o' is  " + str.indexOf("o") + "<br/>";
+		result += "5th index of a String is " + str.charAt(5) + "<br/>";
+		result += "String upperCase is " + str.toUpperCase() + "<br/>";
+		
+		result += "String to lower case "+ str.toLowerCase() + "<br/>";
+		document.getElementById("result").innerHTML = result;
+	}
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body onload="show()">
+	<form name="frmString" >
+		<span id="result" ></span>
+	</form>
+</body>
+</html>

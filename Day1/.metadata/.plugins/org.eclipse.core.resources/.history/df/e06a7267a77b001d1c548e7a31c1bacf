@@ -1,0 +1,13 @@
+package com.infinite.day1;
+
+public class MultiplyBigNumbers {
+	public static void main(String[] args) {
+		String s1 = "12345";
+		String s2 = "12345";
+		for (int i = s1.length() - 1; i > 0; i--) 
+		{
+			System.out.println(String.valueOf(s1.charAt(i) + String.valueOf(s1.charAt(i))));
+		}
+	}
+
+}

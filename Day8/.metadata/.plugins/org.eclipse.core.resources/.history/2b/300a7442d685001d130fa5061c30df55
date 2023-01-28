@@ -1,0 +1,57 @@
+package com.java.inventoryProject;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class StockDaoImpl implements StockDAO {
+	
+	Connection connection;
+	PreparedStatement pst;
+	
+	public String generateId()
+	{
+		String str = "S001";
+		String sub = str.substring(1);
+		int tId = Integer.parseInt(sub);
+		tId += 1;
+		str = String.format("s%03d", tId);
+		return str;
+	}
+
+	@Override
+	public String addStock(Stock stock) throws ClassNotFoundException, SQLException {
+		String StockId =generateId();
+		int id = Integer.parseInt(StockId);
+		stock.setStockId(id);
+		String cmd = "insert into stock(stockid, ItemName, Price, QuantityAvail) values(?,?,?,?)";
+		
+		connection = ConnectionHelper.getConnection();
+		pst = connection.prepareStatement(cmd);
+		pst.setInt(1, stock.setStockId(id));
+		pst.setString(2, stock.getItemName());
+		pst.setDouble(3, stock.getPrice());
+		pst.setInt(4, stock.getQuantityAvail());
+		pst.executeUpdate();
+		return "Stock ordered successfully...";
+	}
+
+	@Override
+	public Stock searchStock(int stockId) throws ClassNotFoundException, SQLException {
+		
+		connection = ConnectionHelper.getConnection();
+		String cmd = "select * from stock where stockid=?";
+		pst = connection.prepareStatement(cmd);
+		pst.setInt(1, stockId);
+		ResultSet rs = pst.executeQuery();
+		Stock stock = null;
+		if(rs.next())
+		{
+			stock = new Stock();
+			stock.getStockId(rs.getInt(stockId));
+		}
+	}
+	
+
+}

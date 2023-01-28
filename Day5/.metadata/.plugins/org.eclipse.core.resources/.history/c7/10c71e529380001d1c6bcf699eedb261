@@ -1,0 +1,55 @@
+package com.java.Employe;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeDaoImp implements EmployeeDAO{
+	
+	
+	static Employee employee;
+	static LeaveDetails leave;
+	static List<Employee> employeeList;
+	
+	static 
+	{
+		employeeList = new ArrayList<Employee>();
+		employee = new Employee();
+		leave = new LeaveDetails();
+	}
+
+	@Override
+	public String addEmployeDetails(Employee employee) {
+		
+		employeeList.add(employee);
+		
+		return "Employee Details Added Successfully";
+	}
+
+	@Override
+	public void showPaySlip(int EmpId) {
+		
+	}
+	//gross = basic + hra + da + ta
+	//takeHome = gross - tax - pf - {lossOfPay}
+	public void grossPay(double slaray)
+	{
+		double takehome, totalGross, basic;
+		
+		basic =  = (employee.getSalary()) - (employee.getHra()+employee.getDa()+employee.getTa()
+					+employee.getTax()+employee.);
+		
+		employee.setGross(totalGross);
+		
+		if(leave.getLeaveTaken() != 0)
+		{
+			takehome = employee.getGross() - employee.getTax() - empl
+		}
+	}
+
+	
+	
+	
+
+	
+	
+}

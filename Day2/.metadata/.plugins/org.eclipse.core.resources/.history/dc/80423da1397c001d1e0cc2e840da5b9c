@@ -1,0 +1,10 @@
+package com.java.inher;
+
+public class InhDemo {
+	
+	public void show()
+	{
+		System.out.println("show method from parent");
+	}
+
+}

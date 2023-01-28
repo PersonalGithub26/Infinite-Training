@@ -1,0 +1,28 @@
+package com.java.calanderStreams;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class CalenderPractice {
+	
+	
+	
+	public static void main(String[] args) {
+		
+		SimpleDateFormat sdf = new SimpleDateFormat();
+//		Calendar c1 = Calendar.getInstance();
+//		System.out.println(sdf.format(c1.getTime()));
+		
+		Date start = new Date();
+		Date today = new Date();
+		Calendar cal1 = Calendar.getInstance();
+		cal1.add(Calendar.DATE, -15);
+		start = cal1.getTime();
+		System.out.println(start);
+		System.out.println(today);
+		System.out.println(new CalEx4().count(start, today));
+	}
+		
+	}
+

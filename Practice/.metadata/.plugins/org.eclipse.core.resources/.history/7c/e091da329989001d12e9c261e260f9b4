@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+const restaurants = document.querySelectorAll('.restaurant');
+let currentRestaurant = 0;
+
+function updateTotal() {
+  const items = restaurants[currentRestaurant].querySelectorAll('.item:checked');
+  let total = 0;
+  for (const item of items) {
+    total += parseInt(item.dataset.price);
+  }
+  restaurants[currentRestaurant].querySelector('#total').textContent = `$${total}`;
+}
+
+document.querySelector('#next').addEventListener('click', () => {
+  currentRestaurant = (currentRestaurant + 1) % restaurants.length;
+  for (const restaurant of restaurants) {
+    restaurant.style.display = 'none';
+  }
+  restaurants[currentRestaurant].style.display = 'block';
+  updateTotal();
+});
+
+document.querySelectorAll('.item').forEach(item => {
+  item.addEventListener('click', updateTotal);
+});
+
+updateTotal();
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

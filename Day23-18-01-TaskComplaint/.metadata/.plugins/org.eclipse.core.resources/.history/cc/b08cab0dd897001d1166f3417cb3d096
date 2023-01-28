@@ -1,0 +1,70 @@
+package com.hib.complaint;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
+
+@ManagedBean(name = "cDao")
+@SessionScoped
+public class ComplaintDaoImp implements ComplaintDAO {
+
+
+	@Override
+	public String AddComplaint(Complaint complaint) {
+		SessionFactory sf = SessionHelper.getconnection();
+	    Session session = sf.openSession();	  
+	        session.beginTransaction();
+	        session.save(complaint);
+	        session.getTransaction().commit();
+	        return "complaint added successfully";
+	
+	}
+	
+	public String searchComplaint(String CompId)
+	{
+		Map<String,Object> sessionMap = 
+				FacesContext.getCurrentInstance().getExternalContext().getSessionMap();		
+		SessionFactory sf = SessionHelper.getconnection();
+		Session session = sf.openSession();
+		Criteria cr = session.createCriteria(ResolveE.class);
+		cr.add(Restrictions.eq("complaintID", CompId));
+		List<Complaint> list = cr.list();
+		Complaint complaint = list.get(0);
+		sessionMap.put("resEdit", CompId);
+		return "Resolved.xhtml?faces-redirect=true";
+	}
+	
+	public String resEnter(ResolveE resolveE, Complaint complaint)
+	{
+		SessionFactory sf = SessionHelper.getconnection();
+	    Session session = sf.openSession();	  
+	        session.beginTransaction();
+	        resolveE.setComplaint(complaint);
+	        complaint.setResolveE(resolveE);
+	        session.save(resolveE);
+	        session.getTransaction().commit();
+	        return "showRes.xhtml?faces-redirect=true";
+	}
+
+	@Override
+	public List<Complaint> ShowAllComplaint() {
+		SessionFactory sf = SessionHelper.getconnection();
+		Session session = sf.openSession();
+		Criteria cr = session.createCriteria(Complaint.class);
+		List<Complaint> clist = cr.list();
+		System.out.println(clist);
+		return clist;
+	}
+	 
+	
+	
+
+}

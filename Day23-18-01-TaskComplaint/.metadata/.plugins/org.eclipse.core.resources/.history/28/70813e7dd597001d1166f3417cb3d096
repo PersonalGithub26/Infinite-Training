@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+      <ui:include src="Menu.xhtml"></ui:include>
+	    <h:body>
+        <h:form>
+                <h2 style="text-align: center" class="col-sm-4">Edit Your Record</h2>
+            <hr/>
+Resolve Id
+                    <h:inputText id="empno" value="#{resEdit.resolveID}" /> <br/>
+Complaint Id
+                    <h:inputText id="name" value="#{resEdit.complaintID}" /> <br/>
+complain Date 
+                    <h:inputText id="complaintDate" value="#{resEdit.complaintDate}" /> <br/>
+Resolve Date
+                    <h:inputText id="resolveDate" value="#{resEdit.resolveDate}" >
+                    	<f:convertDateTime pattern="yyyy-MM-dd"></f:convertDateTime>
+                    </h:inputText>
+                    	
+                    <br/>
+Resolved By
+                    <h:inputText id="basic" value="#{resEdit.resolvedBy}"/> <br/>
+                    
+Comments            
+                    <h:inputText id="basic" value="#{resEdit.comments}"/> <br/>
+                    <h:commandButton value="Update" 
+                    	action="#{eDao.updateEmployDao(editEmploy)}" />
+        </h:form>
+    </h:body>
+	
+</html>

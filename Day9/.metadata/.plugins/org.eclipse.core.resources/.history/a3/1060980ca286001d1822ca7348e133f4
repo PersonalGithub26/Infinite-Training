@@ -1,0 +1,18 @@
+package practice;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class P13 {	   
+		public static void main(String[] args) {
+	        Set hs = new HashSet();
+	        hs.add(new Integer(12));
+	        hs.add(new Integer(12));
+	        hs.add(new Integer(12));
+	        hs.add(new Integer(12));
+	        for(Object ob : hs) {
+	            System.out.println(ob);
+	        }
+	    }
+}
+

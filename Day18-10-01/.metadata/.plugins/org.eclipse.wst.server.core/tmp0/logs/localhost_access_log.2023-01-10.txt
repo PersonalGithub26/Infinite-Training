@@ -1,0 +1,10 @@
+127.0.0.1 - - [10/Jan/2023:11:32:23 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:11:32:24 +0530] "GET /newJSfvalidation/faces/Calender1.xhtml HTTP/1.1" 200 1625
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:11:32:24 +0530] "GET /newJSfvalidation/faces/javax.faces.resource/jquery/jquery.js?ln=primefaces&v=6.1 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:11:32:24 +0530] "GET /newJSfvalidation/faces/javax.faces.resource/components.js?ln=primefaces&v=6.1 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:11:32:24 +0530] "GET /newJSfvalidation/faces/javax.faces.resource/components.css?ln=primefaces&v=6.1 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:11:32:24 +0530] "GET /newJSfvalidation/faces/javax.faces.resource/theme.css?ln=primefaces-aristo HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:11:32:24 +0530] "GET /newJSfvalidation/faces/javax.faces.resource/core.js?ln=primefaces&v=6.1 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:11:32:24 +0530] "GET /newJSfvalidation/faces/javax.faces.resource/jquery/jquery-plugins.js?ln=primefaces&v=6.1 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:11:32:24 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:11:32:26 +0530] "GET /newJSfvalidation/faces/javax.faces.resource/images/ui-icons_898989_256x240.png?ln=primefaces-aristo HTTP/1.1" 304 -

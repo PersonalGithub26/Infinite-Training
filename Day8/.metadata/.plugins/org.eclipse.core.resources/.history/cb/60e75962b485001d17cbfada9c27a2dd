@@ -1,0 +1,16 @@
+package com.java.jUnitDemos;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DataTest {
+
+	@Test
+	
+	public void testsayHello() {
+		Data obj = new Data();
+		assertEquals("Welcome to Junit Testcase...", obj.sayHello());
+	}
+
+}

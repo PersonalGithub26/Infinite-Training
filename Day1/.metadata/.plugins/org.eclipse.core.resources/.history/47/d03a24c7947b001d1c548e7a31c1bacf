@@ -1,0 +1,41 @@
+package com.infinite.day1;
+
+public class CurrentBill {
+	static int for90(int units,int price)
+	{
+		return units*price;
+	}
+	static int upto150(int units,int price)
+	{
+		return units*price;
+	}
+	static int upto200(int units,int price)
+	{
+		return units*price;
+	} 
+	static int upto240(int units,int price)
+	{
+		return units*price;
+	}
+	static int after240(int units,int price)
+	{
+		return units*price;
+	}
+	public void currentBill(int units)
+	{
+		if(units <= 90 )
+		{
+			System.out.println(for90(90, 1));
+			
+		}
+		else
+			System.out.println("hii");
+		
+	}
+	
+	public static void main(String[] args) {
+		new CurrentBill().currentBill(180);
+		
+				
+	}
+}

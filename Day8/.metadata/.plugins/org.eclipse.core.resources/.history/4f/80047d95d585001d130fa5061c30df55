@@ -1,0 +1,41 @@
+package com.java.inventoryProject;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class StockDaoImpl implements StockDAO {
+	
+	Connection connection;
+	PreparedStatement pst;
+	
+	public String generateId()
+	{
+		String str = "S001";
+		String sub = str.substring(1);
+		int tId = Integer.parseInt(sub);
+		tId += 1;
+		str = String.format("s%03d", tId);
+		return str;
+	}
+
+	@Override
+	public String addStock(Stock stock) throws ClassNotFoundException, SQLException {
+		String StockId = generateId();
+		stock.setStockId(Integer.parseInt(StockId));
+		String cmd = "insert into stock(stockid, ItemName, Price, QuantityAvail) values(?,?,?,?)";
+		
+		connection = ConnectionHelper.getConnection();
+		pst = connection.prepareStatement(cmd);
+		return "Stock ordered successfully...";
+		
+	}
+
+	@Override
+	public Stock searchStock(int stockId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

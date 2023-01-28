@@ -1,0 +1,17 @@
+package com.cmsJsf;
+
+import java.util.List;
+
+public class M {
+	
+	public static void main(String[] args) {
+		
+		OrdersDAOImpl od= new OrdersDAOImpl();
+		List<Orders> list = od.showOrdersByVendor(2);
+		for (Orders orders : list) {
+			System.out.println(orders.toString());
+		}
+		
+	}
+
+}

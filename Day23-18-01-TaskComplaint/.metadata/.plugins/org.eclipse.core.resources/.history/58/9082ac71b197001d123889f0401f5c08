@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:body>
+<h:form>
+	<h:dataTable value="#{cDao.showComp()}" var="a" border="3">
+
+		<h:column>
+			<f:facet name="header">complaint id</f:facet>
+			<h:outputLabel value="#{a.complaintID}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">complaint type</f:facet>
+			<h:outputLabel value="#{a.complaintType}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">complaint des</f:facet>
+			<h:outputLabel value="#{a.cDescription}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">severity</f:facet>
+			<h:outputLabel value="#{a.severity}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">complaint date</f:facet>
+			<h:outputLabel value="#{a.complaintDate}" />
+			
+		</h:column>
+		<h:column>
+			<f:facet name="header">status</f:facet>
+			<h:outputLabel value="#{a.status}" />
+		</h:column>
+
+	
+
+	</h:dataTable>
+	
+	  <center>
+        <h:commandButton action = "AddComplaint.xhtml?faces-redirect=true"
+        	 value="Create complaint" /> 
+      </center>
+</h:form>	
+</h:body>
+	
+	
+
+</html>

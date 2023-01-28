@@ -1,0 +1,15 @@
+package com.booking;
+
+import java.util.List;
+
+public interface CustomerDAO {
+
+	String addCustomerDao(Customer customer);
+	String validateMe(Customer customer);
+	String viewCustomer(int custId);
+	String updateCustomer(Customer customer);
+	List<Customer> showCustomer();
+	String deleteCustomer(int custId);
+	 String logout();
+
+}

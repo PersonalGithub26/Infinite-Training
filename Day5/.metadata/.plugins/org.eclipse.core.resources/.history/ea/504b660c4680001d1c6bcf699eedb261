@@ -1,0 +1,18 @@
+package com.java.calanderStreams;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class CalenderPractice {
+	
+	
+	
+	public static void main(String[] args) {
+		
+		SimpleDateFormat sdf = new SimpleDateFormat();
+		Calendar c1 = Calendar.getInstance();
+		System.out.println(sdf.format(c1.getTime()));
+		
+	}
+}

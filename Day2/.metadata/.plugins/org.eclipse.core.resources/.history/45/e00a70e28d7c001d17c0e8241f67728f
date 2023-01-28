@@ -1,0 +1,7 @@
+package com.java.practice;
+
+public interface One {
+	void name();
+	
+
+}

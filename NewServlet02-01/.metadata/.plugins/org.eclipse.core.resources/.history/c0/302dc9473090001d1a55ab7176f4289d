@@ -1,0 +1,12 @@
+package com.java.bank;
+
+import com.google.protobuf.Timestamp;
+
+public class Transaction {
+	
+	private int accountNo;
+	private tansType transactionType;
+	private int transactionAmount;
+    private Timestamp transactionDate;
+
+}

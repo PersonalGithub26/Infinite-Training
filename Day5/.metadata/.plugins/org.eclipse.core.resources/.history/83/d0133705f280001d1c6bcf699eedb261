@@ -1,0 +1,10 @@
+package com.java.Employe;
+
+import java.util.List;
+
+public interface EmployeeDAO {
+	
+	String addEmployeDetails(Employee employee);
+	List<Employee> showPaySlip(int EmpId);
+
+}

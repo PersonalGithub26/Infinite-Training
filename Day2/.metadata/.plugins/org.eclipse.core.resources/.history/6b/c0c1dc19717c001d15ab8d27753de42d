@@ -1,0 +1,9 @@
+package com.java.day2;
+
+public class WeekDays {
+	public enum weekDays
+	{
+		MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+	}
+
+}

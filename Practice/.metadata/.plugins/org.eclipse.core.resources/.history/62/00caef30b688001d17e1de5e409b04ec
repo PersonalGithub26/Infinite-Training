@@ -1,0 +1,7 @@
+package NewAgentRealTime.Agent;
+
+public interface AgentDAO {
+	
+	String addAgentDao(Agent agent);
+
+}

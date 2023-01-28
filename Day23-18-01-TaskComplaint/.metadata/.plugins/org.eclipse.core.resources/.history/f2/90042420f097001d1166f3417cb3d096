@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:body style="background-color: #efefef;">
+
+
+	<h:form>
+		<center>
+			<h:dataTable value="#{cdao.showComp()}" var="a" border="3"
+				style="width:80%; margin:0 auto;">
+
+				<h:column style="text-align:center; padding:5px;">
+					<f:facet name="header" style="font-size:20px; color:blue;">complaint id</f:facet>
+					<h:outputLabel value="#{a.complaintID}"
+						style="font-size:18px; padding:5px;" />
+				</h:column>
+				<h:column style="text-align:center; padding:5px;">
+					<f:facet name="header" style="font-size:20px; color:blue;">complaint type</f:facet>
+					<h:outputLabel value="#{a.complaintType}"
+						style="font-size:18px; padding:5px;" />
+				</h:column>
+				<h:column style="text-align:center; padding:5px;">
+					<f:facet name="header" style="font-size:20px; color:blue;">complaint des</f:facet>
+					<h:outputLabel value="#{a.cDescription}"
+						style="font-size:18px; padding:5px;" />
+				</h:column>
+				<h:column style="text-align:center; padding:5px;">
+					<f:facet name="header" style="font-size:20px; color:blue;">severity</f:facet>
+					<h:outputLabel value="#{a.severity}"
+						style="font-size:18px; padding:5px;" />
+				</h:column>
+				<h:column style="text-align:center; padding:5px;">
+					<f:facet name="header" style="font-size:20px; color:blue;">complaint date</f:facet>
+					<h:outputLabel value="#{a.complaintDate}" 
+					style="font-size:18px; padding:5px;"
+					/>
+				</h:column>
+				<h:column style="text-align:center; padding:5px;">
+					<f:facet name="header" style="font-size:20px; color:blue;">status</f:facet>
+					<h:outputLabel value="#{a.status}"
+						style="font-size:18px; padding:5px;" />
+				</h:column>
+
+				<h:column style="text-align:center; padding:5px;">
+					<f:facet name="header" style="font-size:20px; color:blue;">Resolve</f:facet>
+					<h:commandButton action="#{cdao.SearchComplaintDao(a.complaintID)}"
+						value="Resolve"
+						style="background-color:purple; font-size:18px; padding:5px;">
+					</h:commandButton>
+				</h:column>
+
+
+			</h:dataTable>
+
+			<h:commandButton action="CreateComp.xhtml?faces-redirect=true"
+				value="Create complaint"
+				style="background-color:green; font-size:18px; padding:5px; margin-top:20px;" />
+		</center>
+	</h:form>
+					
+						style="font-size:18px; padding:5px;" />

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.rmi.ssl.SslRMIClientSocketFactory"/>
+<fullyQualifiedTypeName name="com.infinite.day1.Calculation"/>
+<fullyQualifiedTypeName name="com.infinite.day1.Circle"/>
+<fullyQualifiedTypeName name="com.infinite.day1.CtoF"/>
+<fullyQualifiedTypeName name="com.infinite.day1.Voting"/>
+<fullyQualifiedTypeName name="com.infinite.day1.PosNeg"/>
+<fullyQualifiedTypeName name="com.infinite.day1.CaseDemo1"/>
+<fullyQualifiedTypeName name="com.infinite.day1.CaseDemo2"/>
+<fullyQualifiedTypeName name="com.infinite.day1.LoopEx1"/>
+<fullyQualifiedTypeName name="com.infinite.day1.Factroial"/>
+<fullyQualifiedTypeName name="com.infinite.day1.EvenShow"/>
+<fullyQualifiedTypeName name="com.infinite.day1.factors"/>
+<fullyQualifiedTypeName name="com.infinite.day1.MaxOfThree"/>
+<fullyQualifiedTypeName name="com.infinite.day1.ArrayDemo1"/>
+<fullyQualifiedTypeName name="com.infinite.day1.StrArray"/>
+<fullyQualifiedTypeName name="com.infinite.day1.ArrayCopy"/>
+<fullyQualifiedTypeName name="com.infinite.day1.Quizz"/>
+<fullyQualifiedTypeName name="com.infinite.day1.CurrentBill"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="com.infinite.day1.IntToRoman"/>
+<fullyQualifiedTypeName name="com.infinite.day1.MultilyLongNums"/>
+</qualifiedTypeNameHistroy>

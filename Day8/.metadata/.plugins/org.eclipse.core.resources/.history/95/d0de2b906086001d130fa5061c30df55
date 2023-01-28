@@ -1,0 +1,8 @@
+package com.java.inventoryProject;
+
+import java.sql.SQLException;
+
+public interface OrdersDAO {
+	String placeOrder(String StockId, int QuantityOrdered) throws ClassNotFoundException, SQLException;
+
+}

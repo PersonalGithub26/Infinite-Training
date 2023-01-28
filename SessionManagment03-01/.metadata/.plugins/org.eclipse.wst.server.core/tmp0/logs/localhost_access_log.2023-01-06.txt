@@ -1,0 +1,4 @@
+127.0.0.1 - - [06/Jan/2023:17:40:59 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [06/Jan/2023:17:41:01 +0530] "GET /EmployeeProjectJspJdbc/EmployeeShow.jsp HTTP/1.1" 200 3116
+0:0:0:0:0:0:0:1 - - [06/Jan/2023:17:41:01 +0530] "GET /EmployeeProjectJspJdbc/table.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [06/Jan/2023:17:57:15 +0530] "GET /EmployeeProjectJspJdbc/EmployeeShow.jsp HTTP/1.1" 200 3116

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:form>
+<h:selectOneMenu value="#{radioBean.gen}" onchange="submit()"
+	valueChangeListener="#{radioBean.radioChanged}">
+    <f:selectItems value="#{radioBean.getGender()}"/>
+	</h:selectOneMenu>
+	
+	Selected value is : 
+<h:outputText value="{radioBean.gen}"/>
+	<h:dataTable value="#{aDao.getAgentByGender(radioBean.gen)}" var="e"
+		border="3">
+		<h:column>
+			<f:facet name="header">Agent Id</f:facet>
+			<h:outputText value="#{e.agentId}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">Name</f:facet>
+			<h:outputText value="#{e.name}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">City</f:facet>
+			<h:outputText value="#{e.city}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">Gender</f:facet>
+			<h:outputText value="#{e.gender}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">Marital Status</f:facet>
+			<h:outputText value="#{e.maritalStatus}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">Premium</f:facet>
+			<h:outputText value="#{e.premium}" />
+		</h:column>
+
+	</h:dataTable>
+</h:form>
+
+</html>
+	

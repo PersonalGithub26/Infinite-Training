@@ -1,0 +1,12 @@
+127.0.0.1 - - [20/Jan/2023:08:59:20 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [20/Jan/2023:08:59:24 +0530] "GET /examhib/faces/ShowComplaint.xhtml HTTP/1.1" 200 1089
+0:0:0:0:0:0:0:1 - - [20/Jan/2023:08:59:24 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [20/Jan/2023:08:59:33 +0530] "POST /examhib/faces/ShowComplaint.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2023:08:59:34 +0530] "GET /examhib/faces/CreateComp.xhtml HTTP/1.1" 200 1926
+0:0:0:0:0:0:0:1 - - [20/Jan/2023:08:59:52 +0530] "POST /examhib/faces/CreateComp.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2023:08:59:53 +0530] "GET /examhib/faces/ShowComplaint.xhtml HTTP/1.1" 200 1657
+0:0:0:0:0:0:0:1 - - [20/Jan/2023:08:59:59 +0530] "POST /examhib/faces/ShowComplaint.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2023:08:59:59 +0530] "GET /examhib/faces/ResolveIt.xhtml HTTP/1.1" 200 1051
+0:0:0:0:0:0:0:1 - - [20/Jan/2023:09:00:05 +0530] "POST /examhib/faces/ResolveIt.xhtml HTTP/1.1" 500 25302
+0:0:0:0:0:0:0:1 - - [20/Jan/2023:09:02:35 +0530] "POST /examhib/faces/ResolveIt.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2023:09:02:35 +0530] "GET /examhib/faces/ShowResolve.xhtml HTTP/1.1" 200 1057

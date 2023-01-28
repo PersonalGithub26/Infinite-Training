@@ -1,0 +1,9 @@
+127.0.0.1 - - [13/Jan/2023:10:56:29 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [13/Jan/2023:10:56:29 +0530] "GET /LibraryProject/Issue.jsp HTTP/1.1" 500 2540
+0:0:0:0:0:0:0:1 - - [13/Jan/2023:10:56:42 +0530] "GET /LibraryProject/Menu.jsp HTTP/1.1" 200 1295
+0:0:0:0:0:0:0:1 - - [13/Jan/2023:10:56:42 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [13/Jan/2023:10:57:00 +0530] "GET /LibraryProject/Search.jsp HTTP/1.1" 200 2020
+0:0:0:0:0:0:0:1 - - [13/Jan/2023:10:57:04 +0530] "GET /LibraryProject/SearchPrint.jsp?searchtype=all&searchvalue= HTTP/1.1" 200 4901
+0:0:0:0:0:0:0:1 - - [13/Jan/2023:10:57:09 +0530] "GET /LibraryProject/Issue.jsp?bookid=1&bookid=7 HTTP/1.1" 200 1530
+0:0:0:0:0:0:0:1 - - [13/Jan/2023:10:57:13 +0530] "GET /LibraryProject/AccountDetails.jsp HTTP/1.1" 200 1547
+0:0:0:0:0:0:0:1 - - [13/Jan/2023:10:57:16 +0530] "GET /LibraryProject/AccountDetails.jsp HTTP/1.1" 200 1547

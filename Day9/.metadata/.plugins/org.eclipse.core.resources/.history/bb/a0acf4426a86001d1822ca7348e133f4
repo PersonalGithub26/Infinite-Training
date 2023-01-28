@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name = "frmData">
+		Firstname:
+		<input type = "text" autofocus="autofocus" name= "firstName"
+		required="required" placeholder="Please Enter the firstNAme"/><br></br>
+		LastName:
+		<input type="text" name="LastName" required="required" placeholder="Please enter lastName">
+	
+	
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+package com.java.inventoryProject;
+
+import java.util.Scanner;
+
+public class SearchStockMain {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String stockId;
+		System.out.println("Enter Stock id");
+		stockId = sc.next();
+		StockDAO dao= new StockDaoImpl();
+		Stock stock = dao.searchStock(stockId);
+	}
+
+}

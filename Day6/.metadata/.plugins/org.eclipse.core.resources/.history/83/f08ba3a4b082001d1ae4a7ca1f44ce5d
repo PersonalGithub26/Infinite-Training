@@ -1,0 +1,48 @@
+package com.java.employeePaySlip;
+
+import java.util.List;
+
+public class LeaveDetailsDaoImp implements LeavesDetailsDAO {
+	double takeHomedao;
+	@Override
+	public String applyLeave(LeavesDetails leaveDetails) {
+
+		EmployeeDaoImp eimp = new EmployeeDaoImp();
+
+		//Employee employee = new Employee();
+		double lop;
+		//boolean b = false;
+		Employee employee = eimp.searchEmployee(leaveDetails.getEmpId());
+		
+		//takeHome = gross - tax - pf - {lossOfPay}
+		if(employee != null){
+
+			if(leaveDetails.getLeaveTaken() >  employee.getLeaveAvail())
+			{
+				int diff =  employee.getLeaveAvail() - leaveDetails.getLeaveTaken();
+				lop = ((employee.getSalary()/30.44) * diff);
+				leaveDetails.setLossOfPay(lop);
+				takeHomedao = employee.getGross() - employee.getTax() - employee.getPf() - lop;
+				employee.setTakeHome(takeHomedao);
+			}
+			else
+			{
+				leaveDetails.setLossOfPay(0);
+				takeHomedao = employee.getGross() - employee.getTax() - employee.getPf();
+				employee.setTakeHome(takeHomedao);
+			}
+			return "Leave Applied successfully";	
+		}
+		else
+		{
+			return "No Employee found";
+		}
+	}
+
+
+
+}
+
+
+
+

@@ -1,0 +1,24 @@
+.tablebackground{
+	background-color:white;
+	margin-top:30px;
+	height:60%;
+	width:50%;
+}
+
+#menucard{
+	background-color:red;
+	color:#fff;
+}
+
+.totalamount{
+	text-align: center;
+    background-color: green;
+    font-weight: 650;
+    color: red;
+    height: 30px;
+    width: 70px;
+    padding: 10px;
+    float: right;
+    margin-left: 600px;
+    margin-top: 30px
+}

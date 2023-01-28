@@ -1,0 +1,11 @@
+package com.java.inventoryProject;
+
+public class MainStock {
+	
+	public static void main(String[] args) {
+		Stock stock = new Stock();
+		System.out.println(stock.getStockId());
+		System.out.println(stock.getStockId());
+	}
+
+}

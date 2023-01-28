@@ -1,0 +1,25 @@
+package com.java.Practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayEx {
+
+	public static void main(String[] args) {
+
+		List<String> str = new ArrayList<>();
+		str.add("Chandu");
+		str.add("Srinivas");
+		str.add("Srikanth");
+		str.add("Ajay");
+		str.add("Pranay");
+		
+		str.forEach(x -> {
+			System.out.print(x+" ");
+		});
+		
+		
+
+	}
+
+}

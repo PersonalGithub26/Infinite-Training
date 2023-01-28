@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:body>
+	<h:form>
+		<h2>Update Customer</h2>
+		Customer Id:<h:inputText id="custId" value="#{custInfo.customerId}"></h:inputText><br/>
+		Customer Name:<h:inputText id="movieName" value="#{custInfo.customerName}"></h:inputText><br/>
+		Address:<h:inputText id="movieGenre" value="#{custInfo.address}"></h:inputText><br/>
+		Mobile:<h:inputText id="movieHours" value="#{custInfo.mobile}"></h:inputText><br/>
+		Email:<h:inputText id="movielang" value="#{custInfo.email}"></h:inputText><br/>
+		Password:<h:inputText id="moviedesc" value="#{custInfo.password}"></h:inputText><br/>
+		UserName:<h:inputText id="moviedesc" value="#{custInfo.userName}"></h:inputText><br/>
+		<h:commandButton value="Update Movie" action="#{cDao.updateCustomer(custInfo)}"></h:commandButton>
+		
+		</h:form>
+	</h:body>
+	
+	</html>

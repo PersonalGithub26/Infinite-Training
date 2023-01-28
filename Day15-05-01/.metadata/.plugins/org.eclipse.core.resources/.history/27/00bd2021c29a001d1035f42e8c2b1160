@@ -1,0 +1,13 @@
+package com.java.LMSProjectJstl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class LevHistoryDaoImp {static levHistoryDAO dao;
+static StringBuilder sb;
+Connection connection;
+PreparedStatement pst;
+	
+	
+
+}

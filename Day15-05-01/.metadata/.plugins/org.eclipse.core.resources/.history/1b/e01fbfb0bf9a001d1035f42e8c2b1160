@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="ApproveAll.jsp">
+	<jsp:useBean id="Dao" class="com.java.LMSProjectJstl.LevHistoryDaoImp"></jsp:useBean>
+	<jsp:useBean id="leave" class="com.java.LMSProjectJstl.levHistory"></jsp:useBean>
+	<c:set></c:set>
+    <table border="3" align="center">
+        <tr>
+            <th>LeaveId</th>
+            <th>EmpId</th>
+            <th>Leave Toatl Days</th>
+            <th>Manager Comments</th>
+            <th>Leave Start Date</th>
+            <th>Leave End Date</th>
+            <th>Leave Type</th>
+            <th>Leave Status</th>
+            <th>Leave Reason</th>
+            <th>Approve</th>
+        </tr>
+        <c:forEach var="lev" items="${levList}">
+            <tr>
+                <td>${lev.leaveId}</td>
+                <td>${lev.empId}</td>
+                <td>${lev.noOfDays}</td>
+                <td>${lev.levMngCmts}</td>
+                <td>${lev.stDate}</td>
+                <td>${lev.endDate}</td>
+                <td>${lev.leaveTyp}</td>
+                <td>${lev.status}</td>
+                <td>${lev.levReason}</td>
+                <td><input type="checkbox" name="leaveIds" value="${lev.leaveId}"></td>
+            </tr>
+        </c:forEach>
+    </table>
+    <br>
+    Manager Comments: <input type="text" id="mgrComments">
+    <br>
+    <br>
+    <input type="button" value="Approve" onclick="approveLeaves('APPROVED')">
+    <input type="button" value="Deny" onclick="approveLeaves('DENIED')">
+</form>
+</body>
+</html>

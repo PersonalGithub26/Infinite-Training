@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script >
+fuction show()
+{
+	if(frmTest.chkstatus.cheecked==true)
+		{
+		document.getElementById("result").innerHtml="present";
+		}
+	else
+		{
+		document.getElementById("result").innerHtml="Absent";
+		}
+	}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form name="frmTest">
+	<center>
+	Status :
+	<input type="checkbox" name="chkstatus"  ><br></br>
+	<span id="result" > </span>
+	</center>
+	
+	</form>
+
+</body>
+</html>

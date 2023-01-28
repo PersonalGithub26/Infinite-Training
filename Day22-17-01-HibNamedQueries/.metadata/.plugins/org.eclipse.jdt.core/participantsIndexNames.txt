@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+D:\Java_Training\Java_Training\Day22-17-01-HibNamedQueries\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1852828297.index
+\HibNamedQueriess\src\main\java

@@ -1,0 +1,27 @@
+package com.java.abs;
+
+public class MainEmp2 {
+	
+	public static void main(String[] args) {
+		Employee[] emp = new Employee[]
+				{
+						new HrEmployee(1, "chandu", 814591),
+						new DevEmployee(2, "AkhilA", 285729),
+						new HrEmployee(1, "Srinivas", 814591),
+						new DevEmployee(2, "Ajay", 285729), 
+						new HrEmployee(1, "Srikanth", 814591),
+						new DevEmployee(2, "Abhishek", 285729),
+						new HrEmployee(1, "Pardhu", 814591),
+						new DevEmployee(2, "patel", 285729)  
+				};
+		for (Employee employee : emp) {
+			
+			if(employee instanceof HrEmployee)
+			{
+				System.out.println(employee);
+			}
+			
+		}
+	}
+
+}

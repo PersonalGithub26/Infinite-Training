@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:body>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="Complaint Type: " for="complaintType" />
+			<h:inputText id="complaintType" value="#{complaint.complaintType}"
+				required="true" />
+
+			<h:outputLabel value="Description: " for="cDescription" />
+			<h:inputTextarea id="cDescription" value="#{complaint.cDescription}"
+				required="true" />
+
+			<h:outputLabel value="Severity: " for="severity" />
+			<h:selectOneMenu id="severity" value="#{complaint.severity}">
+				<f:selectItem itemValue="Low" itemLabel="Low" />
+				<f:selectItem itemValue="Medium" itemLabel="Medium" />
+				<f:selectItem itemValue="High" itemLabel="High" />
+			</h:selectOneMenu>
+			<h:outputLabel value="Complaint Date: " for="complaintDate" />
+			<h:inputText value="#{complaint.complaintDate}">
+				<f:convertDateTime pattern="yyyy-MM-dd" />
+			</h:inputText>
+			<h:outputLabel value="status : " for="status" />
+			<h:inputText id="status" value="#{complaint.status}"
+				required="true" />
+
+		</h:panelGrid>
+		<h:commandButton value="Add Complaint"
+			action="#{cDao.AddComplaint(complaint, resolveE)}" />
+		<h:messages />
+	</h:form>
+
+
+</h:body>
+</html>

@@ -1,0 +1,56 @@
+package com.java.Practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeForEach {
+	
+	private int empId;
+	private String name;
+	private double basic;
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getBasic() {
+		return basic;
+	}
+	public void setBasic(double basic) {
+		this.basic = basic;
+	}
+	public EmployeeForEach(int empId, String name, double basic) {
+		this.empId = empId;
+		this.name = name;
+		this.basic = basic;
+	}
+	
+}
+
+class Fe
+{
+	public static void main(String[] args) {
+		List<EmployeeForEach> employees = new ArrayList<EmployeeForEach>();
+		employees.add(new EmployeeForEach(1, "Chandu", 12000));
+		employees.add(new EmployeeForEach(2, "srinivas", 13000));
+		employees.add(new EmployeeForEach(3, "Srikanth", 14000));
+		employees.add(new EmployeeForEach(4, "Ajay", 10000));
+		employees.add(new EmployeeForEach(5, "Pranay", 15000));
+		
+		System.out.println("Employee List is :");
+		employees.forEach(X -> {
+			System.out.println(X);
+		});
+		
+		
+		
+				
+	}
+}

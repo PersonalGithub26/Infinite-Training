@@ -1,0 +1,30 @@
+package com.jsf.complant;
+
+import java.sql.Date;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@ManagedBean
+@SessionScoped
+@Entity
+@Table(name = "resolve")
+public class ResolveE {
+	@Id
+	@Column(name = "ResolveID")
+	private String resolveId;
+	@Column(name = "ComplaintID")
+	private String complaintId;
+	@Column(name = "ComplaintDate")
+	private Date complaintDate;
+	@Column(name = "ResolveDate")
+	private Date resolveDate;
+	@Column(name = "ResolvedBy")
+	private String resolvedBy;
+	@Column(name = "Comments")
+	private String comments;
+}

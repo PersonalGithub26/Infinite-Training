@@ -1,0 +1,91 @@
+package com.java.employeePaySlip;
+
+import java.util.List;
+import java.util.Scanner;
+
+public class EmployeeDaoMain {
+	
+	static Scanner sc;
+    static Employee employee;
+    static EmployeeDAO dao;
+   
+
+    static
+    {
+        sc = new Scanner(System.in);
+        employee = new Employee();
+        dao = new EmployeeDaoImp();
+			
+			
+
+    }
+    public static void addEmployeeMain()
+    {
+        employee.setEmpId(1);
+        List<Employee> employeeList = dao.showEmployee();
+
+        //int id = employee.getEmpId();
+        System.out.println(employee.getEmpId());
+        System.out.println("Enter employee first name");
+        employee.setFirstName(sc.next());
+        System.out.println("Enter employee last name");
+        employee.setLastName(sc.next());
+        System.out.println("Enter employee salary");
+        employee.setSalary(sc.nextDouble());
+        System.out.println(dao.addEmployeeDao(employee));
+        System.out.println("Enter leaves Available");
+        employee.setLeaveAvail(sc.nextInt());
+        
+        for (Employee employee1: employeeList) {
+            System.out.println(employee1.toString());
+
+        }
+
+
+
+    }
+    
+//    public static void takeHomeMain()
+//    {
+//    	LeaveDetailsDaoImp ed = new LeaveDetailsDaoImp();
+//    	LeavesDetails ld = new LeavesDetails();
+//    	ed.applyLeave(ld);
+//    }
+    
+    public static void applyLeaveMain()
+    {
+    	LeaveDetailsDaoImp ld = new LeaveDetailsDaoImp();
+    	LeavesDetails ld1 = new LeavesDetails();
+    	ld.applyLeave(ld1);
+    ld1.setLeaveId(1);
+    	System.out.println(ld1.getLeaveId());
+    	System.out.println(employee.getEmpId());
+    	System.out.println(ld1.getLeaveTaken());
+    	System.out.println(ld1.getLossOfPay());
+    	System.out.println(ld1.toString());
+    }
+    
+    public static void searchEmployeeMain()
+    {
+    	EmployeeDaoImp edd= new EmployeeDaoImp();
+
+    	System.out.println("Enter employee id to search");
+    	employee.setEmpId(sc.nextInt());
+    	edd.searchEmployee(employee.getEmpId());
+    	
+    	
+    	
+    }
+    
+    public static void main(String[] args) {
+        addEmployeeMain();
+        applyLeaveMain();
+        
+      
+        
+
+    }
+    
+    
+   
+}

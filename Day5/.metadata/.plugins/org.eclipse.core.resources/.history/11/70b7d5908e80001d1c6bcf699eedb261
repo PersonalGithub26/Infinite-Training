@@ -1,0 +1,37 @@
+package com.java.Employe;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeDaoImp implements EmployeeDAO{
+	
+	
+	static Employee employee;
+	static List<Employee> employeeList;
+	
+	static 
+	{
+		employeeList = new ArrayList<Employee>();
+		employee = new Employee();
+	}
+
+	@Override
+	public String addEmployeDetails(Employee employee) {
+		
+		employeeList.add(employee);
+		
+		return "Employee Details Added Successfully";
+	}
+
+	@Override
+	public void showPaySlip(int EmpId) {
+		
+	}
+
+	
+	
+	
+
+	
+	
+}

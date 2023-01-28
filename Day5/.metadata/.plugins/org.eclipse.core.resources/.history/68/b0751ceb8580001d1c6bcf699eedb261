@@ -1,0 +1,116 @@
+package com.java.Employe;
+
+public class Employee {
+	
+	private int empId;
+	private String firstName;
+	private String lastName;
+	private double salary;
+	private int leaveAvail;
+	private double hra;
+	private double da;
+	private double ta;
+	private double tax;
+	private double gross;
+	private double takeHome;
+	
+	
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	public int getLeaveAvail() {
+		return leaveAvail;
+	}
+	public void setLeaveAvail(int leaveAvail) {
+		this.leaveAvail = leaveAvail;
+	}
+	public double getHra() {
+		return hra;
+	}
+	public void setHra(double hra) {
+		this.hra = hra;
+	}
+	public double getDa() {
+		return da;
+	}
+	public void setDa(double da) {
+		this.da = da;
+	}
+	public double getTa() {
+		return ta;
+	}
+	public void setTa(double ta) {
+		this.ta = ta;
+	}
+	public double getTax() {
+		return tax;
+	}
+	public void setTax(double tax) {
+		this.tax = tax;
+	}
+	public double getGross() {
+		return gross;
+	}
+	public void setGross(double gross) {
+		this.gross = gross;
+	}
+	public double getTakeHome() {
+		return takeHome;
+	}
+	public void setTakeHome(double takeHome) {
+		this.takeHome = takeHome;
+	}
+	public Employee(int empId, String firstName, String lastName, double salary, int leaveAvail, 
+			double hra, double da,
+			double ta, double tax, double gross, double takeHome) {
+		
+		this.empId = empId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.salary = salary;
+		this.leaveAvail = leaveAvail;
+		this.hra = hra;
+		this.da = da;
+		this.ta = ta;
+		this.tax = tax;
+		this.gross = gross;
+		this.takeHome = takeHome;
+	}
+	public Employee() {
+		
+	}
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", firstName=" + firstName + ", lastName=" + lastName + ", salary=" + salary
+				+ ", leaveAvail=" + leaveAvail + ", hra=" + hra + ", da=" + da + ", ta=" + ta + ", tax=" + tax
+				+ ", gross=" + gross + ", takeHome=" + takeHome + "]";
+	}
+	
+	
+	
+	
+	
+	
+
+}

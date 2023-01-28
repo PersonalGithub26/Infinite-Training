@@ -1,0 +1,34 @@
+package com.booking;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class CustomerDaoImp implements CustomerDAO{
+
+	@Override
+	public String addCustomerDao(Customer customer) {
+		String pwd = EntryptPassword.getCode(customer.getPassword());
+		customer.setPassword(pwd);
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		session.save(customer);
+		tx.commit();
+	}
+
+	@Override
+	public String validateMe(Customer customer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Customer searchByCustomerUser(String userName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

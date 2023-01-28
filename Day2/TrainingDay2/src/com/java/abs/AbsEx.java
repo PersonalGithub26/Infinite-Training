@@ -1,0 +1,7 @@
+package com.java.abs;
+
+public class AbsEx {
+	
+	
+
+}

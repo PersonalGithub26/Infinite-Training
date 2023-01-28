@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>User Account Page</title>
+	<style>
+/* Add a background color for the top navigation */
+.nav {
+	background-color: #7464aa;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* Style the links in the navigation */
+.nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 10px;
+}
+
+/* Add a hover effect for the links */
+.nav a:hover {
+	background-color: #d56d2d;
+}
+
+/* Add some padding and a background color for the welcome message */
+.welcome {
+	background-color: #ff11ff;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+/* Style the logout button */
+input[type="button"] {
+	background-color: #d56d2d;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	float: right;
+}
+</style>
+</h:head>
+<h:body>
+	<div class="nav">
+		<a href="#">Account Details</a>
+		<h:form>
+			<h:commandLink hreflang="#" value="Search / Issue" action="searchBook" />
+		</h:form>
+		<a href="#">Return</a> <a href="#">History</a>
+	</div>
+	<div class="welcome">
+		<h:outputText value="Welcome, #{libUsers.userName}!" />
+		<form>
+			<input type="button" value="Logout" onclick="#{logoutBean.logout()}" />
+		</form>
+	</div>
+</h:body>
+</html>
+
+

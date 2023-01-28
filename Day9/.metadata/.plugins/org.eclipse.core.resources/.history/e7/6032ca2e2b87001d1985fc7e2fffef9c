@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	var question=["1. identify whih is not an oops feature"];
+	var options=["a. abstraction","b. inheritance","c. configuration","d. polymorphism"];
+	var ques = 0;
+	function load()
+	
+	{
+		document.getElementById("question").innerHTML=question[ques];
+	}
+	function opt()
+	{
+		for(var v in options)
+			{
+				document.getElementById("otions").innerHTML=v;
+			}
+	}
+	
+	</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body onload="load()">
+	<form name="frmTask">
+		<span id="question"></span>
+		<br/><br/>
+		<input type="button" value="Next" onclick="nextQuestion()" /> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" value="Previous" onclick="prevQuestion()" /> 
+		<span id="options">
+		<br/><br/>
+		<input type="radio" >
+		
+		</span>
+	</form>
+
+</body>
+</html>

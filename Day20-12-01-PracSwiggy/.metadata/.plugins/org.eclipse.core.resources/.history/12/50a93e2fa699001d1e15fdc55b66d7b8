@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+		<h:form>
+			<ui:include src="CustomerMenu.xhtml"/>
+			<center>
+				<h2><h:outputText value="Customer Wallet"></h2>
+				<h:dataTable value="#{wDao.showWallet(customerInfo.custId)" var="e" border="3">
+				<h:column>
+					<f:facet name="header">Wallet Id</f:facet>
+					#{e.walId}
+				</h:column>
+				<h:column>
+					<f:facet name="header">Customer Id</f:facet>
+					#{e.custId}
+				</h:column>
+				<h:column>
+					<f:facet name="header">Wallet Amount</f:facet>
+					#{e.walAmt}
+				</h:column>
+				<h:column>
+					<f:facet name="header">Wallet Source</f:facet>
+					#{e.source}
+				</h:column>
+				
+				
+				</h:dataTable>
+			</center>
+		</h:form>
+		
+	</html>

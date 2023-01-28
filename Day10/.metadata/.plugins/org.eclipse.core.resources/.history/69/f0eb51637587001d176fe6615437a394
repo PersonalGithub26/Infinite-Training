@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	var Items =["1. Dosa", "2. Idly", "3. vada", "4. Puri", "5. Bonda"];
+	var resturants =["1. Raja Tiffins", "2. Bawarchi", "3. Shah Ghouse", "4. raju Gari Biryni"];
+	var prices =["1. 40", "2. 35", "3. 32", "4. 45", "5. 25"];
+	
+	var ItemPrice =0;
+	
+	
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="resturantFrm" >
+		<table border="3" align="center">
+			<tr>
+				<th colspan="2">Menu List</th>
+			</tr>
+			
+		
+	
+	</form>
+	
+
+</body>
+</html>

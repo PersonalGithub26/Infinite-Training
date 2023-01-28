@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+D:\Java_Training\Java_Training\JspBeans04-01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3435328834.index
+\PracticeLibrary\src\main\java
+D:\Java_Training\Java_Training\JspBeans04-01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3424540907.index
+\JspBeansDemo\src\main\java
+D:\Java_Training\Java_Training\JspBeans04-01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2459316954.index
+\LibraryProject\src\main\java

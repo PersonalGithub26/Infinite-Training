@@ -1,0 +1,7 @@
+package com.swig;
+
+public interface CustomerDAO {
+	
+	String AddCustomer(Customer customer);
+
+}

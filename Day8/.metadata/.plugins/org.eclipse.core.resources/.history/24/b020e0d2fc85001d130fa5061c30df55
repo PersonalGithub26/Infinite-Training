@@ -1,0 +1,19 @@
+package com.java.inventoryProject;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class OrdersDaoImpl implements OrdersDAO{
+	
+	Connection connection;
+	PreparedStatement pst;
+	Stock stock;
+	StockDaoImpl dao;
+	@Override
+	public String placeOrder(String StockId, int QuantityOrdered) {
+		stock = new Stock();
+		return null;
+	}
+	
+
+}

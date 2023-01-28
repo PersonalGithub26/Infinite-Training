@@ -1,0 +1,29 @@
+package com.booking;
+
+import javax.transaction.Transaction;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class AdminDaoImp implements AdminDAO {
+
+	/**
+	 *
+	 */
+	@Override
+	public String addAdmin(Admin admin) {
+		String pwd = EntryptPassword.getCode(admin.getPassword());
+		admin.setPassword(pwd);
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+		org.hibernate.Transaction tx = session.beginTransaction();
+		session.save(admin);
+		return "Success.xhtml?faces-redirect=true";
+	}
+
+	@Override
+	public String ValidateMe(Admin admin) {
+		return null;
+	}
+
+}

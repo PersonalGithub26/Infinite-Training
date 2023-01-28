@@ -1,0 +1,22 @@
+package com.infinite.day1;
+
+public class CurrentBill {
+	public static void main(String[] args) {
+		int distance = 5;
+		int money = 0;
+		for(int i = 0; i < distance; i++)
+		{
+			if(i < 2 && i > 1)
+			{
+				money += 1;
+				System.out.println(money);
+			}
+			else if( i > 2 && i < 5)
+			{
+				money = money +2;
+				System.out.println(money);
+			}
+		}
+				
+	}
+}

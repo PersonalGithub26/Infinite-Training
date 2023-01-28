@@ -1,0 +1,14 @@
+package com.jsf.Demo;
+
+import javax.faces.bean.SessionScoped;
+
+@javax.faces.bean.ManagedBean(name="test")
+@SessionScoped
+public class Test {
+	
+	public String satHello()
+	{
+		return "Welcome to jsf programming";
+	}
+
+}

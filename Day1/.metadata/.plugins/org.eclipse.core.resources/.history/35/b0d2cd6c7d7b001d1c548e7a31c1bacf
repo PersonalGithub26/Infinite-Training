@@ -1,0 +1,15 @@
+package com.infinite.day1;
+
+public class Factroial {
+	public void isFact(int n)
+	{
+		int i = 1;
+		int fact = i*n;
+		System.out.println(fact);
+	}
+	public static void main(String[] args) {
+		int n = 5;
+		new Factroial().isFact(n);
+	}
+
+}

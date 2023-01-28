@@ -1,0 +1,18 @@
+package com.jsf.complant;
+
+import org.hibernate.SessionFactory;
+
+public class ComplainEDaoImp implements ComplaintEDAO {
+
+	@Override
+	public String AddComplaint() {
+		
+		SessionFactory sf  = SessionHelper.getconnection();
+		
+		return null; 
+	}
+	 
+	
+	
+
+}

@@ -1,0 +1,12 @@
+package com.java.sup;
+
+public class SupCon {
+	public static void main(String[] args) {
+		
+	
+	Employee c = new Employee(1, "chandu", 200000.2725);
+	System.out.println(c);
+
+	}
+
+}

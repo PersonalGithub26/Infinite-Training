@@ -1,0 +1,25 @@
+package com.swig;
+
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class CustomerDaoImp implements CustomerDAO{
+
+	@Override
+	public String AddCustomer(Customer customer) {
+		String pwd = EntryptPassword.getCode(customer.getPassword());
+		customer.setPassword(pwd);
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		session.save(customer);
+		tx.commit();
+		return "Customer Added";
+		
+	}
+	
+	
+
+}

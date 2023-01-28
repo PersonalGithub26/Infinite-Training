@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form name="SwiggyForm">
+		<table border="3" align="center">
+		<tr>
+			<th colspan="2" align="center">&nbsp;&nbsp;Menu Card</th>
+		</tr>
+		<tr>
+			<th>Items</th>
+			<th>Price</th>
+			<th>Click</th>
+		</tr>
+		</table>
+
+	</form>
+
+</body>
+</html>

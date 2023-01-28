@@ -1,0 +1,30 @@
+package com.java.Collections;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.print.attribute.HashAttributeSet;
+
+public class SetDemo {
+	public static void main(String[] args) {
+		Set names= new HashSet();
+		names.add("Chandu");
+		names.add("Srinivas");
+		names.add("Akhila");names.add("Chandu");
+		names.add("Srinivas");
+		names.add("Akhila");names.add("Chandu");
+		names.add("Srinivas");
+		names.add("Akhila");names.add("Chandu");
+		names.add("Srinivas");
+		names.add("Akhila");names.add("Chandu");
+		names.add("Srinivas");
+		names.add("Akhila");
+		
+		System.out.println("nmaes are   ");
+		
+		for (Object object : names) {
+			System.out.println(object);
+		}
+	}
+
+}

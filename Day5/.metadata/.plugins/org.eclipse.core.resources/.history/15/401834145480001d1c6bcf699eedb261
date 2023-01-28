@@ -1,0 +1,73 @@
+package com.java.calanderStreams;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class CalenderPractice {
+//	public static void main(String[] args) {
+//		
+//		SimpleDateFormat sdf = new SimpleDateFormat();
+////		Calendar c1 = Calendar.getInstance();
+////		System.out.println(sdf.format(c1.getTime()));
+//		
+//		Date start = new Date();
+//		Date today = new Date();
+//		Calendar cal1 = Calendar.getInstance();
+//		cal1.add(Calendar.DATE, -15);
+//		start = cal1.getTime();
+//		System.out.println(start);
+//		System.out.println(today);
+//		System.out.println(new CalEx4().count(start, today));
+//	}
+//		
+	
+	
+	public boolean doValid(Date d) throws ParseException
+	{
+		Date LeaveStartDate = new Date();
+		Date LeaveEndDate = 
+
+		//boolean isValid = true;
+				
+
+		if(LeaveStartDate != null)
+		{
+			String yesterdayDate = null;
+			Date date = new Date();
+			Calendar c = Calendar.getInstance();
+			c.setTime(date);
+			c.add(Calendar.DATE, -1);
+			//yesterdayDate = c.toString();
+			
+			//if(sd.format(leave.getLeaveStartDate()).equals(sd.parse(yesterdayDate)))
+			if (LeaveStartDate.before(new Date()))
+			{
+				sb.append("Leave Start date cannot be yeasterday's date....");
+				isValid = false;
+			}
+//			if(LeaveEndDate.before(new Date()))
+//			{
+//
+//
+//				sb.append("Leave end date cannot be yestarday's date");
+//				isValid = false;
+//			}
+//
+//			
+//		}
+//		if (leave.getLeaveStartDate().after(leave.getLeaveEndDate()))
+//		{
+//			sb.append("Leave start date cannot be greater than leave end date");
+//			isValid = false;
+//		}
+//		return isValid;
+//
+//	}
+//
+
+	}
+	}
+}
+//optional in jdk 8

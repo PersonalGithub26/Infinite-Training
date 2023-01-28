@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+      
+      <h:dataTable value="#{employeeBean.employeeList}" var="employee">
+    <h:column>
+        <f:facet name="header">Emp ID</f:facet>
+        #{employee.empId}
+    </h:column>
+    <h:column>
+        <f:facet name="header">Name</f:facet>
+        #{employee.name}
+    </h:column>
+    <h:column>
+        <f:facet name="header">Department</f:facet>
+        #{employee.dept}
+    </h:column>
+    <h:column>
+        <f:facet name="header">Designation</f:facet>
+        #{employee.desg}
+    </h:column>
+    <h:column>
+        <f:facet name="header">Basic</f:facet>
+        #{employee.basic}
+    </h:column>
+</h:dataTable>
+      
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+	<h1>Employ Form</h1>
+	<h:form>
+		Employ No:
+			<h:inputText id="empId" required="true" 
+			label="Employ No" value="{employ.empId}">
+			<f:validateRequired/>
+			<f:validateLongRange maximum="100" minimum="1"/>
+			</h:inputText>
+			<br/><br/>
+			
+			<h:message for="empId" style="color:red"/>
+			<h:commandButton value="Show" action="employShow"/>
+	</h:form>
+</html>

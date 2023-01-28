@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+	var questions = ["1. What is java", "2. what is HTML", "3. What is Jsf"
+	                 "4. What is your name"];
+	var questionNo = 0;
+	
+	function load()
+	{
+		document.getElementById("result").innerHTML =questions[questionNo];
+	}
+	function nextQuestion()
+	{
+		questionNo++;
+	}
+	function prevQuestion
+	{
+		questionNo--;
+	}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body onload="load()">
+
+	<form name = "frmExam">
+		<span id = "result"></span>
+		<br/><br/>
+		
+		<input type="button" value="Next" onclick="nextQuestion">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" value="Previous" onclick="prevQuestion">
+		
+		
+	</form>
+
+</body>
+</html>

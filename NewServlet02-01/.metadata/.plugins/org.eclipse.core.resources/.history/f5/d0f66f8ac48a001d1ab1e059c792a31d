@@ -1,0 +1,150 @@
+package infinite.InventoryProject;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class StockDaoImp implements StockDAO{
+
+	Connection connection;
+	PreparedStatement pst;
+
+	static List stockList;
+
+	static{
+		stockList=new ArrayList<Stock>();
+	}
+
+	public String generateStockId() throws ClassNotFoundException, SQLException{
+
+		connection = ConnectionHelper.getConnection();
+		String cmd="select * from stock order by stockid desc";
+		pst = connection.prepareStatement(cmd);
+		ResultSet rs = pst.executeQuery();
+		rs.next();
+		String strfound=rs.getString("stockid");
+		if(strfound==null){
+			strfound="S001";
+			return strfound;
+		}
+
+		String sub=strfound.substring(1);
+		int temp=Integer.parseInt(sub);
+		temp=temp+1;
+		strfound=String.format("S%03d", temp);
+		return strfound;
+
+	}
+
+	
+
+
+	@Override
+	public String createStock(Stock stock) throws ClassNotFoundException, SQLException {
+		
+		String stockidg=generateStockId();
+		//stock=searchStock(stock.getStockId());
+		
+		stock.setStockId(stockidg);
+
+		String cmd="insert into stock(stockid,itemname,price,QuantityAvail) values(?,?,?,?)";
+		connection = ConnectionHelper.getConnection();
+		pst = connection.prepareStatement(cmd);
+
+		pst.setString(1,stockidg );
+		pst.setString(2,stock.getItemName());
+		pst.setDouble(3,stock.getPrice());
+		pst.setInt(4,stock.getQuantityAvail());
+
+		pst.executeUpdate();
+
+		return "stock added succefully";
+
+
+	}
+
+	@Override
+	public Stock searchStock(String id) throws ClassNotFoundException, SQLException {
+		connection=ConnectionHelper.getConnection();
+
+		String cmd="select * from stock where stockid=?";
+
+		pst=connection.prepareStatement(cmd);
+
+		pst.setString(1,id);
+
+		ResultSet rs=pst.executeQuery();
+
+		Stock stock=null;
+		if(rs.next()){
+			stock=new Stock();
+
+			stock.setStockId(rs.getString("stockid"));
+			stock.setItemName(rs.getString("itemname"));
+			stock.setPrice(rs.getDouble("price"));
+			stock.setQuantityAvail(rs.getInt("quantityavail"));
+		}
+
+		return stock;
+
+	}
+
+	@Override
+	public List<Stock> showStock() throws ClassNotFoundException, SQLException {
+connection=ConnectionHelper.getConnection();		
+		
+		String cmd="select * from stock";
+		pst=connection.prepareStatement(cmd);
+		
+		ResultSet rs=pst.executeQuery();
+		
+		while(rs.next()){
+			
+			Stock stock=new Stock();
+			
+			stock.setStockId(rs.getString("stockid"));
+			stock.setItemName(rs.getString("itemname"));
+			stock.setPrice(rs.getDouble("price"));
+			stock.setQuantityAvail(rs.getInt("quantityavail"));
+			stockList.add(stock);
+		}
+		
+		return stockList;
+	}
+
+
+
+
+	@Override
+	public String riseStock(Stock stock,String Id) throws ClassNotFoundException, SQLException {
+		stock = searchStock(Id);
+		if(stock!=null)
+		{
+			connection = ConnectionHelper.getConnection();
+			String cmd = "Update stock set  QuantityAvail=QuantityAvail+?,price=? where stockid=? ";
+			pst.setInt(1, stock.getQuantityAvail());
+			Double totalprc = stock.getPrice()*stock.getQuantityAvail();
+			pst.setDouble(2, totalprc);
+			pst.setString(3, stock.getStockId());
+			return "Stock Rised";
+			
+			
+			
+		}
+		else 
+		{
+			return "Please add the item to rise";
+		}
+	}
+
+
+
+
+	
+
+
+
+}

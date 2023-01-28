@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+	
+<h:body>
+
+	<h:form>
+	
+		<center>
+			<h2>
+				<h:outputText value="All movies" />
+			</h2>
+
+			<h:dataTable value="#{mDao.viewMovieList()}" var="m" border="3">
+				<h:column>
+					<f:facet name="header">Movie Id</f:facet>
+                  	<h:outputText value="#{m.movieId}" />
+                </h:column>
+				<h:column>
+					<f:facet name="header">Movie Name</f:facet>
+					<h:outputText value="#{m.movieName}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Movie Genre</f:facet>
+					<h:outputText value="#{m.movieGenre}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Movie Hours</f:facet>
+					<h:outputText value="#{m.movieHours}" />
+				</h:column>\
+				<h:column>
+					<f:facet name="header">Movie Language</f:facet>
+					<h:outputText value="#{m.language}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Movie Desc</f:facet>
+					<h:outputText value="#{m.description}" />
+				</h:column>
+				 <h:column>
+					<f:facet name="header">Update</f:facet>
+					<h:commandButton action="#{mDao.viewMovie(m.movieId)}"
+						value="Update">
+					</h:commandButton>
+				</h:column> 
+				 <h:column>
+					<f:facet name="header">Remove</f:facet>
+					<h:commandButton action="#{mDao.removeMovie(m.movieId)}"
+						value="Update">
+					</h:commandButton>
+				</h:column> 
+
+			</h:dataTable>
+		</center>
+	</h:form>
+</h:body>
+</html>

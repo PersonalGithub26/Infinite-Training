@@ -1,0 +1,127 @@
+package com.java.examhib;
+
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
+
+
+@ManagedBean(name="cdao")
+@SessionScoped
+public class ComplaintDaoImpl implements ComplaintDAO {
+
+	@Override
+	public List<Complaint> showComp() {
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+		Criteria cr = session.createCriteria(Complaint.class);
+		List<Complaint> list = cr.list();
+		return list;
+	}
+
+//	public String convertDate(Timestamp stamp) {
+//		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+//		if (stamp != null) {
+//			Date date = new Date(stamp.getTime());
+//			return sdf.format(date);
+//		} else {
+//			return sdf.format(new Date());
+//		}
+//
+//	}
+
+	public List<Resolve> showReso() {
+
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+		Criteria cr = session.createCriteria(Resolve.class);
+		List<Resolve> list = cr.list();
+		return list;
+
+	}
+
+
+	public String AddComplaint(Complaint complaint) {
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+
+		session.beginTransaction();
+		//complaint.setComplaintDate();
+		complaint.setStatus("pending");
+		session.save(complaint);
+
+		session.getTransaction().commit();
+		return "ShowComplaint.xhtml?faces-redirect=true";
+
+	}
+
+	public long find(Date d1,Date d2) {
+
+
+		LocalDateTime start = LocalDateTime.ofInstant(d1.toInstant(), ZoneId.systemDefault());
+		LocalDateTime end = LocalDateTime.ofInstant(d2.toInstant(), ZoneId.systemDefault());
+
+		long daysBetween = ChronoUnit.DAYS.between(start, end);
+
+		return daysBetween + 2;
+
+	}
+	
+	
+	public String SearchComplaintDao(String id) {
+        Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
+        SessionFactory sf = SessionHelper.getConnection();
+        Session session = sf.openSession();
+        Criteria cr = session.createCriteria(Complaint.class);
+        cr.add(Restrictions.eq("complaintID",id));
+        
+        Complaint comp=(Complaint) cr.uniqueResult();
+        
+        sessionMap.put("editc",comp);
+
+        return "ResolveIt.xhtml?faces-redirect=true";
+
+ 
+
+    }
+	
+	public String resolveComplaint(Resolve resolve){
+	
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+		Complaint comp = (Complaint) FacesContext.getCurrentInstance().getExternalContext().getSessionMap().get("editc");
+		session.beginTransaction();
+		String complaint = SearchComplaintDao(comp.getComplaintID());
+		comp.setStatus("Aproved");		
+		resolve.setResolveDate(new Date());
+		resolve.setComplaint(comp);
+		System.out.println(comp.getComplaintDate());
+		resolve.setComplaintDate(comp.getComplaintDate());
+		comp.setResolve(resolve);
+		
+		session.update(comp);
+		session.save(resolve);
+		
+		session.getTransaction().commit();
+        
+        
+		return "ShowResolve.xhtml?faces-redirect=true";
+		
+	}
+
+	
+
+}

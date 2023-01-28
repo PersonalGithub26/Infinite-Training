@@ -1,0 +1,6 @@
+package interfacE;
+
+public interface ITwo {
+	void sream();
+
+}

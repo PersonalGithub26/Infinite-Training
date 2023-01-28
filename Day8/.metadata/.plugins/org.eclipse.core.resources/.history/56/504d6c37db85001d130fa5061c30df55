@@ -1,0 +1,10 @@
+package com.java.inventoryProject;
+
+public class SearchStockMain {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

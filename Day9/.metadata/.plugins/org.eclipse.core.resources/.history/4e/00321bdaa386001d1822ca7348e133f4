@@ -1,0 +1,21 @@
+package practice;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.HashSet;
+import java.util.Set;
+
+public class P13 {	   
+	public static void main(String[] args) {
+        HashMap hm = new HashMap();
+        hm.put(null,"Divya");
+        hm.put(null, "Demo");
+        hm.put(null, "Raj");
+        hm.put(null,"Kalpana");
+        String x =(String)hm.getOrDefault(2, "Not found");
+        System.out.println(x);
+    }
+}
+

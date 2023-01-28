@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<a href = "p1.html">Page 1</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = "p1.html">Page 2</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = "p1.html">Page 3</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = "p1.html">Page 4</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = "p1.html">Page 5</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = "p1.html">Page 6</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<a href = "p1.html">Page 7</a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+</body>
+</html>

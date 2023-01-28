@@ -1,0 +1,93 @@
+package com.java.Employe;
+
+import java.util.Scanner;
+
+public class MainEmployeePaySlip {
+	
+	static EmployeeDaoImp ed;
+	static LeaveDetails ld;
+	static Scanner sc;
+	static Employee employee;
+	
+	static 
+	{
+		ed = new EmployeeDaoImp();
+		ld = new LeaveDetails();
+		sc = new Scanner(System.in);
+		employee = new Employee();
+	}
+	/*empNo (int)
+	firstName (String)
+	lastName (String)
+	salary (double)
+	leaveAvail (int)
+	hra (double) salary * 0.03
+	da (double)  salary * 0.12 
+	ta (double)  salary * 0.01
+	tax (double) salary * 0.21
+	pf (double)  salary * 0.23
+	gross (double)
+	takeHome (double)*/
+	
+	
+	public static void addEmployeeMain()
+	{
+		System.out.println(employee.getEmpId());
+		System.out.println("Enter Empoyee First Name");
+		employee.setFirstName(sc.next());
+		System.out.println("Enter Employee Last Name");
+		employee.setLastName(sc.next());
+		//System.out.println("Enter Employee salary per year");
+		employee.setSalary(12000.0);
+		System.out.println(employee.getSalary());
+		addEmployeeMain();
+
+		showPaySlipMain();
+		System.out.println("************************************************");
+		System.out.println("PAY SLIP FOR Employee");
+		System.out.println("************************************************");
+		System.out.println("Basic Pay:Rs");
+		System.out.println("DA:Rs"+employee.getDa());
+		System.out.println("HRA:Rs"+employee.getHra());
+		System.out.println("PF:Rs"+employee.getPf());
+		System.out.println("GROSS PAY:Rs"+employee.getGross());
+		System.out.println("TAKE HOME:RS"+employee.getTakeHome());
+		System.out.println(ed.getSalaryDao());
+		
+		
+	}
+	
+	public static void showPaySlipMain()
+	{
+		ed.showPaySlip(102);
+	}
+	
+	
+	public static void main(String[] args) {
+		int choice;
+		do
+		{
+			System.out.println("O P T I O N S");
+			System.out.println("===============");
+			System.out.println("1. Add Employee");
+			System.out.println(" 2. show employee paySlip");
+			System.out.println("Enter your choice");
+			choice = sc.nextInt();
+			
+			
+			switch(choice) 
+			{
+			case 1:
+				addEmployeeMain();
+				break;
+			case 2:
+				showPaySlipMain();
+				break;
+			
+				
+			}
+		}
+		while(true);
+	}
+
+}

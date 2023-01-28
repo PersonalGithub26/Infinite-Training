@@ -1,0 +1,8 @@
+package movie.MovieTicket;
+
+public interface AdminDAO {
+
+	String addAdmin(Admin admin);
+	String ValidateMe(Admin admin);
+	
+}

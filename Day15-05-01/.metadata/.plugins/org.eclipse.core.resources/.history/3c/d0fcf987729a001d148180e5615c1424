@@ -1,0 +1,22 @@
+package com.java.LMSProjectJstl;
+
+import java.sql.SQLException;
+import java.util.List;
+
+public class M {
+
+	public static void main(String[] args) {
+		
+		LevHistoryDaoImp d = new LevHistoryDaoImp();
+		try {
+			List<levHistory> list = d.pendingLeaves(2000);
+			for (levHistory levHistory : list) {
+				System.out.println(levHistory.toString());
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

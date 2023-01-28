@@ -1,0 +1,40 @@
+package com.swig;
+
+
+import java.util.Map;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.faces.context.*;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+@ManagedBean(name = "cDao")
+@SessionScoped
+public class CustomerDaoImp implements CustomerDAO{
+
+	@Override
+	public String AddCustomer(Customer customer) {
+		String pwd = EntryptPassword.getCode(customer.getPassword());
+		customer.setPassword(pwd);
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		session.save(customer);
+		tx.commit();
+		return "Customer Added";
+		
+	}
+
+	@Override
+	public String validateMe(Customer customer) {
+		String pwd = EntryptPassword.getCode(customer.getPassword());
+		Map<String, Object> sessionMap = 
+				FaceletContext
+	}
+	
+	
+
+}

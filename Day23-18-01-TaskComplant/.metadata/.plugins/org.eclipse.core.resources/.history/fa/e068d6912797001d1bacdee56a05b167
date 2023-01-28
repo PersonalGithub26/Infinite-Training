@@ -1,0 +1,7 @@
+package com.jsf.complant;
+
+public interface ComplaintEDAO {
+
+	String AddComplaint();
+	
+}

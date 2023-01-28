@@ -1,0 +1,9 @@
+package com.swig;
+
+public interface CustomerDAO {
+	
+	String AddCustomer(Customer customer);
+	String validateMe(Customer customer);
+	Customer searchCustomer(String userName);
+
+}

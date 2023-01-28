@@ -1,0 +1,26 @@
+package com.java.Practice;
+
+public class ConnectionHelper {
+	
+	@Override
+	public void run() {
+		
+		List<String> names = new ArrayList<>();
+		names.add("Chandu");
+		names.add("Srinivas");
+		names.add("Srilkanth");
+		names.add("Ajay");
+		names.add("Pranay");
+		for (String string : names) {
+			{
+			System.out.println("Names is : "+string);
+			
+			Thread.sleep(1000);
+			
+		}
+		
+		
+	}
+
+
+}

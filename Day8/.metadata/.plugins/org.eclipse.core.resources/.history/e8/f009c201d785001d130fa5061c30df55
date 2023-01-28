@@ -1,0 +1,10 @@
+package com.java.inventoryProject;
+
+public class MainStock {
+	
+	public static void main(String[] args) {
+		Stock stock = new Stock();
+		
+	}
+
+}

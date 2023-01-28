@@ -1,0 +1,14 @@
+127.0.0.1 - - [10/Jan/2023:21:42:27 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:21:42:28 +0530] "GET /jsfDemo/userShow.xhtml HTTP/1.1" 500 15880
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:21:42:43 +0530] "GET /jsfDemo/UserInput.xhtml HTTP/1.1" 200 821
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:21:43:11 +0530] "POST /jsfDemo/UserInput.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:21:43:11 +0530] "GET /jsfDemo/UserInput.xhtml HTTP/1.1" 200 867
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:21:43:15 +0530] "POST /jsfDemo/UserInput.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:21:43:15 +0530] "GET /jsfDemo/Menu.xhtml HTTP/1.1" 200 229
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:21:44:06 +0530] "GET /jsfDemo/EmployShow.xhtml HTTP/1.1" 200 1302
+127.0.0.1 - - [10/Jan/2023:21:55:52 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:21:55:53 +0530] "GET /jsfDemo/UserInput.xhtml HTTP/1.1" 200 824
+127.0.0.1 - - [10/Jan/2023:22:11:24 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:22:11:25 +0530] "GET /jsfDemo/UserInput.xhtml HTTP/1.1" 200 823
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:22:11:31 +0530] "POST /jsfDemo/UserInput.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:22:11:31 +0530] "GET /jsfDemo/EmployShow.xhtml HTTP/1.1" 200 1302

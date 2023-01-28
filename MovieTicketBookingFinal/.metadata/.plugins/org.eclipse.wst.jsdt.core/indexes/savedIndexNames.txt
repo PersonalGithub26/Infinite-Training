@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+D:\Java_Training\Java_Training\MovieTicketBookingFinal\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3418992972.index

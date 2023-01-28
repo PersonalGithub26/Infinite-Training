@@ -1,0 +1,29 @@
+package com.java.employeeLeave;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeDaoImp implements EmployeeDAO {
+	static List<Leave> employeeList;
+	
+	static 
+	{
+		employeeList = new ArrayList<Leave>();
+	}
+
+	
+
+	@Override
+	public List<Leave> showLeaves() {
+		return employeeList;
+	}
+
+
+
+	@Override
+	public String addDate() {
+		employeeList.add();
+		return "Leave Applied Successfully";
+	}
+
+}

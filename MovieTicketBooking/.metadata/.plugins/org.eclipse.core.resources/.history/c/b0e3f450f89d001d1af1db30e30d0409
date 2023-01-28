@@ -1,0 +1,11 @@
+package com.booking;
+
+public interface CustomerDAO {
+
+	String addCustomerDao(Customer customer);
+	String validateMe(Customer customer);
+	String viewCustomer(int custId);
+	String updateCustomer(Customer customer);
+	 String logout();
+
+}

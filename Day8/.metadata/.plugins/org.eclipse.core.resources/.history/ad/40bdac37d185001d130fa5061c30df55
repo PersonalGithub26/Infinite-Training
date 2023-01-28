@@ -1,0 +1,8 @@
+package com.java.inventoryProject;
+
+public interface StockDAO {
+	
+	String addStock();
+	Stock searchStock(int stockId);
+
+}

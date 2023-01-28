@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+ 
+
+<h:body>
+<center>
+<h1>resolve it</h1>
+</center>
+<h:form>
+<center>
+        Complaint ID: 
+<h:inputText id="complaintID" value="#{editc.complaintID}" /><br/><br/>
+
+ 
+
+    Complaint Date: 
+<h:inputText id="complaintDate" value="#{editc.complaintDate}" >
+<f:convertDateTime pattern="YYYY-MM-dd"/>
+</h:inputText>
+
+ 
+
+<br/><br/>
+
+ 
+
+      Resolved By :
+<h:inputText value="#{e.resolvedBy}"/><br/><br/>
+
+ 
+
+     Comments :
+<h:inputText value="#{e.comments}"/><br/><br/>
+
+ 
+
+ 
+
+
+<h:commandButton value="Resolve"
+            action="#{cDao.resolveComplaint(resolve)}" />
+
+ 
+
+</center>
+</h:form>
+</h:body>
+
+
+ 
+
+</html>

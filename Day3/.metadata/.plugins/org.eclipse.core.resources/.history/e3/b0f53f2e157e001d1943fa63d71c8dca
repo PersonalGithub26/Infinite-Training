@@ -1,0 +1,35 @@
+package com.java.employeeLeave;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeDaoImp implements EmployeeDAO {
+	static List<Leave1> employeeList;
+	
+	
+	static 
+	{
+		employeeList = new ArrayList<Leave1>();
+	}
+
+
+	@Override
+	public String addLeave(Leave1 leave) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<Leave1> showLeaves() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+	
+
+	
+
+}

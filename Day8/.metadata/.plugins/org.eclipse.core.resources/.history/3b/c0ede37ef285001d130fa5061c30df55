@@ -1,0 +1,23 @@
+package com.java.inventoryProject;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ShowStocks {
+	
+	public static void showStockMain()
+	{
+		StockDAO dao= new StockDaoImpl(); 
+		StockDaoImpl dao1 = new StockDaoImpl();
+		List<Stock> list = new ArrayList<Stock>();
+		list.addAll(dao1.stockList);
+		System.out.println(list);
+		
+	}
+	public static void main(String[] args) {
+		showStockMain();
+		
+	}
+
+}

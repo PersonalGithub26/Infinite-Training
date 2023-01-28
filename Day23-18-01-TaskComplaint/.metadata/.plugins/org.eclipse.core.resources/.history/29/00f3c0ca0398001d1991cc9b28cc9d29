@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+
+<h:body>
+<h:form>
+	<center>
+	<h:dataTable value="#{cdao.showReso()}" var="r" border="3" >
+
+		<h:column>
+			<f:facet name="header">r id</f:facet>
+			<h:outputLabel value="#{r.resolveID}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">compalint date</f:facet>
+			<h:outputLabel value="#{r.complaintDate}" />
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">resolved date</f:facet>
+			<h:outputLabel value="#{r.resolveDate}" />
+			
+		</h:column>
+		<h:column>
+			<f:facet name="header">resolved by</f:facet>
+			<h:outputLabel value="#{r.resolvedBy}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">comments</f:facet>
+			<h:outputLabel value="#{r.comments}" />
+			
+		</h:column>
+		<h:column>
+			<f:facet name="header">Tot</f:facet>
+			<h:outputLabel value="#{cdao.find(r.complaintDate,r.resolveDate)}">
+			</h:outputLabel>
+			
+		</h:column>
+	
+
+
+	</h:dataTable>
+	
+	  
+        <h:commandButton action = "CreateAgent.xhtml?faces-redirect=true"
+        	 value="Create Employ" /> 
+      </center>
+</h:form>	
+</h:body>
+
+	
+	
+
+</html>

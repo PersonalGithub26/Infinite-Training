@@ -1,0 +1,16 @@
+package com.booking;
+
+public class AdminDaoImp implements AdminDAO {
+
+	@Override
+	public String addAdmin(Admin admin) {
+		String pwd = EntryptPassword.getCode(Admin.)
+		return null;
+	}
+
+	@Override
+	public String ValidateMe(Admin admin) {
+		return null;
+	}
+
+}

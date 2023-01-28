@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	 xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:p="http://primefaces.org/ui">
+
+<h:head> </h:head>
+<h:body>
+	<f:facet name="last">
+		<h:outputStylesheet library="default" name="css/style.css" />
+	</f:facet>     <div style="width: 500px">
+		<h:form>
+			<p:panel id="panel-signup">
+				<!-- enable focus component -->
+				<p:focus context="panel-signup" />
+    sudent name:<p:inputText id="studentname"
+					value="#{feedback.studentName}"></p:inputText>
+				<br />
+				<br />
+    instructor:<h:selectOneMenu  value="#{fdao.localCode}"
+					onchange="submit()"  valueChangeListener="#{fdao.eventHappened}">
+					<f:selectItems value="#{fdao.showInstructorNames()}" />
+				</h:selectOneMenu>
+				<br />
+				<br />
+     subject:<h:selectOneMenu value="#{fdao.localCode2}"
+					onchange="submit()"
+					 valueChangeListener="#{fdao.eventHappened2}">
+					<f:selectItems value="#{fdao.showSubjectNames()}" />
+				</h:selectOneMenu>
+				<h:selectOneRadio value="#{feedback.fbValue}">
+					<f:selectItem itemValue="BAD" itemLabel="Bad" />
+					<f:selectItem itemValue="GOOD" itemLabel="good" />
+					<f:selectItem itemValue="GREAT" itemLabel="great" />
+				</h:selectOneRadio>       <p:commandButton value="add FeedBack" style="margin:20px"
+					 action="#{fdao.addFeedback(feedback)}" />
+				     Feedback Count:  <p:commandButton value=" FeedBack count" style="margin:20px"
+					 action="#{fdao.countFeedback()}" />
+			</p:panel>
+		</h:form>
+	</div>
+</h:body>
+</html>

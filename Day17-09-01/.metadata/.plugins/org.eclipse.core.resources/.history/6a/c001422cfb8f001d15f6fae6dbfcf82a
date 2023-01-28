@@ -1,0 +1,27 @@
+package com.jsf.Demo;
+
+import javax.faces.application.FacesMessage;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
+
+@ManagedBean
+@SessionScoped
+public class UserDAO {
+	
+	public String validate(User user)
+	{
+		if(user.getUserName().equals("infinite") && user.getPassWord().equals("chandu"))
+		{
+			return "Menu.xhtml?faces-redirect=true";
+		}
+		else
+		{
+			FacesContext.getCurrentInstance().addMessage("password", new FacesMessage("Invalid login. Please try again."));
+
+			return "UserInput.xhtml?faces-redirect=true";
+
+		}
+	}
+
+}

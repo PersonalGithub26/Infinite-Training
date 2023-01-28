@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+		function show()
+		{
+			var result = "";
+			result += "Absolute Value is "+ Math.abs(-12) + "</br>";
+			
+		}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body onload="show()">
+	<form name=frmMath>
+		<span id="result"> </span>
+	</form>
+</body>
+</html>

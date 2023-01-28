@@ -1,0 +1,11 @@
+package com.java.employeeLeave;
+
+import java.util.List;
+
+public interface EmployeeDAO {
+	
+	List<Leave1> addLeave();
+	List<Leave1> showLeaves();
+	
+
+}

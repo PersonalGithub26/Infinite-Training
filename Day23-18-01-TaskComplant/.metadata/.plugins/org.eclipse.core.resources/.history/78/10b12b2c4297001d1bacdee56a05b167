@@ -1,0 +1,89 @@
+package com.jsf.complant;
+
+import java.sql.Date;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@ManagedBean
+@SessionScoped
+@Entity
+@Table(name = "complaint")
+public class ComplaintE {
+	@Id
+	@Column(name = "ComplaintID")
+	private String complaintId;
+	@Column(name = "ComplaintType")
+	private String complaintType;
+	@Column(name = "CDescription")
+	private String cDescription;
+	@Column(name = "ComplaintDate")
+	private Date complaintDate;
+	@Column(name = "Severity")
+	private String severity;
+	@Column(name = "Status")
+	private String status;
+	public String getComplaintId() {
+		return complaintId;
+	}
+	public void setComplaintId(String complaintId) {
+		this.complaintId = complaintId;
+	}
+	public String getComplaintType() {
+		return complaintType;
+	}
+	public void setComplaintType(String complaintType) {
+		this.complaintType = complaintType;
+	}
+	public String getcDescription() {
+		return cDescription;
+	}
+	public void setcDescription(String cDescription) {
+		this.cDescription = cDescription;
+	}
+	public Date getComplaintDate() {
+		return complaintDate;
+	}
+	public void setComplaintDate(Date complaintDate) {
+		this.complaintDate = complaintDate;
+	}
+	public String getSeverity() {
+		return severity;
+	}
+	public void setSeverity(String severity) {
+		this.severity = severity;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public ComplaintE(String complaintId, String complaintType, String cDescription, Date complaintDate,
+			String severity, String status) {
+		super();
+		this.complaintId = complaintId;
+		this.complaintType = complaintType;
+		this.cDescription = cDescription;
+		this.complaintDate = complaintDate;
+		this.severity = severity;
+		this.status = status;
+	}
+	
+	public ComplaintE() {}
+	@Override
+	public String toString() {
+		return "ComplaintE [complaintId=" + complaintId + ", complaintType=" + complaintType + ", cDescription="
+				+ cDescription + ", complaintDate=" + complaintDate + ", severity=" + severity + ", status=" + status
+				+ "]";
+	}
+	
+	
+	
+	
+
+}

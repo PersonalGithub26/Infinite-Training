@@ -1,0 +1,8 @@
+127.0.0.1 - - [03/Jan/2023:22:24:55 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [03/Jan/2023:22:24:59 +0530] "GET /EmployeeProjectJspJdbc/EmployeeShow.jsp HTTP/1.1" 200 3111
+0:0:0:0:0:0:0:1 - - [03/Jan/2023:22:24:59 +0530] "GET /EmployeeProjectJspJdbc/table.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Jan/2023:22:24:59 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [03/Jan/2023:22:25:22 +0530] "GET /EmployeeProjectJspJdbc/AddEmployee.jsp HTTP/1.1" 200 863
+0:0:0:0:0:0:0:1 - - [03/Jan/2023:22:25:33 +0530] "POST /EmployeeProjectJspJdbc/AddEmployee.jsp HTTP/1.1" 200 3367
+0:0:0:0:0:0:0:1 - - [03/Jan/2023:22:25:39 +0530] "GET /EmployeeProjectJspJdbc/DeleteEmployee.jsp?empId=14 HTTP/1.1" 200 3111
+0:0:0:0:0:0:0:1 - - [03/Jan/2023:22:25:53 +0530] "GET /EmployeeProjectJspJdbc/DeleteEmployee.jsp?empId=9 HTTP/1.1" 200 2856

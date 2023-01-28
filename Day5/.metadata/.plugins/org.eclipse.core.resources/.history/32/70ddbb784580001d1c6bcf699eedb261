@@ -1,0 +1,31 @@
+package com.java.calanderStreams;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class CalenderPractice {
+	
+	public static void count() {
+		Date start = null,  end = null;
+		SimpleDateFormat sdf = new SimpleDateFormat();
+		 Calendar c1 = Calendar.getInstance();
+		    c1.setTime(start);
+		    int w1 = c1.get(Calendar.DAY_OF_WEEK);
+		    c1.add(Calendar.DAY_OF_WEEK, -w1);
+
+		    Calendar c2 = Calendar.getInstance();
+		    c2.setTime(end);
+		    int w2 = c2.get(Calendar.DAY_OF_WEEK);
+		    c2.add(Calendar.DAY_OF_WEEK, -w2);
+		    
+		    
+		    System.out.println(sdf.format(start));
+		    System.out.println(sdf.format(end));
+}
+	
+	public static void main(String[] args) {
+		count();
+		
+	}
+}

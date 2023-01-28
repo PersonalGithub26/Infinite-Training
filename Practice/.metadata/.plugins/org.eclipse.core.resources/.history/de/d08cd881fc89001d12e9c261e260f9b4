@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <style>
+body {
+	    background-image: url('im2.jpg'); 
+	    background-position : center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+} 
+  /* .flex-container {   display: flex; } */
+</style> -->
+ <link rel="stylesheet" href="Restaurent.css">
+ 
+<script>
+	    var rest = [ "RaghavendraTiffins", "Bawarchi", "ShahGhouse",
+			"KinaraGrand" ];
+	var restTemp = [ "RaghavendraTiffins", "Bawarchi", "ShahGhouse",
+			"KinaraGrand" ];
+
+	var restno = rest.length;
+
+	var RaghavendraTiffins = [ [ "Idly", 30 ], [ "wada", 40 ], [ "dosa", 40 ],
+			[ "Puri", 45 ], [ "utapa", 50 ] ];
+
+	var Bawarchi = [ [ "Chicken Biryani", 240 ], [ "mutton Briyani", 250 ],
+			[ "Mutton BoneSoup", 110 ], [ "Shwarma", 190 ],
+			[ "Fried Rice", 150 ] ];
+	
+	   var ShahGhouse = [ [ "Mutton BoneSoup", 110 ], [ "Mutton Biryani", 300 ],
+			[ "Mutton Fry", 320 ], ["Mutton Fried Biryani", 400], ["Nalli Biryani", 500]];
+	   
+	var KinaraGrand = [["Chicken Fried Rice", 100],["Egg fried Rice", 95], ["chicken manchurian",95]
+						["Chicken Noodles",110],["Egg noodles",100]];    
+
+	var rest = [ RaghavendraTiffins, Bawarchi,ShahGhouse, KinaraGrand];
+
+	var hotelno = 0;
+	
+	var pic = [ "C:\Users\chandud\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\desktop.jpg",
+				"C:\Users\chandud\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\img2.jpg" ];
+
+
+	function OnLoading() {
+
+		document.body.style.backgroundImage = pic[hotelno];
+
+		
+		document.getElementById("resname").innerHTML = "<h2>"
+				+ restTemp[hotelno] + "<h2/>";
+
+		document.getElementById("item1").innerHTML = rest[hotelno][0][0];
+		document.getElementById("item2").innerHTML = rest[hotelno][1][0];
+		document.getElementById("item3").innerHTML = rest[hotelno][2][0];
+		document.getElementById("item4").innerHTML = rest[hotelno][3][0];
+		document.getElementById("item5").innerHTML = rest[hotelno][4][0];
+
+		document.getElementById("p1").innerHTML = rest[hotelno][0][1];
+		document.getElementById("p2").innerHTML = rest[hotelno][1][1];
+		document.getElementById("p3").innerHTML = rest[hotelno][2][1];
+		document.getElementById("p4").innerHTML = rest[hotelno][3][1];
+		document.getElementById("p5").innerHTML = rest[hotelno][4][1];
+
+		document.getElementById("c1").value = rest[hotelno][0][1];
+		document.getElementById("c2").value = rest[hotelno][1][1];
+		document.getElementById("c3").value = rest[hotelno][2][1];
+		document.getElementById("c4").value = rest[hotelno][3][1];
+		document.getElementById("c5").value = rest[hotelno][4][1];
+
+		document.getElementById("c1").checked = false;
+		document.getElementById("c2").checked = false;
+		document.getElementById("c3").checked = false;
+		document.getElementById("c4").checked = false;
+		document.getElementById("c5").checked = false;
+
+		document.getElementById("xyz").innerHTML = "TOTAL=" + "000";
+
+	}
+
+	function totalIt() {
+		var input = document.getElementsByName("price");
+		var total = 0;
+
+		for (var i = 0; i < input.length; i++) {
+			if (input[i].checked) {
+				total += parseInt(input[i].value);
+
+			}
+		}
+
+		document.getElementById("xyz").innerHTML = "TOTAL=" + total;
+	}
+
+	function next() {
+
+		if(hotelno<5){
+		hotelno++;
+		document.getElementById("xyz").innerHTML = "TOTAL=" + "000";
+		document.getElementsByName("price").checked = false;
+		OnLoading();
+		}
+		else{
+			documnet.getElementById("last").innerHTML ;
+		}
+	}
+</script>
+     
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body onload="OnLoading()"
+	background = pic[0];>
+	<div id="main">
+		           
+		<div id="resname" align="center" class="col" ></div>
+		         
+		<div id="a">
+			           
+			<p id="rest" ></p>
+			          
+			<form name="frmdata" action="">
+				               
+				<table border="2" align="center" class="tablebackground">
+					                   
+					<tr>
+						                         
+						<th>Menu</th>                        
+						<th>Price</th>                        
+						<th>Choose</th>                    
+					</tr>
+					                   
+					<tr>
+						                       
+						<td id="item1"></td>                        
+						<td id="p1" value=""></td>                        
+						<td><input id="c1" name="price" type="checkbox"
+							                            onclick="totalIt()" value=""></td>
+						                     
+					</tr>
+					                   
+					<tr>
+						                       
+						<td id="item2"></td>                        
+						<td id="p2" value=""></td>                        
+						<td><input id="c2" name="price" type="checkbox"
+							                            onclick="totalIt()" value=""></td>
+						                     
+					</tr>
+					                   
+					<tr>
+						                       
+						<td id="item3"></td>                        
+						<td id="p3" value=""></td>                        
+						<td><input id="c3" name="price" type="checkbox"
+							                            onclick="totalIt()" value=""></td>
+						                     
+					</tr>
+					                   
+					<tr>
+						                       
+						<td id="item4"></td>                        
+						<td id="p4" value=""></td>                        
+						<td><input id="c4" name="price" type="checkbox"
+							                            onclick="totalIt()" value=""></td>
+						                     
+					</tr>
+					                   
+					<tr>
+						                       
+						<td id="item5"></td>                        
+						<td id="p5" value=""></td>                        
+						<td><input id="c5" name="price" type="checkbox"
+							                            onclick="totalIt()" value=""></td>
+						                     
+					</tr>
+					                 
+				</table>
+				               
+			</form>
+			             
+			<div align="center">
+				                  <input type="button" value="next" onclick="next()" />
+				<label                     id="item1"></label>              
+			</div>
+			           
+		</div>
+		       
+		<div align="center">
+			              <label id="xyz"> </label>          
+		</div>
+		     
+	</div>
+</body>
+</html>
+

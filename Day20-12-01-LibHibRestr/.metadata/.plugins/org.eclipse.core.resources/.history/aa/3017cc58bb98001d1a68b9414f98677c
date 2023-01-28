@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://xmlns.jcp.org/jsf/html"
+		xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+	<h:head>
+		<title>Dashboard</title>
+	</h:head>
+	
+	<h:body>
+		
+		<div>
+			<span>The Logged in user is: #{register.email}</span>
+			<span style="float: right;">Role: #{register.role}</span>
+		</div>
+		<div>
+			<p>Your profile is: #{register.active}</p>
+		</div>
+		<div>
+			<p>You have the following permissions:</p>
+			<ul>
+				<ui:repeat var="permission" value="#{register.permissions}">
+					<li>#{permission}</li>
+				</ui:repeat>
+			</ul>
+		</div>
+	</h:body>
+
+</html>

@@ -1,0 +1,50 @@
+package infinite.Agentjsfhiber;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+@ManagedBean(name = "aDao")
+@SessionScoped
+public class AgentDaoImp implements AgentDAO{
+	SessionFactory sf;
+	Session session;
+	Query query;
+	@Override
+	public List<Agent> showAgent() {
+		sf=SessionHelper.getConnection();
+		session=sf.openSession();
+		query=session.createQuery("from Agent");
+		List<Agent> list = query.list();
+		
+		return list;
+	}
+	@Override
+	public String searchAgent(int agentId) {
+		Map<String, Object> map = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
+		sf=SessionHelper.getConnection();
+		session=sf.openSession();
+		query=session.createQuery("from Agent where agentId="+agentId);
+		List<Agent> list=query.list();
+		if(list.size()==0)
+		{
+			return "Agent not found...";
+		}
+		else
+		{
+			Agent agent=list.get(0);
+			map.put("editAgent", agent);
+		}
+		return "UpdateAgent.xhtml?faces-redirect=true";
+	}
+	
+	
+
+}

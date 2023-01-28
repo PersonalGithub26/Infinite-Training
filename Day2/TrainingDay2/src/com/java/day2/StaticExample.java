@@ -1,0 +1,26 @@
+
+package com.java.day2;
+
+public class StaticExample {
+	int c;
+	static int c1;
+	public void increment()
+	{
+		c++;
+		c1++;
+		System.out.println("c   "+c);
+		System.out.println("c with static   "+c1);
+	}
+
+	public static void main(String[] args) {
+		StaticExample s = new StaticExample();
+		StaticExample s1 = new StaticExample();
+		StaticExample s2 = new StaticExample();
+
+		s.increment();
+		s1.increment();
+		s2.increment();
+		
+				
+	}
+}

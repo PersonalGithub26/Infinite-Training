@@ -1,0 +1,99 @@
+package com.java.Employe;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeDaoImp implements EmployeeDAO{
+	
+	
+	static Employee employee;
+	static LeaveDetails leave;
+	static List<Employee> employeeList;
+	
+	static 
+	{
+		employeeList = new ArrayList<Employee>();
+		employee = new Employee();
+		leave = new LeaveDetails();
+	}
+
+	@Override
+	public String addEmployeDetails(Employee employee) {
+		
+		employeeList.add(employee);
+		addEmployeDetails(employee);
+		
+		return "Employee Details Added Successfully";
+	}
+
+	@Override
+	public void showPaySlip(int EmpId) {
+		
+		for (Employee employee : employeeList) {
+			if(employee.getEmpId() == EmpId )
+			{
+				TotalPay(employee.getSalary());
+			}
+			else
+			{
+				System.out.println("Enter valid employee Id ");
+			}
+			
+		}
+		
+		
+	}
+	public void TotalPay(double slaray)
+	{
+		double d = employee.getSalary();
+		double daTx = (employee.getSalary() * 0.12)/12,
+		hraTx = (employee.getSalary() * 0.03)/12,
+		pfTx = 	(employee.getSalary() * 0.23)/12,
+		taTx = (employee.getSalary() * 0.01)/12,
+		taxTx = (employee.getSalary() * 0.21)/12;
+		
+		employee.setDa(daTx);
+		employee.setHra(hraTx);
+		employee.setPf(pfTx);
+		employee.setTa(taTx);
+		employee.setTax(taxTx);
+		
+		double takeHomePerYear, totalGrossPerYear, basicPerYear;
+		
+		basicPerYear =(employee.getSalary()) - (employee.getHra()+employee.getDa()+employee.getTa()
+					+employee.getTax()+employee.getPf());
+		totalGrossPerYear = basicPerYear+employee.getHra()+employee.getDa()+employee.getTa();
+		double totalGrossPerMonth = totalGrossPerYear/12;
+		
+		employee.setGross(totalGrossPerMonth);
+		
+		takeHomePerYear = (employee.getGross()) - (employee.getTax() - employee.getPf());
+		double takeHomePerMonth = takeHomePerYear/12;
+		double takeHomePerDay = takeHomePerYear/365.25;
+		
+		if(leave.getLeaveTaken() > 1)
+		{
+			takeHomePerMonth = (takeHomePerMonth) - (leave.getLeaveTaken()*takeHomePerDay);
+		}
+		else
+		{
+			takeHomePerMonth = (employee.getGross()) - (employee.getTax() - employee.getPf());
+		}
+		
+		employee.setLeaveAvail(leave.getLeaveTaken() - 13);
+		
+		
+	}
+	
+	public double getSalaryDao()
+	{
+		return employee.getSalary();
+	}
+
+	
+	
+	
+
+	
+	
+}

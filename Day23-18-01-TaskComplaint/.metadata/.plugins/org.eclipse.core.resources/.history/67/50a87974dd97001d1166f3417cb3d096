@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:form>
+<center>
+	<h:dataTable value="#{cDao.resolveComplaint(e)}" var="a" border="3">
+
+		<h:column>
+			<f:facet name="header">complaint id</f:facet>
+			<h:outputText value="#{a.complaintID}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">Resolve Id</f:facet>
+			<h:outputLabel value="#{a.resolveID}" />
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">resolvedBy</f:facet>
+			<h:outputLabel value="#{a.resolvedBy}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">complaint date</f:facet>
+			<h:outputLabel value="#{a.complaintDate}" />
+			
+		</h:column>
+		<h:column>
+			<f:facet name="header">comments</f:facet>
+			<h:outputLabel value="#{a.comments}" />
+		</h:column>
+		<h:column>
+			<f:facet name="header">Resolve</f:facet>
+			
+		</h:column>
+
+	
+
+	</h:dataTable>
+	
+	  
+        <h:commandButton action = "AddComplaint.xhtml?faces-redirect=true"
+        	 value="Create complaint" /> 
+      </center>
+</h:form>		
+	
+
+</html>

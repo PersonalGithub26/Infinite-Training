@@ -1,0 +1,118 @@
+package com.hib.complaint;
+
+import java.util.Date;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+@ManagedBean
+@SessionScoped
+@Entity
+@Table(name = "Complaint")
+public class Complaint {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@PrimaryKeyJoinColumn
+	@Column(name = "ComplaintID")
+	private String complaintID;
+
+
+	@Column(name = "ComplaintType")
+	private String complaintType;
+
+	@Column(name = "CDescription")
+	private String cDescription;
+
+	@Column(name = "ComplaintDate")
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date complaintDate;
+
+	@Column(name = "Severity")
+	private String severity;
+
+	@Column(name = "Status")
+	private String status;
+
+//	@OneToOne(cascade = CascadeType.ALL)
+//	private ResolveE resolveE;
+
+
+//	public ResolveE getResolveE() {
+//		return resolveE;
+//	}
+//
+//	public void setResolveE(ResolveE resolveE) {
+//		this.resolveE = resolveE;
+//	}
+
+//	@PrePersist
+//	public void setComplaintNumber() {
+//		this.complaintNumber = "C" + String.format("%03d", complaintID);
+//	}
+
+	public String getComplaintID() {
+		return complaintID;
+	}
+
+	public void setComplaintID(int complaintID) {
+		this.complaintID = complaintID;
+	}
+
+
+	public String getComplaintType() {
+		return complaintType;
+	}
+
+	public void setComplaintType(String complaintType) {
+		this.complaintType = complaintType;
+	}
+
+	public String getcDescription() {
+		return cDescription;
+	}
+
+	public void setcDescription(String cDescription) {
+		this.cDescription = cDescription;
+	}
+
+	public Date getComplaintDate() {
+		return complaintDate;
+	}
+
+	public void setComplaintDate(Date complaintDate) {
+		this.complaintDate = complaintDate;
+	}
+
+	public String getSeverity() {
+		return severity;
+	}
+
+	public void setSeverity(String severity) {
+		this.severity = severity;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+
+
+
+
+}

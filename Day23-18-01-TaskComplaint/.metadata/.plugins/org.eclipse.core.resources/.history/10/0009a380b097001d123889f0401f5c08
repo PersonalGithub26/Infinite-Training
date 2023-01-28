@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<ui:include src="Menu.xhtml"></ui:include>
+	
+<h:body>
+
+	<h:form>
+	
+		<center>
+			<h2>
+				<h:outputText value="Complaint Records" />
+			</h2>
+
+			<h:dataTable value="#{cDao.ShowAllComplaint()}" var="c" border="3">
+				<h:column>
+					<f:facet name="header">Complaint Id</f:facet>
+                  	<h:outputLabel value="#{c.complaintID}" />
+                </h:column>
+				<h:column>
+					<f:facet name="header">complaintType</f:facet>
+					<h:outputText value="#{c.complaintType}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">cDescription</f:facet>
+					<h:outputText value="#{c.cDescription}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">complaintDate</f:facet>
+					<h:outputText value="#{c.complaintDate}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">severity</f:facet>
+					<h:outputText value="#{c.severity}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">status</f:facet>
+					<h:outputText value="#{c.status}" />
+				</h:column>
+				
+
+			</h:dataTable>
+		</center>
+	</h:form>
+</h:body>
+</html>

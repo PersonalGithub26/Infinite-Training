@@ -1,0 +1,39 @@
+package com.java.Practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MulThread implements Runnable{
+
+	@Override
+	public void run() {
+
+		List<String> names = new ArrayList<>();
+		names.add("Chandu");
+		names.add("Srinivas");
+		names.add("Srilkanth");
+		names.add("Ajay");
+		names.add("Pranay");
+		for (String string : names) {
+			{
+				System.out.println("Names is : "+string);
+
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+			}
+
+
+		}
+	}
+}
+
+
+
+
+
+

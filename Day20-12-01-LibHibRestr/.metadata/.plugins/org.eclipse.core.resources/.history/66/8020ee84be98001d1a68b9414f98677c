@@ -1,0 +1,103 @@
+package in.bushansirgur.jsf.beans;
+
+import java.util.Arrays;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+@ManagedBean
+@SessionScoped
+public class Register {
+	
+	private String email;
+	
+	private String password;
+	
+	private String role;
+	
+	private List roleOptions;
+	
+	private String active;
+	
+	private List statusOptions;
+	
+	private String[] permissions; 
+	
+	private List permissionOptions;
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+	public List getRoleOptions() {
+		return roleOptions;
+	}
+
+	public void setRoleOptions(List roleOptions) {
+		this.roleOptions = roleOptions;
+	}
+
+	public String getActive() {
+		return active;
+	}
+
+	public void setActive(String active) {
+		this.active = active;
+	}
+
+	public List getStatusOptions() {
+		return statusOptions;
+	}
+
+	public void setStatusOptions(List statusOptions) {
+		this.statusOptions = statusOptions;
+	}
+
+	public String[] getPermissions() {
+		return permissions;
+	}
+
+	public void setPermissions(String[] permissions) {
+		this.permissions = permissions;
+	}
+
+	public List getPermissionOptions() {
+		return permissionOptions;
+	}
+
+	public void setPermissionOptions(List permissionOptions) {
+		this.permissionOptions = permissionOptions;
+	}
+
+	@Override
+	public String toString() {
+		return "Register [email=" + email + ", password=" + password + ", role=" + role + ", roleOptions=" + roleOptions
+				+ ", active=" + active + ", statusOptions=" + statusOptions + ", permissions="
+				+ Arrays.toString(permissions) + ", permissionOptions=" + permissionOptions + "]";
+	}
+	
+	
+	
+
+}

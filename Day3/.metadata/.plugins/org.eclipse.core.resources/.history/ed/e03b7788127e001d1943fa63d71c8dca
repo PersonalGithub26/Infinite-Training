@@ -1,0 +1,10 @@
+package com.java.employeeLeave;
+
+import java.util.List;
+
+public interface EmployeeDAO {
+	
+	 String addDate();
+	 List<Employee> showLeaves();
+
+}

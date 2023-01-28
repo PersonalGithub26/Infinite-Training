@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Restaurent.css">
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body onload="Load()"
+	background="C:\Users\chandud\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\desktop.jpg"height:"200px"; width:"200px">
+
+
+	<table id="tab" class="tablebackground" border="2" align="center">
+		<tr id="menucard">
+			<th colspan="3">Menu Card</th>
+		</tr>
+		<tr>
+			<th>Items</th>
+			<th>Price</th>
+			<th>Click</th>
+		</tr>
+		<tr>
+			<td id="1" class="items"></td>
+			<td id="2" class="items"></td>
+
+			<td class="items"><input type="checkbox"
+				onclick="calculateTotal()" /></td>
+		</tr>
+		<tr>
+			<td id="3" class="items"></td>
+			<td id="4" class="items"></td>
+			<td id="" class="items"><input type="checkbox"
+				onclick="calculateTotal()" class="items"></td>
+		</tr>
+		<tr>
+			<td id="5" class="items"></td>
+			<td id="6" class="items"></td>
+			<td id="6" class="items"><input type="checkbox"
+				onclick="calculateTotal()" class="items"></td>
+		</tr>
+		<tr>
+			<td id="7" class="items"></td>
+			<td id="8" class="items"></td>
+			<td class="items"><input type="checkbox"
+				onclick="calculateTotal()" class="items"></td>
+		</tr>
+		<tr>
+			<td id="9" class="items"></td>
+			<td id="10" class="items"></td>
+
+			<td class="items"><input type="checkbox"
+				onclick="calculateTotal()" class="items"></td>
+		</tr>
+		<tr>
+			<td id="11" class="items"></td>
+			<td id="12" class="items"></td>
+			<td id="" class="items"><input type="checkbox"
+				onclick="calculateTotal()"></td>
+		</tr>
+
+		<input type="button" value="Next" onclick="nextRes()">
+
+	</table>
+
+
+
+	<div id="total" class="totalamount" class="items">Total=0</div>
+	<script>
+		var restaurants = [ "raghavendra Tiffins", "Bawarchi", "Shah Ghouse",
+				"Pista house", "Bahar", "Kinara Grand", "Kritunga" ];
+		
+		
+		function Load() {
+			var items = [ "Idly", "Wada", "Dosa", "puri", "utappa", "upma" ];
+			var prices = [ "40", "35", "30", "45", "45", "25" ];
+
+			document.getElementById("1").innerHTML = items[0];
+			document.getElementById("2").innerHTML = prices[0];
+			document.getElementById("3").innerHTML = items[1];
+			document.getElementById("4").innerHTML = prices[1];
+			document.getElementById("5").innerHTML = items[2]
+			document.getElementById("6").innerHTML = prices[2];
+			document.getElementById("7").innerHTML = items[3];
+			document.getElementById("8").innerHTML = prices[3];
+			document.getElementById("9").innerHTML = items[4];
+			document.getElementById("10").innerHTML = prices[4];
+			document.getElementById("11").innerHTML = items[5];
+			document.getElementById("12").innerHTML = prices[5];
+		}
+		/* table = document.getElementById("tab"); */
+		function calculateTotal() {
+			var total = 0;
+			// Loop through all the checkboxes
+			var checkboxes = document
+					.querySelectorAll('input[type="checkbox"]');
+			for (var i = 0; i < checkboxes.length; i++) {
+				var checkbox = checkboxes[i];
+				// If the checkbox is checked, add the price to the total
+				if (checkbox.checked) {
+
+					var x2 = prices[i];
+					total += parseInt(x2);
+
+				}
+			}
+			document.querySelector("#total").textContent = "Total=Rs " + total;
+		}
+
+		resLen = resturants.length;
+		rsNo = 0;
+		resArray = new Array(resLen);
+		for (var i = 0; i < resLen; i++) {
+			resArray[i] = new Array[items.length];
+		}
+
+		function nextRes() {
+			if (checked || !checked) {
+				resNo++;
+			}
+		}
+	</script>
+
+</body>
+</html> 

@@ -1,0 +1,23 @@
+package com.jsf.complant;
+
+import java.sql.Date;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@ManagedBean
+@SessionScoped
+@Entity
+@Table(name = "complaint")
+public class ComplaintE {
+	
+	private String complaintId;
+	private String complaintType;
+	private String cDescription;
+	private Date complaintDate;
+	private String severity;
+	private String status;
+
+}

@@ -1,0 +1,11 @@
+package com.java.Practice;
+
+public class ArrayEx {
+	
+	public static void main(String[] args) {
+		
+		String[] str = {"Chandu","Srinivas","Srikanth", "Ajay"};
+		System.out.println(str);
+	}
+
+}

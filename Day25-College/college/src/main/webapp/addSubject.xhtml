@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:form>
+		
+				<center>
+                <h2><h:outputText value="Add subjects"/></h2>
+       
+       Subject Name : 
+               	<h:selectOneMenu value="#{SubDao.localCode}" onchange="submit()"
+	valueChangeListener="#{SubDao.subjectLocaleCodeChanged}">
+    <f:selectItems value="#{SubDao.getSubjects()}"/>
+</h:selectOneMenu>
+Selected value is : 
+<h:outputText value="#{SubDao.localCode}"/>
+<br/><br/>
+Selected index is : 
+<h:outputText value="#{SubDao.getIndex()}"/>
+<br/><br/>
+<!-- Theory :
+<h:inputText  value="#{SubDao.gettheory()}"></h:inputText>
+<br/><br/>
+practical :
+<h:inputText id="practical" value="#{SubDao.getpractical()}"></h:inputText>
+<br/><br/> -->
+
+Theory marks :
+<h:outputText value="#{SubDao.gettheory()}"></h:outputText>
+<br/><br/>
+
+practical marks :
+<h:outputText value="#{SubDao.getpractical()}"></h:outputText>
+<br/><br/>
+Year :
+<h:inputText id="years" value="#{subjects.year}"></h:inputText>
+<br/><br/>
+Instructor :
+<h:inputText id="instructor" value="#{subjects.instructor}"></h:inputText>
+<br/><br/>
+
+<h:commandButton value="add subject" action="#{SubDao.addSubject(subjects.year,subjects.instructor,SubDao.localCode,SubDao.gettheory(),SubDao.getpractical())}"/>
+
+
+	</center></h:form>
+</html>

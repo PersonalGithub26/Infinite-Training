@@ -1,0 +1,11 @@
+package com.java.inventoryProject;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class StockDaoImpl {
+	
+	Connection connection;
+	PreparedStatement pst;
+
+}

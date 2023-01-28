@@ -1,0 +1,39 @@
+package com.java.inventoryProject;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class OrdersDaoImpl implements OrdersDAO{
+	
+	Connection connection;
+	PreparedStatement pst;
+	Stock stock;
+	StockDaoImpl dao;
+	
+	public int generateOrderid() throws SQLException, ClassNotFoundException
+	{
+		connection = ConnectionHelper.getConnection();
+		String cmd = "select case when max(OrderId) IS NULL THEN 1 "
+				+ " else max(OrderId)+1 end OrderId from Orders";
+		pst = connection.prepareStatement(cmd);
+		ResultSet rs = pst.executeQuery();
+		rs.next();
+		int OrderId = rs.getInt("OrderId");
+		return OrderId;
+	}
+	@Override
+	public String placeOrder(String StockId, int QuantityOrdered) throws ClassNotFoundException, SQLException {
+		stock = new Stock();
+		dao = new StockDaoImpl();
+		Stock stock = dao.searchStock(StockId);
+		if(stock != null)
+		{
+			connection = ConnectionHelper.getConnection();
+		}
+		return null;
+	}
+	
+
+}

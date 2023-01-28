@@ -1,0 +1,10 @@
+package com.hibNate.infinite;
+
+public class UpdateEmploy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.java.inher;
+
+public class Test {
+	public static void main(String[] args) {
+		Second s = new Second();
+		s.show();
+		s.display();
+		
+		C2 c = new C2();
+		
+	}
+
+}

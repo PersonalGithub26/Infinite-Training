@@ -1,0 +1,27 @@
+package com.java.Collections;
+
+import java.util.Comparator;
+
+public class Employee {
+	
+	int empId;
+	String empName;
+	double basic;
+	public Employee() {
+		
+	}
+	public Employee(int empId, String empName, double basic) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.basic = basic;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + ", basic=" + basic + "]";
+	}
+	
+	
+	
+
+}

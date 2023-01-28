@@ -1,0 +1,30 @@
+package infinite.Agentjsfhiber;
+
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+@ManagedBean(name = "aDao")
+@SessionScoped
+public class AgentDaoImp implements AgentDAO{
+	SessionFactory sf;
+	Session session;
+	Query query;
+	@Override
+	public List<Agent> showAgent() {
+		sf=SessionHelper.getConnection();
+		session=sf.openSession();
+		query=session.createQuery("from Agent");
+		List<Agent> list = query.list();
+		
+		return list;
+	}
+	
+	
+
+}

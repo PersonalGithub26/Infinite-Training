@@ -1,0 +1,25 @@
+package com.infinite.day1;
+
+public class CurrentBill {
+	public void calculate(int units)
+	{
+		int rate;double bill = 1;
+		if(units <= 90)
+		{
+			rate = 1;
+			bill += rate*units;
+			if(units <= 150)
+			{
+				bill += 60 * rate;
+			}
+		}
+		System.out.println(bill);
+		
+	}
+	
+	public static void main(String[] args) {
+		new CurrentBill().calculate(91);
+		
+				
+	}
+}

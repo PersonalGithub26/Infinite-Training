@@ -1,0 +1,12 @@
+package infinite.Agentjsfhiber;
+
+public class Agent {
+	
+	private int agentId;
+	private String name;
+	private String city;
+	private Gender gender;
+	private int MaritalStatus;
+	private int premium;
+
+}

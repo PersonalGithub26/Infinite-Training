@@ -1,0 +1,6 @@
+package com.java.practice;
+
+public interface Three {
+	void name();
+
+}

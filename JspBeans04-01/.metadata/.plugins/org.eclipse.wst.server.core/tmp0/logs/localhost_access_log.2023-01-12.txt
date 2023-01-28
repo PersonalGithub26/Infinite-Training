@@ -1,0 +1,16 @@
+127.0.0.1 - - [12/Jan/2023:17:22:54 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:17:22:55 +0530] "GET /LibraryProject/Menu.jsp HTTP/1.1" 200 1295
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:17:22:55 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:17:22:59 +0530] "GET /LibraryProject/Search.jsp HTTP/1.1" 200 2020
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:17:23:07 +0530] "GET /LibraryProject/SearchPrint.jsp?searchtype=id&searchvalue= HTTP/1.1" 200 1740
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:17:23:12 +0530] "GET /LibraryProject/Search.jsp HTTP/1.1" 200 2020
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:17:23:17 +0530] "GET /LibraryProject/SearchPrint.jsp?searchtype=all&searchvalue= HTTP/1.1" 200 4901
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:17:23:28 +0530] "GET /LibraryProject/Search.jsp HTTP/1.1" 200 2020
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:17:24:45 +0530] "GET /LibraryProject/SearchPrint.jsp?searchtype=id&searchvalue=3 HTTP/1.1" 200 1986
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:17:24:50 +0530] "GET /LibraryProject/History.jsp HTTP/1.1" 404 1104
+127.0.0.1 - - [12/Jan/2023:21:43:48 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:21:43:49 +0530] "GET /LibraryProject/Menu.jsp HTTP/1.1" 200 1295
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:21:43:57 +0530] "GET /LibraryProject/Search.jsp HTTP/1.1" 200 2020
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:21:44:05 +0530] "GET /LibraryProject/SearchPrint.jsp?searchtype=all&searchvalue= HTTP/1.1" 200 4901
+127.0.0.1 - - [12/Jan/2023:21:47:34 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [12/Jan/2023:21:47:34 +0530] "GET /LibraryProject/Search.jsp HTTP/1.1" 200 2020

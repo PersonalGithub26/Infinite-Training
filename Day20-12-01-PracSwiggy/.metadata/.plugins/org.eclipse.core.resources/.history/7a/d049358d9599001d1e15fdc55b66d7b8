@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+      <body>
+      	<form>
+      		<ui:include src="CustomerMenu.xhtml"></ui:include>
+      		<h:outputText value="Customer Id"/>
+      		#{customer.custId}
+      		<h:outputText value="Customer Name"/>
+      		#{customer.name}
+      		<h:outputText value="Customer Phone"/>
+      		#{customer.phone}
+      		<h:outputText value="User Name"/>
+      		#{customer.username}
+      		<h:outputText value="password"/>
+      		#{customer.password}
+      		<h:outputText value="Email"/>
+      		#{customer.email}
+      	</form>
+      </body>
+      
+      </html>
+      

@@ -1,0 +1,21 @@
+package com.java.examhib;
+
+import java.text.ParseException;
+
+public class Test2 {
+	
+	
+	
+	public static void main(String[] args) {
+		
+		ComplaintDaoImpl d=new ComplaintDaoImpl();
+		
+		try {
+			System.out.println(d.find());
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

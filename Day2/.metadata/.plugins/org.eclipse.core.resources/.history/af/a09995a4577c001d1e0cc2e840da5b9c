@@ -1,0 +1,7 @@
+package interfacE;
+
+public interface IOne {
+	void name();
+	
+
+}

@@ -1,0 +1,10 @@
+package com.booking;
+
+public interface MoviesDAO 
+
+{
+	String addMovie(Movies movies);
+	String updateMovie(Movies movies);
+	String viewMovie(int id);
+	
+}

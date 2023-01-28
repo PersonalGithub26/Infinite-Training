@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+		var items = ["Idly", "Dosa", "wada", "Puri", "Chapathi", "Bonda"]
+	
+	</script>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form name="SwiggyForm">
+		<table border="3" align="center">
+			<tr>
+				<th colspan="2" align="center">&nbsp;&nbsp;Menu Card</th>
+			</tr>
+			<tr>
+				<th>Items</th>
+				<th>Price</th>
+				<th>Click</th>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" >
+						
+						<script>
+                            for (i = 0; i < items.length; i++) {
+                                document.write( tems[i]);
+                            }
+                        </script>
+				</td>
+			</tr>
+		</table>
+
+	</form>
+
+</body>
+</html>

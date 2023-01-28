@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+const names = ["Chandu", "Srinivas", "Ajay"];
+
+for (let i = 0; i < names.length; i++) {
+  // create a table element
+  const table = document.createElement("table");
+  // set the name of the table as the current name in the array
+  table.name = names[i];
+  // append the table to the body of the HTML document
+  document.body.appendChild(table);
+}
+
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="4">
+		<th>
+		 awuit;
+		</th>
+	
+	</table>
+
+</body>
+</html>

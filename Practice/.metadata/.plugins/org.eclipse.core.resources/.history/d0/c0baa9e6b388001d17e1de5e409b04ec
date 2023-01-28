@@ -1,0 +1,14 @@
+
+package NewAgentRealTime.Agent;
+
+public class Agent {
+	
+	private int agentId;
+	private String name;
+	private String city;
+	private Gender gender;
+	private int materialStatus;
+	private double premium;
+	public int getAgentId() {
+
+}

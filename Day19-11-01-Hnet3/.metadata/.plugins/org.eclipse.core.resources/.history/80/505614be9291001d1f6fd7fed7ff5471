@@ -1,0 +1,44 @@
+package infinite.jsfhib;
+
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+@ManagedBean(name="eDao")
+@SessionScoped
+public class EmployDaoImp implements EmployDAO{
+	SessionFactory sf;
+	Session session;
+	Query query;
+	@Override
+	public List<Employ> showEmployDao() {
+		 sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+		 query = session.createQuery("from Employ");
+		List<Employ> employList = query.list();
+		return employList;
+	}
+
+	@Override
+	public String searchEmploy(int empno) {
+		 sf = SessionHelper.getConnection();
+		 session=sf.openSession();
+		 query = session.createQuery("From Employ where empno="+empno);
+		 List<Employ> list = query.list();
+		 if(list.size()==0)
+			{
+				
+			}
+			else
+			{
+				Employ employ = list.get(0);
+				System.out.println(employ);
+			}
+	}
+	
+
+}

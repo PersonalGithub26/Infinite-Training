@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	var restaurants = [ "raghavendra Tiffins", "Bawarchi", "Shah Ghouse",
+			"Pista house", "Bahar", "Kinara Grand", "Kritunga" ];
+
+	var items = [ "Idly", "Wada", "Dosa", "puri", "utappa", "upma" ];
+	var prices = [ "40", "35", "30", "45", "45", "25" ];
+	var items1 = [ "kagba", "ag.ih", "agh", "wgih", "wigho", "wugh" ];
+	var prices1 = [ "40", "35", "30", "45", "45", "25" ];
+	
+	res = 0;
+	
+	
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+</body>
+</html>

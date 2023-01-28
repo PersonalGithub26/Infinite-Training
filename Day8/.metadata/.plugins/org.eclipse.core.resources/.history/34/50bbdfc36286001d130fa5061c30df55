@@ -1,0 +1,86 @@
+package com.java.inventoryProject;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class OrdersDaoImpl implements OrdersDAO{
+	
+	Connection connection;
+	PreparedStatement pst;
+	//Stock stock;
+	StockDaoImpl dao;
+	
+	public int generateOrderid() throws SQLException, ClassNotFoundException
+	{
+		connection = ConnectionHelper.getConnection();
+		String cmd = "select case when max(OrderId) IS NULL THEN 1 "
+				+ " else max(OrderId)+1 end OrderId from Orders";
+		pst = connection.prepareStatement(cmd);
+		ResultSet rs = pst.executeQuery();
+		rs.next();
+		int OrderId = rs.getInt("OrderId");
+		return OrderId;
+	}
+	
+//	public String placeOrder(String StockId, int QuantityOrdered) throws ClassNotFoundException, SQLException {
+//		Orders x = new Orders();
+		
+//		x.setOrderId(orderId);
+//		StockDAO dao = new StockDaoImpl();
+//		Stock stock = dao.searchStock(x.getStockId());
+//		dao = new StockDaoImpl();
+//			Double price = stock.getPrice();
+//					
+//			String cmd = "Insert into Orders(OrderId, StockId, QtyOrd, Price) values(?,?,?,?)";
+//			connection = ConnectionHelper.getConnection();
+//			pst = connection.prepareStatement(cmd);
+//			pst.setInt(1, orderId);
+//			pst.setString(2, x.getStockId());
+//			pst.setInt(3, x.getQuntityOrdered());
+//			pst.setDouble(4, price);
+//			pst.executeUpdate();
+//			
+//		
+//		return "Order Placed";
+//	}
+//	
+
+	
+	@Override
+	public String  placeOrder(Orders od) throws ClassNotFoundException, SQLException {
+	        Stock st= searchStock(od.getStockId());
+			
+	        if(st!=null){
+	            if(st.getQuantityAvail()>od.getQuntityOrdered()){
+	            String orderIdg=generateOrderId();
+	            od.setOrderId(orderIdg);
+	            String cmd="insert into orders(orderid,stockid,qtyord,price) values(?,?,?,?)";
+	            connection = ConnectionHelper.getConnection();
+	            pst = connection.prepareStatement(cmd);
+	            pst.setString(1, orderIdg);
+	            pst.setString(2, od.getStockId());
+	            pst.setInt(3,od.getQtyOrd());
+	            pst.setDouble(4,st.getPrice());
+	            pst.executeUpdate();
+	            cmd="update stock set QuantityAvail=? where stockid=?";
+	            pst = connection.prepareStatement(cmd);
+	            pst.setInt(1,st.getQuantityAvail()-od.getQtyOrd());
+	            pst.setString(2,od.getStockId());
+	            pst.executeUpdate();
+	            double total=od.getQtyOrd()*st.getPrice();
+	            cmd="insert into amount(gamt) values(?)";
+	            pst = connection.prepareStatement(cmd);
+	            pst.setDouble(1,total);
+	            pst.executeUpdate();
+	            }else{
+	                return "not enough quantity ,available=" +st.getQuantityAvail();
+	            }
+	            return "order placed succefully";
+	        }
+	        return "stock does not exist";
+	    }
+
+
+}

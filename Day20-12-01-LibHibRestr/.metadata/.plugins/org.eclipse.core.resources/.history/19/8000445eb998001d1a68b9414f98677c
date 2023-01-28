@@ -1,0 +1,23 @@
+package in.bushansirgur.jsf.beans;
+
+import java.util.List;
+
+public class Register {
+	
+	private String email;
+	
+	private String password;
+	
+	private String role;
+	
+	private List roleOptions;
+	
+	private String active;
+	
+	private List statusOptions;
+	
+	private String[] permissions; 
+	
+	private List permissionOptions;
+
+}

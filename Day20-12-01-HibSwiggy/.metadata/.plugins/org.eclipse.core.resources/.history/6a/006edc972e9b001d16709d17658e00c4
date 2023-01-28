@@ -1,0 +1,15 @@
+package com.cmsJsf;
+
+import java.util.List;
+
+public class M {
+	
+	public static void main(String[] args) {
+		
+		OrdersDAOImpl od= new OrdersDAOImpl();
+		String s = od.approveOrDeny(1, "PENDING");
+		System.out.println(s);
+		
+	}
+
+}

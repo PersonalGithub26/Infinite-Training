@@ -1,0 +1,19 @@
+package com.infinite.day1;
+
+public class MultiplyBigNumbers {
+	public static void main(String[] args) {
+		String s1 = "12345";
+		String s2 = "12345";
+		int a = s1.charAt(0) - '0';
+		int b = s1.charAt(1) - '0';
+		System.out.println(a+" "+b);
+//		for (int i = s1.length() - 1; i > 0; i--) 
+//		{
+//			for (int j = s2.length() - 1; j >= 0; j--) 
+//			{
+//				
+//			}
+//		}
+	}
+
+}

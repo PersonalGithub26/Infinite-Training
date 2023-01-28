@@ -1,0 +1,9 @@
+package com.hib.complaint;
+
+import java.util.List;
+
+public interface ComplaintDAO {
+
+	String AddComplaint();
+	List<Complaint> ShowAllComplaint(Complaint complaint);
+}

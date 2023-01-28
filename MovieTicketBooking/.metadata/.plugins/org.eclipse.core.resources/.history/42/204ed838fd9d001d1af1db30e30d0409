@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+<h:body>
+
+	<h:form>
+	
+		<center>
+			<h2>
+				<h:outputText value="Customer Records" />
+			</h2>
+
+			<h:dataTable value="#{cDao.showCustomer()}" var="c" border="3">
+				<h:column>
+					<f:facet name="header">Employ No</f:facet>
+                  	<h:outputText value="#{c.customerId}" />
+                </h:column>
+				<h:column>
+					<f:facet name="header">Customer Name</f:facet>
+					<h:outputText value="#{c.customerName}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Employ Department</f:facet>
+					<h:outputText value="#{c.address}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Employ Designation</f:facet>
+					<h:outputText value="#{c.mobile}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Employ Basic</f:facet>
+					<h:outputText value="#{c.email}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Employ Basic</f:facet>
+					<h:outputText value="#{c.password}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Employ Basic</f:facet>
+					<h:outputText value="#{c.userName}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Update</f:facet>
+					<h:commandButton action="#{eDao.viewCustomer(c.customerId)}"
+						value="Update">
+					</h:commandButton>
+				</h:column>
+
+			</h:dataTable>
+		</center>
+	</h:form>
+</h:body>
+</html>

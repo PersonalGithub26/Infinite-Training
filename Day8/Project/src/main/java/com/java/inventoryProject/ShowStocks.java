@@ -1,0 +1,29 @@
+package com.java.inventoryProject;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ShowStocks {
+	
+	public static void showStockMain() throws ClassNotFoundException, SQLException
+	{
+		StockDAO dao= new StockDaoImpl(); 
+		StockDaoImpl dao1 = new StockDaoImpl();
+		List<Stock> list = new ArrayList<Stock>();
+		
+		list.addAll(dao1.showStock());
+		System.out.println(list);
+		
+	}
+	public static void main(String[] args) {
+		try {
+			showStockMain();
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

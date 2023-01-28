@@ -1,0 +1,34 @@
+package com.java.day2;
+
+public class EmployeeShow {
+	public static void main(String[] args) {
+		
+	
+	Employee e = new Employee();
+	e.empId = 1;
+	e.empName = "chandu";
+	e.salary = 22000.54;
+	System.out.println(e);
+	
+	Employee e1 = new Employee();
+	e1.empId = 1;
+	e1.empName = "chandu";
+	e1.salary = 22000.54;
+	System.out.println(e);
+	
+	Employee e2 = new Employee();
+	e2.empId = 1;
+	e2.empName = "chandu";
+	e2.salary = 22000.54;
+//	System.out.println(e);
+	
+	Employee[] arrEmployee = new Employee[] {e1, e2, e};
+	for (Employee employee : arrEmployee) {
+		System.out.println(employee);
+		
+	}
+	
+	
+	}
+
+}

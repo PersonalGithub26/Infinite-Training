@@ -1,0 +1,16 @@
+package interfacE;
+
+public class Pavan implements ITraining{
+
+	@Override
+	public void name() {
+		System.out.println("pavan name");
+	}
+
+	@Override
+	public void stream() {
+		System.out.println("civil");
+		
+	}
+
+}

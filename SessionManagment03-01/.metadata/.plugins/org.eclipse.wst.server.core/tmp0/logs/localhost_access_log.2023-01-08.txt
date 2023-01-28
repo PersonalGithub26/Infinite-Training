@@ -1,0 +1,5 @@
+127.0.0.1 - - [08/Jan/2023:21:18:50 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [08/Jan/2023:21:18:52 +0530] "GET /EmployeeProjectJspJdbc/AddEmployee.jsp HTTP/1.1" 200 863
+0:0:0:0:0:0:0:1 - - [08/Jan/2023:21:18:52 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [08/Jan/2023:21:19:06 +0530] "POST /EmployeeProjectJspJdbc/AddEmployee.jsp HTTP/1.1" 200 3112
+0:0:0:0:0:0:0:1 - - [08/Jan/2023:21:19:06 +0530] "GET /EmployeeProjectJspJdbc/table.css HTTP/1.1" 304 -

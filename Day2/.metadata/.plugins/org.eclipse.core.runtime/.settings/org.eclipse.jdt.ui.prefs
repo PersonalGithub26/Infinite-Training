@@ -1,0 +1,21 @@
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.recommenders.calls.rcp.proposalCategory.templates\u0000org.eclipse.mylyn.java.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.recommenders.chain.rcp.proposalCategory.chain\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.java.day2.WeekDays"><rhs name\="com.java.day2.WeekDays"/></lhs><lhs name\="java.lang.Enum"><rhs name\="com.java.day2.OrderStatus"/></lhs><lhs name\="com.java.day2.OrderStatus"><rhs name\="com.java.day2.OrderStatus"/></lhs><lhs name\="com.java.day2.BoxingRun"><rhs name\="com.java.day2.BoxingRun"/></lhs><lhs name\="com.java.day2.Employee"><rhs name\="com.java.day2.Employee"/></lhs><lhs name\="com.java.day2.OverLoadeEx"><rhs name\="com.java.day2.OverLoadeEx"/></lhs><lhs name\="com.java.day2.overEx2"><rhs name\="com.java.day2.overEx2"/></lhs><lhs name\="com.java.day2.ConstructorS"><rhs name\="com.java.day2.ConstructorS"/></lhs><lhs name\="com.java.day2.StaticExample"><rhs name\="com.java.day2.StaticExample"/></lhs><lhs name\="com.java.day2.CricketWithStatic"><rhs name\="com.java.day2.CricketWithStatic"/></lhs><lhs name\="com.java.inher.First"><rhs name\="com.java.inher.Second"/></lhs><lhs name\="com.java.inher.Second"><rhs name\="com.java.inher.Second"/></lhs><lhs name\="com.java.inher.C1"><rhs name\="com.java.inher.C2"/></lhs><lhs name\="com.java.inher.C2"><rhs name\="com.java.inher.C2"/></lhs><lhs name\="com.java.sup.First"><rhs name\="com.java.sup.Second"/></lhs><lhs name\="com.java.sup.Second"><rhs name\="com.java.sup.Second"/></lhs><lhs name\="com.java.sup.Employee"><rhs name\="com.java.sup.Employee"/></lhs><lhs name\="interfacE.IOne"><rhs name\="interfacE.MultiInher"/></lhs><lhs name\="interfacE.ITwo"><rhs name\="interfacE.MultiInher"/></lhs><lhs name\="interfacE.MultiInher"><rhs name\="interfacE.MultiInher"/></lhs><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.LinkedHashSet"/><rhs name\="java.util.TreeSet"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.LinkedHashSet"/><rhs name\="java.util.TreeSet"/></lhs><lhs name\="java.util.Set"><rhs name\="java.util.LinkedHashSet"/><rhs name\="java.util.TreeSet"/></lhs><lhs name\="java.util.SortedSet"><rhs name\="java.util.TreeSet"/></lhs><lhs name\="com.java.Collections.Student"><rhs name\="com.java.Collections.Student"/></lhs></history>
+content_assist_number_of_computers=24
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+fontPropagated=true
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Courier New|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+proposalOrderMigrated=true
+spelling_locale_initialized=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

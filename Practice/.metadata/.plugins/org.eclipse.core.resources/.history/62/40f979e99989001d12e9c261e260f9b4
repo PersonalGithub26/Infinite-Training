@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+const restaurants = document.querySelectorAll('.restaurant');
+let currentRestaurant = 0;
+
+function updateTotal() {
+  const items = restaurants[currentRestaurant].querySelectorAll('.item:checked');
+  let total = 0;
+  for (const item of items) {
+    total += parseInt(item.dataset.price);
+  }
+  restaurants[currentRestaurant].querySelector('#total').textContent = `$${total}`;
+}
+
+document.querySelector('#next').addEventListener('click', () => {
+  currentRestaurant = (currentRestaurant + 1) % restaurants.length;
+  for (const restaurant of restaurants) {
+    restaurant.style.display = 'none';
+  }
+  restaurants[currentRestaurant].style.display = 'block';
+  updateTotal();
+});
+
+document.querySelectorAll('.item').forEach(item => {
+  item.addEventListener('click', updateTotal);
+});
+
+updateTotal();
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="restaurant-container">
+  <div class="restaurant" id="restaurant-1">
+    <h2>Restaurant 1</h2>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Click</th>
+      </tr>
+      <tr>
+        <td>Item 1</td>
+        <td>$10</td>
+        <td><input type="checkbox" class="item" data-price="10" /></td>
+      </tr>
+      <tr>
+        <td>Item 2</td>
+        <td>$5</td>
+        <td><input type="checkbox" class="item" data-price="5" /></td>
+      </tr>
+      <!-- Add more rows for additional menu items -->
+    </table>
+    <p>Total: <span id="total">$0</span></p>
+  </div>
+  <!-- Add more .restaurant divs for additional restaurants -->
+</div>
+<button id="next">Next</button>
+
+</body>
+</html>

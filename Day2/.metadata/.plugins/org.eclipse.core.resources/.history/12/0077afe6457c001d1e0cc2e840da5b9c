@@ -1,0 +1,17 @@
+package com.java.abs;
+
+public class MainAbs {
+	
+	public static void main(String[] args) {
+		Training[] arr = new Training[]
+				{
+						new Chandu(),
+						new Akhila(),
+						new Srinivas()
+				};
+		for (Training training : arr) {
+			System.out.println(training);
+		}
+	}
+
+}

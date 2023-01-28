@@ -1,0 +1,18 @@
+public List<Transaction> getMiniStatement(int accountNo) throws ClassNotFoundException, SQLException {
+    connection = ConnectionHelper.getConnection();
+    String cmd = "select * from Transactions where accountNo=? order by transactionTime desc limit 5";
+    pst = connection.prepareStatement(cmd);
+    pst.setInt(1, accountNo);
+    ResultSet rs = pst.executeQuery();
+    List<Transaction> miniStatement = new ArrayList<>();
+    while (rs.next()) {
+        Transaction transaction = new Transaction();
+        transaction.setTransactionId(rs.getInt("transactionId"));
+        transaction.setAccountNo(rs.getInt("accountNo"));
+        transaction.setTransactionType(rs.getString("transactionType"));
+        transaction.setTransactionAmount(rs.getInt("transactionAmount"));
+        transaction.setTransactionTime(rs.getTimestamp("transactionTime"));
+        miniStatement.add(transaction);
+    }
+    return miniStatement;
+}

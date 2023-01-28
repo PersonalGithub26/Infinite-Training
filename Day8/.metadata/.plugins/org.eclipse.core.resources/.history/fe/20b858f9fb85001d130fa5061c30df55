@@ -1,0 +1,6 @@
+package com.java.inventoryProject;
+
+public interface OrdersDAO {
+	String placeOrder(String StockId, int QuantityOrdered);
+
+}

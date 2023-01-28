@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+D:\Java_Training\Java_Training\NewServlet02-01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\373555898.index
+\ServletDemos\src\main\java
+D:\Java_Training\Java_Training\NewServlet02-01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\633988819.index
+\BankServletProject\src\main\java
+D:\Java_Training\Java_Training\NewServlet02-01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3800646052.index
+\InventoryServlet\src\main\java

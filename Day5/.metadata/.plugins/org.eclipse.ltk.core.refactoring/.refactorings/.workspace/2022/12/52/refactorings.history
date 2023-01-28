@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;MultiThreading&apos; to &apos;MultiThreadingProject&apos;" description="Rename resource &apos;MultiThreading&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/MultiThreading" name="MultiThreadingProject" stamp="1671509731229" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;OptionalDemo&apos; to &apos;OptionalDemoEx&apos;" description="Rename resource &apos;OptionalDemo&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/OptionalDemo" name="OptionalDemoEx" stamp="1671533654087" updateReferences="true"/>
+</session>

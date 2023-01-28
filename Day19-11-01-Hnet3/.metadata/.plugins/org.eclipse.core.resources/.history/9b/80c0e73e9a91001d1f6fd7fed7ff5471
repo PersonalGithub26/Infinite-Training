@@ -1,0 +1,10 @@
+package infinite.jsfhib;
+
+import java.util.List;
+
+public interface EmployDAO {
+	
+	List<Employ> showEmployDao();
+	String searchEmploy(int empno);
+	String updateEmploy(Employ employ);
+}

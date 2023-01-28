@@ -1,0 +1,5 @@
+package NewAgentRealTime.Agent;
+
+public enum Gender {
+
+}

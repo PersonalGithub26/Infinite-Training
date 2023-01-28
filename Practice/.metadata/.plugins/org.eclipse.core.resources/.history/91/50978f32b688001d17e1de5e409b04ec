@@ -1,0 +1,13 @@
+package NewAgentRealTime.Agent;
+
+public class AgentDaoImp implements AgentDAO{
+
+	@Override
+	public String addAgentDao(Agent agent) {
+		
+		return "Agent Added Successfully";
+	}
+	
+	
+
+}

@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+D:\Java_Training\Java_Training\Day15-05-01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3765744272.index
+\DynamicJstl\src\main\java
+D:\Java_Training\Java_Training\Day15-05-01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2180474328.index
+\JstlDemo\src\main\java
+D:\Java_Training\Java_Training\Day15-05-01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2452044634.index
+\LMSProjectJstl\src\main\java

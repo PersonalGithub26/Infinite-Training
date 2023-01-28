@@ -1,0 +1,42 @@
+package com.hib.complaint;
+
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+@ManagedBean(name = "cDao")
+@SessionScoped
+public class ComplaintDaoImp implements ComplaintDAO {
+
+	
+
+	
+	@Override
+	public List<Complaint> ShowAllComplaint(Complaint complaint) {
+		
+	}
+
+	@Override
+	public String AddComplaint(Complaint complaint) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Complaint> ShowAllComplaint() {
+		SessionFactory sf = SessionHelper.getconnection();
+		Session session = sf.openSession();
+		Criteria cr = session.createCriteria(Complaint.class);
+		List<Complaint> list = cr.list();
+		return list;
+	}
+	 
+	
+	
+
+}

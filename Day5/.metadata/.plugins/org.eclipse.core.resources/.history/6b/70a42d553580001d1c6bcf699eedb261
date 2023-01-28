@@ -1,0 +1,5 @@
+package com.java.jdk8;
+
+public interface Icalc {
+
+}

@@ -1,0 +1,10 @@
+package com.swig;
+
+public class Wallet {
+	
+	private int custId;
+	private int walId;
+	private int walAmt;
+	private
+
+}

@@ -1,0 +1,36 @@
+package infinite.InventoryProject;
+
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class StockRiseMain {
+	
+	public static void riseMain() throws ClassNotFoundException, SQLException {
+		StockDAO dao = new StockDaoImp();
+		Scanner sc = new Scanner(System.in);
+		Stock stock = new Stock();
+		System.out.println("Enter StockID");
+		String id = sc.next();
+		System.out.println("Enter Quantity to update");
+		int quty= sc.nextInt();
+		//stock.setQuantityAvail(quty);
+		System.out.println(dao.riseStock(stock,quty,id));
+
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		try {
+			riseMain();
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+
+}

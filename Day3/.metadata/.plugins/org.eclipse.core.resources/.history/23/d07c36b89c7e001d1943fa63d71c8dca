@@ -1,0 +1,19 @@
+package com.java.ExceptionHandling;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateFormatte {
+	
+	public static void main(String[] args) {
+		
+		Date d = new Date();
+		 SimpleDateFormat sd = new SimpleDateFormat("dd-MM-yyyy");
+		 
+		 String date = sd.format(22-02-2022);
+		 System.out.println(date);
+		 
+		
+	}
+
+}

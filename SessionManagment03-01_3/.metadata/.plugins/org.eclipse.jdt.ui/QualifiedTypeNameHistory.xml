@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.java.JsfAgent.Agent"/>
+    <fullyQualifiedTypeName name="newInfinite.LibProject.LibraryDAO"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="newInfinite.LibProject.ConnectionHelper"/>
+</qualifiedTypeNameHistroy>

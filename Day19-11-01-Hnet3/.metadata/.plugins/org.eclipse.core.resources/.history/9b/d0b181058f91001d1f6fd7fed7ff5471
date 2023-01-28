@@ -1,0 +1,19 @@
+package infinite.jsfhib;
+
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+
+public class EmployDaoImp implements EmployDAO{
+
+	@Override
+	public List<Employ> showEmployDao() {
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+		Query query = session.createQuery("from Employ");
+		List<Employ> employList = query.list();
+		return employList;
+	}
+	
+
+}

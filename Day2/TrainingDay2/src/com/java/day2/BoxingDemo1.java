@@ -1,0 +1,26 @@
+package com.java.day2;
+
+public class BoxingDemo1 {
+	public static void main(String[] args) {
+		int x = 12;
+		String s = "chandu";
+		double d = 12.5;
+		
+		//Boxing
+		
+		Object ob1 = x;
+		Object ob2 = s;
+		Object ob3 = d;
+		
+		//unBoxing
+		
+		int x1 = (Integer)ob1;
+		String s2 = (String)ob2;
+		double d2 = (Double)ob3;
+		System.out.println(x1);
+		System.out.println(s2);
+		System.out.println(d2);
+		
+	}
+
+}

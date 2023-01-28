@@ -1,0 +1,23 @@
+package com.jsf;
+
+import java.util.List;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class EmployDaoImp implements EmployDAO{
+
+	@Override
+	public List<Employ> showEmploy() {
+		SessionFactory sf =SessionHelper.getConnection();
+		Session session = sf.openSession();
+		Criteria criteria = session.createCriteria(Employ.class);
+		List<Employ> employs = criteria.list();
+		
+		return employs;
+	}
+	
+	
+
+}

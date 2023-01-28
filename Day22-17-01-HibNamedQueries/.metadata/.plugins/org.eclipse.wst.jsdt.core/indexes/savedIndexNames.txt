@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\Java_Training\Java_Training\Day22-17-01-HibNamedQueries\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2591466202.index
+3687871343.index
+2623320490.index
+433144711.index
+1916073572.index
+2077366871.index

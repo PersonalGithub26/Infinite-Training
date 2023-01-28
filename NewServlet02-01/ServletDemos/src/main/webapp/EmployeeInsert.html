@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>	
+	<form method="post" action="InsertEmployeeServlet">
+		<center>
+			Employee Name :
+			<input type="text" name="ename" />
+			Department :
+			<select name ="dept">
+				<option value="Dotnet">Dotnet</option>
+				<option value="Java">Java</option>
+				<option value="QA">QA</option>
+				<option value="Sap">Sap</option>
+			</select><br/>
+			Designantion :
+			<select name="desig">
+				<option value="ASE">Associate</option>
+				<option value="TeamLead">TeanLead</option>
+				<option value="Manager">Manager</option>
+			</select><br/>
+			Salary :
+			<input type="number" name="basic"><br/>
+			<input type="submit" value="Insert">
+		</center>
+		
+	</form>
+</body>
+</html>

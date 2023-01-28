@@ -1,0 +1,38 @@
+package com.infinite.day1;
+
+public class CurrentBill {
+	public void currentBill(int units)
+	{
+		double bill = 0;
+		for(int i = 0; i <= units; i++)
+		{
+			if(units > 1 && units <= 90)
+			{
+				bill = units *1;
+			}
+			else if(units > 90 && units <= 150)
+			{
+				bill = units*1.5;
+			}
+			else if(units > 150 && units <= 200)
+			{
+				bill = units*2;
+			}
+			else if(units > 200 && units <= 240)
+			{
+				bill = units*2.5;
+			}
+			else 
+			{
+				bill = units*3;
+			}
+		}
+		System.out.println(bill);
+	}
+	
+	public static void main(String[] args) {
+		new CurrentBill().currentBill(180);
+		
+				
+	}
+}

@@ -1,0 +1,55 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Leave Approval</title>
+</head>
+<body>
+<form action="ShowLeaves" method="post">
+<c:if test="${param.empId!=null && param.manId!=null}">
+	<c:set var="empId" value="${param.empId }"/>
+	<c:set var="manId" value="${param.manId }"/>
+	<jsp:useBean id="lDao" class="com.java.LMSProjectJstl.LevHistoryDaoImp"/>
+	<c:set var="lev" value="${lDao.approveLeave(empId, manId) }"/>
+	
+
+<h3>Leave Approval</h3>
+
+
+
+<table>
+
+<!-- <tr>
+<td>Employee ID:</td>
+<td><input type="text" name="empId"/></td>
+</tr> -->
+
+<tr>
+<td>Leave Status:</td>
+<td>
+<select name="status">
+  <option value="APPROVED">APPROVED</option>
+  <option value="DENIED">DENIED</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Manager Comments:</td>
+<td><textarea name="levMngCmts"></textarea></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center"><input type="submit" value="Submit"/></td>
+</tr>
+
+</table>
+
+</c:if>
+
+</form>
+</body>
+</html>

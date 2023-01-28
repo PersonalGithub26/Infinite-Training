@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AgentJsfJdbc/src/main/webapp/Login.html&apos; to &apos;Login.xhtml&apos;" description="Rename resource &apos;Login.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/Login.html" name="Login.xhtml" stamp="1673370606250" updateReferences="true"/>
+</session>

@@ -1,0 +1,11 @@
+127.0.0.1 - - [10/Jan/2023:09:08:07 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:09:08:09 +0530] "GET /LMSProjectJstl/leavenew.jsp HTTP/1.1" 500 4765
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:09:08:09 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:09:10:06 +0530] "GET /LMSProjectJstl/leavenew.jsp HTTP/1.1" 500 4765
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:09:10:06 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:09:10:19 +0530] "GET /LMSProjectJstl/ApplyLeave.jsp HTTP/1.1" 200 1140
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:09:10:19 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:09:10:31 +0530] "GET /LMSProjectJstl/ApplyLeave.jsp?empId=1000&stDate=2023-01-11&endDate=2023-01-13&leaveTyp=EL&levReason=medical&status=PENDING HTTP/1.1" 500 3127
+127.0.0.1 - - [10/Jan/2023:09:13:16 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:09:13:17 +0530] "GET /LMSProjectJstl/leavenew.jsp HTTP/1.1" 500 5466
+0:0:0:0:0:0:0:1 - - [10/Jan/2023:09:13:17 +0530] "GET /favicon.ico HTTP/1.1" 404 1085

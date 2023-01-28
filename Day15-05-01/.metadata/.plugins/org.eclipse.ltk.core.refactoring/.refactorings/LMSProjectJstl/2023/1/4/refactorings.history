@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.java.LMSProjectJstl.LevHistoryDaoImp.java&apos; to &apos;LevHistoryDaoImp2.java&apos;&#x0D;&#x0A;- Original project: &apos;LMSProjectJstl&apos;&#x0D;&#x0A;- Original element: &apos;com.java.LMSProjectJstl.LevHistoryDaoImp.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.java.LMSProjectJstl.LevHistoryDaoImp2.java&apos;" description="Rename compilation unit &apos;LevHistoryDaoImp.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.java.LMSProjectJstl{LevHistoryDaoImp.java" name="LevHistoryDaoImp2.java" references="false" stamp="1674439344766" version="1.0"/>
+</session>

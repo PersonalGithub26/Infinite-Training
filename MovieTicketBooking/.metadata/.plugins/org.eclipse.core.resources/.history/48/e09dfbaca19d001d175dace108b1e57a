@@ -1,0 +1,55 @@
+package com.booking;
+
+import java.util.Map;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
+
+@ManagedBean(name = "mDao")
+@SessionScoped
+public class MoviesDaoImp implements MoviesDAO{
+
+	@Override
+	public String addMovie(Movies movies) {
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		session.save(movies);
+		
+		tx.commit();
+		
+		return "Success.xhtml?faces-redirect=true";
+	}
+
+	@Override
+	public String updateMovie(Movies movies) {
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf .openSession();
+		Transaction tx = session.beginTransaction();
+		session.update(movies);
+		tx.commit();
+		return "Success.xhtml?faces-redirect=true";
+	}
+
+	@Override
+	public String viewMovie(int id) {
+		Map<String, Object> map = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+		Criteria cr =session.createCriteria(Movies.class);
+		cr.add(Restrictions.eq("movieId", id));
+		Movies movies = (Movies) cr.uniqueResult();
+		map.put("movie", movies);
+		return null;
+	}
+	
+	
+
+}

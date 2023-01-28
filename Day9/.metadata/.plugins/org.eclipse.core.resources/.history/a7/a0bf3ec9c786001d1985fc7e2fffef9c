@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script >
+	function sow()
+	{
+		var str ="Welcome to Khanampally";
+		var result = "";
+		
+		result += "Length of a String is " + str.length + "<br/>";
+		document.getElementById("result").innerHTML = result;
+	}
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body onload="show()">
+	<form name="frmString" >
+		<span id="result" ></span>
+	</form>
+</body>
+</html>

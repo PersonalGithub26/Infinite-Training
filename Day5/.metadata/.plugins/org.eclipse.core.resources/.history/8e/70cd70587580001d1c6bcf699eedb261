@@ -1,0 +1,33 @@
+package com.java.jdk8;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MaxAndMinBySreams {
+	
+	public static void main(String[] args) {
+		
+		List<Empoyee> employList = new ArrayList<Empoyee>();
+		Empoyee[] arr = employList.toArray(new Empoyee[employList.size()]);
+		
+		
+		employList.add(new Empoyee(1, "Chandu", 735));
+		employList.add(new Empoyee(1, "ajay", 765));
+		employList.add(new Empoyee(1, "srinivas", 7635));
+		employList.add(new Empoyee(1, "srikanth", 7635));
+		employList.add(new Empoyee(1, "pavan", 7501));
+		
+		Empoyee employee = employList.stream().max((m1, m2) -> 
+		m1.getBasic() > m2.getBasic() ? 1 : -1).get();
+		System.out.println(employee);
+		
+		// program to sum of all employees and average
+		
+		Empoyee employee2 = employList.stream().min((m1, m2) -> 
+		m1.getBasic() < m2.getBasic() ? 1 : -1).get();
+		System.out.println(employee2);
+		
+		
+	}
+
+}

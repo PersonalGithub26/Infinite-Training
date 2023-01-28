@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:body>
+		<h2>Add Movies</h2>
+		Movie Name:<h:inputText id="movieName" value="#{movies.movieName}"></h:inputText><br/>
+		Movie Genre:<h:inputText id="movieGenre" value="#{movies.movieGenre}"></h:inputText><br/>
+		Movie Hours:<h:inputText id="movieHours" value="#{movies.movieHours}"></h:inputText><br/>
+		Movie language:<h:inputText id="movielang" value="#{movies.language}"></h:inputText><br/>
+		Movie description:<h:inputText id="moviedesc" value="#{movies.description}"></h:inputText><br/>
+		<h:commandButton value="Add Movie" action="#{mDao.addMovie(movies)}"></h:commandButton>
+		
+		
+	</h:body>
+	
+	</html>

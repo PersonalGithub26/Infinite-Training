@@ -1,0 +1,24 @@
+package com.java.jUnitDemos;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class EmployTest {
+	
+	@Test
+	public void testConstructors()
+	{
+		Employ employ = new Employ();
+		assertNotNull(employ);
+		Employ employ2 = new Employ(1, "Chandu", Gender.MALE, "ece", "java", 25674.53);
+		assertEquals(1, employ2.getEmpId());
+		assertEquals("Chandu", employ2.getName());
+		assertEquals(Gender.MALE, employ2.getGender());
+		assertEquals("ece", employ2.getDept());
+		assertEquals("java", employ2.getDesig());
+		assertEquals(25674.53, employ2.getBasic(), 0);
+				
+	}
+
+}

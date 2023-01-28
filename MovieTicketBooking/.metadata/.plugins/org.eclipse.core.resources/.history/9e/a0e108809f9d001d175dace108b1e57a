@@ -1,0 +1,37 @@
+package com.booking;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+@ManagedBean(name = "mDao")
+@SessionScoped
+public class MoviesDaoImp implements MoviesDAO{
+
+	@Override
+	public String addMovie(Movies movies) {
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		session.save(movies);
+		tx.commit();
+		
+		return "Success.xhtml?faces-redirect=true";
+	}
+
+	@Override
+	public String updateMovie(Movies movies) {
+		SessionFactory sf = SessionHelper.getConnection();
+		Session session = sf .openSession();
+		Transaction tx = session.beginTransaction();
+		session.update(movies);
+		tx.commit();
+		return "Success.xhtml?faces-redirect=true";
+	}
+	
+	
+
+}
