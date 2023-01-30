@@ -1,0 +1,15 @@
+127.0.0.1 - - [29/Jan/2023:19:50:32 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:50:37 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 200 2425
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:50:37 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:51:02 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 200 2382
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:51:03 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 200 2382
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:51:04 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 200 2383
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:51:48 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 200 2384
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:52:15 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 200 1375
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:52:33 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 200 1389
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:52:35 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 200 1390
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:53:00 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 200 2244
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:54:38 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 500 14286
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:55:17 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 500 14286
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:55:17 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 500 14286
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:19:55:28 +0530] "GET /college/faces/feedBackCount.xhtml HTTP/1.1" 200 2208

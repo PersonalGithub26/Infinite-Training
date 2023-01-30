@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+  
+  <h:body>
+   
+   <p:dataTable value="#{fdao.countFeedback()}" var="feedbackCount">
+  <p:column headerText="Feedback Value">
+    <h:outputText value="#{feedbackCount.key}"/>
+  </p:column>
+  <p:column headerText="Count">
+    <h:outputText value="#{feedbackCount.value}"/>
+  </p:column>
+</p:dataTable>
+<p:commandButton value="Show Feedback Count" outcome="feedbackCount"/>
+  </h:body>
+</html>
+  -->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.12.6/dist/umd/popper.min.js"
+	integrity="sha384-/0j2PjTb9/KjJh/0fU6e1u6lSjV7OuGKP8o7/v+m4XFhKj6DUx7PA+Bb6zS7VuS"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+	integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+	crossorigin="anonymous" />
+</head>
+<h:body>
+<div class="row">
+			<div class="col-3"></div>
+			<div class="col-6">
+	<h:form>
+		
+				<h:dataTable border="3" value="#{fdao.countFeedback()}"
+					var="feedbackCount" class="table">
+					<p:column headerText="Feedback Value">
+						<h:outputText value="#{feedbackCount.key}" />
+					</p:column>
+					<p:column headerText="Count">
+						<h:outputText value="#{feedbackCount.value}" />
+					</p:column>
+				</h:dataTable>
+				
+	</h:form>
+	</div>
+      		</div>
+      		</div>
+</h:body>
+</html>

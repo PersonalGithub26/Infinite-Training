@@ -39,7 +39,6 @@ INDEX VERSION 1.131+D:\Java_Training\Java_Training\MovieTicketBooking\.metadata\
 4013218907.index
 2937480701.index
 762541124.index
-3418992972.index
 692810719.index
 4236371449.index
 3880324470.index
