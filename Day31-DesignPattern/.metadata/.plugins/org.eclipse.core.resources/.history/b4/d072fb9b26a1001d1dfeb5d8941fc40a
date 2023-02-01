@@ -1,0 +1,7 @@
+package com.java.abs;
+
+public interface MobileDetails {
+	
+	public Mobile getMobileDetails(String value);
+
+}
