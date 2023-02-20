@@ -49,7 +49,7 @@
 	<h:form>
 		
 				<h:dataTable border="3" value="#{fdao.countFeedback()}"
-					var="feedbackCount" class="table">
+					var="feedbackCount" class="table" bor>
 					<p:column headerText="Feedback Value">
 						<h:outputText value="#{feedbackCount.key}" />
 					</p:column>

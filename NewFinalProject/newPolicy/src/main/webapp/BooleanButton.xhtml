@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>Boolean Button</h:head>
+<body>
+	<h:form>
+		<p:growl id="msgs" />
+		<h:panelGrid columns="2" cellpadding="5">
+			<h:outputText value="I accept Terms and Conditions" />
+			<p:selectBooleanButton id="button" value="#{B.check}" onLabel="Yes"
+				offLabel="No" style="width:80px" onIcon="ui-icon-check"
+				offIcon="ui-icon-close">
+				<p:ajax update="msgs" listener="#{B.message()}"></p:ajax>
+			</p:selectBooleanButton>
+		</h:panelGrid>
+	</h:form>
+</body>
+</html>

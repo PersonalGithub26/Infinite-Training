@@ -1,0 +1,69 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head></h:head>
+
+<h:body>
+    <h2>Primefaces DataTable with pagination</h2>
+    <h:form>
+        <p:dataTable var="p" value="#{pDao.showPolicy()}"
+                     paginator="true" rows="4"
+                     paginatorTemplate="{CurrentPageReport} {FirstPageLink}
+                     {PreviousPageLink} {PageLinks} {NextPageLink}
+                     {LastPageLink} {RowsPerPageDropdown}"
+                     rowsPerPageTemplate="4,8,12">
+                     
+                     <p:column headerText="P ID">
+				<h:outputText value="#{p.pid}" />
+			</p:column>
+			<p:column headerText="Name">
+			
+				<h:outputText value="#{p.pname}" />
+			</p:column>
+			
+			<p:column headerText=" Name ">
+				<h:outputText value="#{p.cname}" />
+			</p:column>
+			
+			<p:column headerText="Premium">
+				<h:outputText value="#{p.premium}" />
+			</p:column> 
+
+           <p:column headerText="Status">
+				<h:outputText value="#{p.status}" />
+			</p:column> 
+			
+	      <p:column headerText="BuyData">
+				<h:outputText value="#{p.buydate}" />
+			</p:column>
+			
+			<p:column headerText="Activate Date">
+				<h:outputText value="#{p.activedate}" />
+			</p:column>
+			
+			
+			<p:column headerText="End Date">
+				<h:outputText value="#{p.enddate}" />
+			</p:column>       
+			
+                    </p:dataTable>
+    </h:form>
+</h:body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

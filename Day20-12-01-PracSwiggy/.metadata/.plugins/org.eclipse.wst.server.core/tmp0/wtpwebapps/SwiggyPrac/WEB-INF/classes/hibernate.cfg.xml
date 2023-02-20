@@ -9,7 +9,12 @@
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/cms</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-        <mapping class="com.swig.Customer"/>
-        <mapping class="com.swig.Wallet"/>
+        <mapping class="com.cmsJsf.Customer"/>
+        
+        <mapping class="com.cmsJsf.Orders"/>
+        <mapping class="com.cmsJsf.Restaurant"/>
+        <mapping class="com.cmsJsf.User"/>
+        <mapping class="com.cmsJsf.Vendor"/>
+        <mapping class="com.cmsJsf.Wallet"/>
     </session-factory>
 </hibernate-configuration>

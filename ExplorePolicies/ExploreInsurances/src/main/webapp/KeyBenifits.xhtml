@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<ui:include src="Radio.xhtml" />
+<h:head>
+	<title>Key Benifits</title>
+</h:head>
+<body>
+	<h:form id="form">
+		<p:growl id="msgs" showDetail="true" />
+		<p:accordionPanel>
+			<p:tab title="Key Benifits">
+				<h:panelGrid columns="2" cellpadding="10">
+					<p>This is an annual aggregate deductible policy. The policy
+						covers aggregate hospitalization expenses reasonably and
+						necessarily incurred in India in respect of all covered
+						hospitalization during the policy period exceeding the Threshold
+						Level or any amount reimbursed or reimbursable under any Health
+						Insurance Policies/Reimbursement Scheme whichever is higher, upto
+						the Sum Insured stated in the policy.</p>
+					<p>The Policy provides cover on an Individual basis or Family
+						Floater basis. A separate Sum Insured and threshold limit for each
+						Insured Person is provided under Individual basis while under
+						Family Floater basis, the Sum Insured limit and threshold limit is
+						shared by the whole family of the Insured and Our total liability
+						for the family cannot exceed the Sum Insured in a Policy period.</p>
+				</h:panelGrid>
+			</p:tab>
+			<p:tab title="Definitions">
+				<h:panelGrid columns="2" cellpadding="10">
+					<p>--> Accident is a sudden, unforeseen and involuntary event
+						caused by external, visible and violent means.</p>
+					<p>--> Any One Illness means continuous period of illness and
+						includes relapse within 45 days from the date of last consultation
+						with the Hospital/Nursing Home where treatment was taken.></p>
+					<p>--> AYUSH Hospital is a healthcare facility wherein
+						medical/surgical/para-surgical treatment procedures and
+						interventions are carried out by AYUSH Medical Practitioner(s)
+						comprising any of the following: \ Central or State Government
+						AYUSH Hospital; or \</p>
+					<p>--> Teaching hospital attached to AYUSH College recognised
+						by the Central Government/Central Council of Indian
+						Medicine/Central Council for Homeopathy; or \</p>
+					<p>a)Having at least 5 in-patient beds;<br></br>
+						b)Having qualified AYUSH
+						Medical Practitioner in charge round the clock; <br></br>
+						c)Having dedicated
+						AYUSH therapy sections as required and/or has equipped operation
+						theatre where surgical procedures are carried out; <br></br>
+						d)Maintainingdaily records of the patients and making them accessible to the
+						insurance company\u2019s authorised representation</p>
+
+				</h:panelGrid>
+			</p:tab>
+			<p:tab title="Policy Details">
+				<p:dataTable var="p" value="#{pDao.showPolicies()}" paginator="true"
+					rows="4"
+					paginatorTemplate="{CurrentPageReport} {FirstPageLink}
+                     {PreviousPageLink} {PageLinks} {NextPageLink}
+                     {LastPageLink} {RowsPerPageDropdown}"
+					rowsPerPageTemplate="4,8,12">
+
+					<p:column headerText="Policy ID">
+						<h:outputText value="#{p.planId}" />
+					</p:column>
+					<p:column headerText="Name">
+
+						<h:outputText value="#{p.planName}" />
+					</p:column>
+
+					<p:column headerText=" Premium ">
+						<h:outputText value="#{p.premium}" />
+					</p:column>
+
+					<p:column headerText="coverage">
+						<h:outputText value="#{p.coverage}" />
+					</p:column> 
+
+           <p:column headerText="Launch Date">
+						<h:outputText value="#{p.launchDate}" />
+					</p:column> 
+           <p:column headerText="Expiry Date">
+						<h:outputText value="#{p.expiryDate}" />
+					</p:column> 
+           <p:column headerText="Duration(in years)">
+						<h:outputText value="#{p.duration}" />
+					</p:column> 
+			
+	     
+                    </p:dataTable>
+			</p:tab>
+		</p:accordionPanel>
+	</h:form>
+</body>
+</html>

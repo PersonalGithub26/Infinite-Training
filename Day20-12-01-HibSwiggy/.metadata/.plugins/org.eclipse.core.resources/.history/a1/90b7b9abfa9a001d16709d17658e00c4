@@ -1,6 +1,0 @@
-package com.cmsJsf;
-
-public interface OrderDetailsDAO {
-
-	String placeOrder(int custId, int venId, int menuId, String walSource,int qty, String ordComments);
-}

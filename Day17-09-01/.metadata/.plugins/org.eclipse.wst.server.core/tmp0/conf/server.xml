@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\Java_Training\Java_Training\Day17-09-01\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Java_Training\Java_Training\Day17-09-01\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\jsfDemo" path="/jsfDemo" reloadable="true" source="org.eclipse.jst.jee.server:jsfDemo"/></Host>
+      <Context docBase="D:\Java_Training\Java_Training\Day17-09-01\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Java_Training\Java_Training\Day17-09-01\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\jsfDemo" path="/jsfDemo" reloadable="true" source="org.eclipse.jst.jee.server:jsfDemo"/><Context docBase="D:\Java_Training\Java_Training\Day17-09-01\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\lms" path="/lms" reloadable="true" source="org.eclipse.jst.jee.server:lms"/></Host>
     </Engine>
   </Service>
 </Server>

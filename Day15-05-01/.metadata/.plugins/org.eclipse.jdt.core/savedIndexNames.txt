@@ -47,5 +47,4 @@ INDEX VERSION 1.131+D:\Java_Training\Java_Training\Day15-05-01\.metadata\.plugin
 1697065679.index
 4287174022.index
 1865797976.index
-1412594051.index
 2365048902.index

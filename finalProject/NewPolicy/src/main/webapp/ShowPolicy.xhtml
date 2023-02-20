@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://java.sun.com/jsf/html">
+
+
+
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.12.6/dist/umd/popper.min.js" 
+        integrity="sha384-/0j2PjTb9/KjJh/0fU6e1u6lSjV7OuGKP8o7/v+m4XFhKj6DUx7PA+Bb6zS7VuS" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"/>
+ </head>
+
+
+ <p:form>
+		<center>
+			<h2>
+				<p:outputText value="***** Show Policy *****" />
+			</h2>
+			<div class="row">
+			<div class = "col-12">
+      		<div class="col-md-auto border rounded-2 p-3 shadow-lg">
+			<p>***********************************************************************</p>
+		
+		<p:dataTable value="#{pDao.showPolicy()}" var="p" rows="8" paginator="true">
+		<!-- paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}" 
+		rowsPerPageTemplate="4,8,12" -->
+		
+			<p:column>
+				<f:facet name="header">P ID</f:facet>
+				<p:outputText value="#{p.pid}" />
+			</p:column>
+			<p:column>
+			
+			<f:facet name="header">Policy Name</f:facet>
+				<p:outputText value="#{p.pname}" />
+			</p:column>
+			
+			<p:column>
+				<f:facet name="header">Company Name</f:facet>
+				<p:outputText value="#{p.cname}" />
+			</p:column>
+			
+			<p:column>
+				<f:facet name="header">Premium</f:facet>
+				<p:outputText value="#{p.premium}" />
+			</p:column> 
+
+           <p:column>
+				<f:facet name="header">Status</f:facet>
+				<p:outputText value="#{p.status}" />
+			</p:column> 
+			
+	      <p:column>
+				<f:facet name="header">Buy Date</f:facet>
+				<p:outputText value="#{p.buydate}" />
+			</p:column>
+			
+			<p:column>
+				<f:facet name="header">Active Date</f:facet>
+				<p:outputText value="#{p.activedate}" />
+			</p:column>
+			
+			
+			<p:column>
+				<f:facet name="header">End Date</f:facet>
+				<p:outputText value="#{p.enddate}" />
+			</p:column>       
+			
+			
+			<p:column>
+                    <f:facet name="header">Delete</f:facet>
+                    <p:commandButton action = "#{pDao.deletePolicyDao(p.pid)}" 
+                    		value="Delete"  style="margin:20px"  ajax="false" class="btn btn-danger" > 
+                    </p:commandButton>
+                    
+                </p:column>
+			</p:dataTable>
+						  <p:commandButton value="Next" action="{NextPageLink}"></p:commandButton>
+			
+			</div> 
+			</div>
+			</div>
+			
+	</center>
+	</p:form>
+</html>

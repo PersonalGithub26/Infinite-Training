@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+	<h:form>
+		<center>
+			<h2>
+				<h:outputText value="Available Rooms" />
+			</h2>
+
+			<h:dataTable value = "#{rDao.showAvailRooms}" var="e" border="3">
+				<h:column>
+					<f:facet name="header">Room No</f:facet>
+					<h:outputText value="#{e.roomId}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Room Type</f:facet>
+					<h:outputText value="#{e.type}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Room Status</f:facet>
+					<h:outputText value="#{e.status}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Cost Per Day</f:facet>
+					<h:outputText value="#{e.costPerDay}" />
+				</h:column>
+							</h:dataTable>
+		</center>
+	</h:form>
+</h:body>
+</html>

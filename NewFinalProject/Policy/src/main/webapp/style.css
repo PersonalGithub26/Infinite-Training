@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+
+p:dataTable {
+font-family: Arial, sans-serif;
+width: 100%;
+border-collapse: collapse;
+}
+
+p:dataTable th, p:dataTable td {
+border: 1px solid black;
+padding: 8px;
+text-align: left;
+}
+
+p:dataTable th {
+background-color: #dddddd;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://java.sun.com/jsf/html">
+<h:form> 
+	<h:selectOneMenu value="#{pDao.insuranceNames}" onchange="submit()"
+	valueChangeListener="#{pDao.onNameChanged}">
+    <f:selectItems value="#{pDao.getPolicyNames()}"/>
+</h:selectOneMenu>
+Selected Value is :
+<h:outputText value="#{pDao.insuranceNames}" />
+<p:dataTable value="#{pDao.getPolicyByPolicyName(pDao.insuranceNames)}" var="p" rows="8" paginator="true" border="">
+		<!-- paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}" 
+		rowsPerPageTemplate="4,8,12" -->
+		
+			<p:column>
+				<f:facet name="header">P ID</f:facet>
+				<p:outputText value="#{p.pid}" />
+			</p:column>
+			<p:column>
+			
+			<f:facet name="header">Policy Name</f:facet>
+				<p:outputText value="#{p.pname}" />
+			</p:column>
+			
+			<p:column>
+				<f:facet name="header">Company Name</f:facet>
+				<p:outputText value="#{p.cname}" />
+			</p:column>
+			
+			<p:column>
+				<f:facet name="header">Premium</f:facet>
+				<p:outputText value="#{p.premium}" />
+			</p:column> 
+
+           <p:column>
+				<f:facet name="header">Status</f:facet>
+				<p:outputText value="#{p.status}" />
+			</p:column> 
+			
+	      <p:column>
+				<f:facet name="header">Buy Date</f:facet>
+				<p:outputText value="#{p.buydate}" />
+			</p:column>
+			
+			<p:column>
+				<f:facet name="header">Active Date</f:facet>
+				<p:outputText value="#{p.activedate}" />
+			</p:column>
+		
+			<p:column>
+				<f:facet name="header">End Date</f:facet>
+				<p:outputText value="#{p.enddate}" />
+			</p:column>       
+			</p:dataTable>
+</h:form>
+</html>

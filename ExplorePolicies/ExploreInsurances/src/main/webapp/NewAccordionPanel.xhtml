@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>Courses</title>
+</h:head>
+<h:body>
+	<h:form id="form">
+		<p:growl id="msgs" showDetail="true" />
+		<h3 style="margin-top: 0">Select a Course</h3>
+		<p:selectOneMenu value="#{courseBean.selectedCourse}">
+			<f:selectItem itemLabel="Select a Course" itemValue="select" />
+			<f:selectItems value="#{courseBean.courses}" var="course" itemLabel="#{course.name}" itemValue="#{course}" />
+			<p:ajax update="display" event="change" listener="#{courseBean.onCourseChange}" />
+		</p:selectOneMenu>
+		
+		<p:panel id="display" style="margin-top:20px">
+			<p:graphicImage name="#{courseBean.selectedCourse.image}" />
+			<h:outputText value="#{courseBean.selectedCourse.description}" />
+		</p:panel>
+	</h:form>
+</h:body>
+</html>

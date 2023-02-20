@@ -1,5 +1,0 @@
-package com.java.bankProject;
-
-public interface BankDAO {
-
-}

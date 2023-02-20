@@ -29,4 +29,5 @@
     <fullyQualifiedTypeName name="javax.persistence.Column"/>
     <fullyQualifiedTypeName name="javax.persistence.Enumerated"/>
     <fullyQualifiedTypeName name="javax.persistence.EnumType"/>
+    <fullyQualifiedTypeName name="com.cmsJsf.MenuDaoImp"/>
 </qualifiedTypeNameHistroy>

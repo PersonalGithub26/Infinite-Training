@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+	<h:form>
+		<center>
+			<h2>
+				<h:outputText value="Employ Records" />
+			</h2>
+
+			<h:dataTable value = "#{eDao.bean.showEmploye()}" var="e" border="3">
+				<h:column>
+					<f:facet name="header">Employ No</f:facet>
+					<h:outputText value="#{e.id}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Employ FirstName</f:facet>
+					<h:outputText value="#{e.firstName}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Employ LastName</f:facet>
+					<h:outputText value="#{e.lastName}" />
+				</h:column>
+				<h:column>
+					<f:facet name="header">Employ email</f:facet>
+					<h:outputText value="#{e.email}" />
+				</h:column>
+							</h:dataTable>
+		</center>
+	</h:form>
+</h:body>
+</html>

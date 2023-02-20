@@ -1,5 +1,5 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="com.java.college.FeedbackDAO"><rhs name\="com.java.college.FeedbackDaoImpl"/></lhs><lhs name\="com.java.college.FeedbackDaoImpl"><rhs name\="com.java.college.FeedbackDaoImpl"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs></history>
-content_assist_number_of_computers=18
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="com.java.college.FeedbackDAO"><rhs name\="com.java.college.FeedbackDaoImpl"/></lhs><lhs name\="com.java.college.FeedbackDaoImpl"><rhs name\="com.java.college.FeedbackDaoImpl"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="com.java.college.Feedback"><rhs name\="com.java.college.Feedback"/></lhs></history>
+content_assist_number_of_computers=22
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
 eclipse.preferences.version=1

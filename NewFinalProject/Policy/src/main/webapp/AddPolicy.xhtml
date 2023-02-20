@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	 xmlns:h="http://java.sun.com/jsf/html"
+	 xmlns:f="http://java.sun.com/jsf/core"
+	 xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:p="http://primefaces.org/ui">
+<h:head></h:head>
+<h:body>     
+
+<h:form>
+		
+	</h:form>
+	<f:facet name="last">
+		<h:outputStylesheet library="default" name="css/style.css" />
+	</f:facet>     
+	<center>
+	
+	 <h1>***** Add Policy *****</h1>
+	 <p>*******************************************************</p>
+	<div style="width: 900px">
+		<h:form>
+			<p:panel id="panel-signup">
+			<p>Enter Policy Name</p>
+				
+				<p:focus context="panel-signup" />  <p:inputText id="policyName" required="true" size="40"
+					requiredMessage="Please enter policy Name." value="#{policy.pname}"></p:inputText>
+				<p:watermark for="policyName" value="Enter Policy Name *" />
+				<p:message for="policyName" />
+				<br />                 
+				<br/>
+				
+				<p>Enter Company Name</p>
+				<p:inputText id="companyName"
+					required="true" size="40"
+					requiredMessage="Please enter company Name."
+				    value="#{policy.cname}"></p:inputText>
+				<p:watermark for="companyName" value="Enter Company Name *" />
+				<p:message for="companyName" />
+				
+				<br/><br/>
+				 <p:selectOneMenu id="premium"
+					required="true" size="80"
+					requiredMessage="Please enter premium"
+					value="#{policy.premium}">
+					<f:selectItem itemValue="" itemLabel="Select premium "
+					noSelectionOption="true" />
+					<f:selectItem itemValue="100000" itemLabel="100000" />
+					<f:selectItem itemValue="300000" itemLabel="300000" />
+					<f:selectItem itemValue="500000" itemLabel="500000" />
+				</p:selectOneMenu>    
+				<br/><br/>            
+				<p:commandButton value="Add" style="margin:20px"
+					action="#{pDao.addPolicy(policy)}"
+					ajax="false" />
+			</p:panel>
+		</h:form>
+	</div>
+	</center>
+</h:body>
+</html>
