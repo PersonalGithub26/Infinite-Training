@@ -8,23 +8,23 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "insurancecompany")
+@Table(name = "company")
 @ManagedBean
 @SessionScoped
 public class Company {
 	
 	@Id
-	@Column(name = "cId")
+	@Column(name = "I_COMPANY_ID")
 	private String companyId; 
-	@Column(name = "companyName")
+	@Column(name = "I_COMPANY_NAME")
 	private String companyName;
-	@Column(name = "address")
+	@Column(name = "I_ADDRESS")
 	private String address;
-	@Column(name = "contact")
+	@Column(name = "I_CONTACT")
 	private String contact;
-	@Column(name = "email")
+	@Column(name = "I_EMAIL")
 	private String email;
-	@Column(name = "website")
+	@Column(name = "I_WEBSITE")
 	private String website;
 	
 	public String getCompanyId() {

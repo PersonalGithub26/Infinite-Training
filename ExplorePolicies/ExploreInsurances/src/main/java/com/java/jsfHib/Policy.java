@@ -11,34 +11,37 @@ import javax.persistence.Table;
 
 @Entity
 @ManagedBean
-@Table(name = "policies")
+@Table(name = "insurance")
 @SessionScoped
 public class Policy {
 	@Id
-	@Column(name = "plainId")
+	@Column(name = "I_PLAN_ID")
 	private String planId;
-	@Column(name = "cId")
+	@Column(name = "I_COMPANY_ID")
 	private String cId;
-	@Column(name = "coverage")
-	private double coverage;
-	@Column(name = "duration")
-	private int duration;
-	@Column(name = "expiryDate")
+	
+	@Column(name = "I_EXPIRY_DATE")
 	private Date expiryDate;
-	@Column(name = "launchDate")
+	@Column(name = "I_LAUNCH_DATE")
 	private Date launchDate;
-	@Column(name = "planName")
+	@Column(name = "I_PLAN_NAME")
 	private String planName;
-	@Column(name = "planType")
+	@Column(name = "I_PLAN_TYPE")
 	private String planType;
-	@Column(name = "premium")
+	@Column(name = "I_PREMIUM")
 	private double premium;
-	@Column(name = "status")
-	private String Status;
-	@Column(name = "Key_Benifits")
+	@Column(name = "I_STATUS")
+	private String status;
+	@Column(name = "I_KEY_BENIFITS")
 	private String keyBenifits;
-	
-	
+	@Column(name = "I_PREM_FK")
+	private String premId;
+	@Column(name = "I_COVERAGE_18TO60")
+	private double coverage18to60;
+	@Column(name = "I_COVERAGE_ABOVE60")
+	private double coverageAbove60;
+	@Column(name = "I_COVERAGE_BELOW18")
+	private double coveragebelow18;
 	
 	
 	public String getPlanId() {
@@ -52,18 +55,6 @@ public class Policy {
 	}
 	public void setcId(String cId) {
 		this.cId = cId;
-	}
-	public double getCoverage() {
-		return coverage;
-	}
-	public void setCoverage(double coverage) {
-		this.coverage = coverage;
-	}
-	public int getDuration() {
-		return duration;
-	}
-	public void setDuration(int duration) {
-		this.duration = duration;
 	}
 	public Date getExpiryDate() {
 		return expiryDate;
@@ -96,18 +87,55 @@ public class Policy {
 		this.premium = premium;
 	}
 	public String getStatus() {
-		return Status;
+		return status;
 	}
 	public void setStatus(String status) {
-		Status = status;
+		this.status = status;
 	}
+	public String getKeyBenifits() {
+		return keyBenifits;
+	}
+	public void setKeyBenifits(String keyBenifits) {
+		this.keyBenifits = keyBenifits;
+	}
+	public String getPremId() {
+		return premId;
+	}
+	public void setPremId(String premId) {
+		this.premId = premId;
+	}
+	public double getCoverage18to60() {
+		return coverage18to60;
+	}
+	public void setCoverage18to60(double coverage18to60) {
+		this.coverage18to60 = coverage18to60;
+	}
+	public double getCoverageAbove60() {
+		return coverageAbove60;
+	}
+	public void setCoverageAbove60(double coverageAbove60) {
+		this.coverageAbove60 = coverageAbove60;
+	}
+	public double getCoveragebelow18() {
+		return coveragebelow18;
+	}
+	public void setCoveragebelow18(double coveragebelow18) {
+		this.coveragebelow18 = coveragebelow18;
+	}
+	
+	
 	@Override
 	public String toString() {
-		return "Policy [planId=" + planId + ", cId=" + cId + ", coverage=" + coverage + ", duration=" + duration
-				+ ", expiryDate=" + expiryDate + ", launchDate=" + launchDate + ", planName=" + planName + ", planType="
-				+ planType + ", premium=" + premium + ", Status=" + Status + "]";
+		return "Policy [planId=" + planId + ", cId=" + cId + ", expiryDate=" + expiryDate + ", launchDate=" + launchDate
+				+ ", planName=" + planName + ", planType=" + planType + ", premium=" + premium + ", status=" + status
+				+ ", keyBenifits=" + keyBenifits + ", premId=" + premId + ", coverage18to60=" + coverage18to60
+				+ ", coverageAbove60=" + coverageAbove60 + ", coveragebelow18=" + coveragebelow18 + "]";
 	}
 	
 	
-
+	
+	
+	
 }
+	
+	

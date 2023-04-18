@@ -1,0 +1,628 @@
+2023-04-04 16:36:46,119 [http-nio-8181-exec-2] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2023-04-04 16:36:46,133 [http-nio-8181-exec-2] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+2023-04-04 16:36:46,137 [http-nio-8181-exec-2] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2023-04-04 16:36:46,138 [http-nio-8181-exec-2] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2023-04-04 16:36:46,179 [http-nio-8181-exec-2] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:36:46,180 [http-nio-8181-exec-2] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:36:46,247 [http-nio-8181-exec-2] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:36:46,410 [http-nio-8181-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:36:46,421 [http-nio-8181-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:36:46,421 [http-nio-8181-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:36:46,421 [http-nio-8181-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:36:46,425 [http-nio-8181-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:36:46,901 [http-nio-8181-exec-2] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:36:47,137 [http-nio-8181-exec-2] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:36:47,147 [http-nio-8181-exec-2] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:36:47,701 [http-nio-8181-exec-2] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:36:47,701 [http-nio-8181-exec-2] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:36:47,705 [http-nio-8181-exec-2] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:36:47,706 [http-nio-8181-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:36:47,707 [http-nio-8181-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:36:47,707 [http-nio-8181-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:36:47,707 [http-nio-8181-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:36:47,707 [http-nio-8181-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:36:47,727 [http-nio-8181-exec-2] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:36:47,738 [http-nio-8181-exec-2] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:36:47,738 [http-nio-8181-exec-2] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:36:47,765 [http-nio-8181-exec-2] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:36:47,765 [http-nio-8181-exec-2] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:36:47,767 [http-nio-8181-exec-2] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:36:47,769 [http-nio-8181-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:36:47,769 [http-nio-8181-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:36:47,769 [http-nio-8181-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:36:47,770 [http-nio-8181-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:36:47,770 [http-nio-8181-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:36:47,797 [http-nio-8181-exec-2] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:36:47,817 [http-nio-8181-exec-2] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:36:47,817 [http-nio-8181-exec-2] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:05,540 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,540 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,555 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:05,561 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:05,562 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:05,562 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:05,562 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:05,562 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:05,587 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:05,606 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:05,606 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:05,618 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,618 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,620 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:05,621 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:05,622 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:05,622 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:05,622 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:05,622 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:05,642 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:05,658 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:05,659 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:05,674 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,674 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,676 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:05,677 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:05,677 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:05,677 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:05,677 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:05,677 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:05,700 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:05,712 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:05,713 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:05,731 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,731 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,734 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:05,735 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:05,736 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:05,736 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:05,736 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:05,736 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:05,755 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:05,770 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:05,770 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:05,783 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,783 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,785 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:05,786 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:05,786 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:05,786 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:05,786 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:05,786 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:05,806 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:05,823 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:05,823 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:05,870 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,870 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,874 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:05,876 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:05,876 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:05,876 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:05,877 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:05,877 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:05,894 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:05,904 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:05,904 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:05,915 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,915 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,918 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:05,919 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:05,919 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:05,919 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:05,919 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:05,919 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:05,934 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:05,948 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:05,948 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:05,961 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,961 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:05,963 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:05,965 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:05,965 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:05,965 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:05,965 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:05,965 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:05,990 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:06,008 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:06,008 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:09,089 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,089 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,091 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:09,093 [http-nio-8181-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:09,093 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:09,093 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:09,093 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:09,093 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:09,110 [http-nio-8181-exec-3] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:09,124 [http-nio-8181-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:09,125 [http-nio-8181-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:09,134 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,135 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,136 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:09,137 [http-nio-8181-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:09,137 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:09,138 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:09,138 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:09,138 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:09,155 [http-nio-8181-exec-3] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:09,171 [http-nio-8181-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:09,171 [http-nio-8181-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:09,185 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,185 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,188 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:09,189 [http-nio-8181-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:09,189 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:09,189 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:09,189 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:09,189 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:09,212 [http-nio-8181-exec-3] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:09,232 [http-nio-8181-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:09,232 [http-nio-8181-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:09,244 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,244 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,247 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:09,248 [http-nio-8181-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:09,248 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:09,249 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:09,249 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:09,249 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:09,268 [http-nio-8181-exec-3] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:09,288 [http-nio-8181-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:09,288 [http-nio-8181-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:09,300 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,300 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,303 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:09,305 [http-nio-8181-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:09,305 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:09,306 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:09,306 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:09,306 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:09,325 [http-nio-8181-exec-3] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:09,342 [http-nio-8181-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:09,342 [http-nio-8181-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:09,358 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,358 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,362 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:09,363 [http-nio-8181-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:09,363 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:09,363 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:09,363 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:09,363 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:09,382 [http-nio-8181-exec-3] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:09,396 [http-nio-8181-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:09,397 [http-nio-8181-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:09,417 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,417 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,421 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:09,422 [http-nio-8181-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:09,422 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:09,423 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:09,423 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:09,423 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:09,439 [http-nio-8181-exec-3] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:09,457 [http-nio-8181-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:09,458 [http-nio-8181-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:09,474 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,474 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,478 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:09,480 [http-nio-8181-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:09,480 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:09,480 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:09,480 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:09,480 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:09,501 [http-nio-8181-exec-3] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:09,521 [http-nio-8181-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:09,521 [http-nio-8181-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:09,537 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,537 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:09,540 [http-nio-8181-exec-3] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:09,541 [http-nio-8181-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:09,541 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:09,542 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:09,542 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:09,542 [http-nio-8181-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:09,571 [http-nio-8181-exec-3] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:09,619 [http-nio-8181-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:09,619 [http-nio-8181-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:12,512 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,513 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,537 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:12,549 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:12,549 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:12,549 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:12,549 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:12,550 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:12,570 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:12,590 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:12,591 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:12,600 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,600 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,602 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:12,604 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:12,605 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:12,605 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:12,605 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:12,605 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:12,621 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:12,640 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:12,640 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:12,651 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,651 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,653 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:12,655 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:12,655 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:12,655 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:12,655 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:12,655 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:12,672 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:12,685 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:12,685 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:12,694 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,694 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,698 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:12,700 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:12,700 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:12,700 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:12,700 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:12,700 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:12,717 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:12,736 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:12,736 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:12,748 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,748 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,751 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:12,752 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:12,752 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:12,752 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:12,752 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:12,752 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:12,770 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:12,785 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:12,785 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:12,793 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,794 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,797 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:12,799 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:12,799 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:12,799 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:12,799 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:12,800 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:12,819 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:12,836 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:12,836 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:12,849 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,849 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,853 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:12,854 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:12,854 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:12,854 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:12,854 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:12,855 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:12,872 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:12,887 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:12,888 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:12,898 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,898 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,900 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:12,901 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:12,901 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:12,902 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:12,902 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:12,902 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:12,923 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:12,940 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:12,941 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:12,955 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,956 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:12,958 [http-nio-8181-exec-4] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:12,959 [http-nio-8181-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:12,959 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:12,959 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:12,959 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:12,959 [http-nio-8181-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:12,982 [http-nio-8181-exec-4] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,000 [http-nio-8181-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,000 [http-nio-8181-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,011 [http-nio-8181-exec-4] INFO  com.java.jsfHib.PolicyDaoImp - Policy IdINS002
+2023-04-04 16:37:13,222 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,223 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,225 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,228 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,228 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,228 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,228 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,228 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,252 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,267 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,267 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,279 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,279 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,282 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,284 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,284 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,284 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,284 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,284 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,308 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,327 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,327 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,341 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,341 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,344 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,346 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,346 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,346 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,346 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,346 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,363 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,378 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,378 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,402 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,402 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,404 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,406 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,407 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,407 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,407 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,407 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,431 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,451 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,451 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,459 [http-nio-8181-exec-10] INFO  com.java.jsfHib.PolicyDaoImp - Key Benifits1. No-claim bonus
+2. Ambulance cover upto 2000Rs.
+3. Lifelong renewability.
+4. Single private room.
+5. Covid cover with opd
+6. Unlimited Recharge
+2023-04-04 16:37:13,461 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,461 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,464 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,465 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,466 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,466 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,466 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,466 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,485 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,494 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,494 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,503 [http-nio-8181-exec-10] INFO  com.java.jsfHib.PolicyDaoImp - Premium12000.0
+2023-04-04 16:37:13,504 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,504 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,506 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,507 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,507 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,507 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,507 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,507 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,522 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,535 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,535 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,557 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,557 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,561 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,561 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,561 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,562 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,562 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,562 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,582 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,597 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,597 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,617 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,617 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,621 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,622 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,622 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,622 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,622 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,622 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,642 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,662 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,663 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,672 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,672 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,676 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,677 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,677 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,677 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,677 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,677 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,702 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,718 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,718 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,729 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,729 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,731 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,732 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,732 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,732 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,732 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,732 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,753 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,766 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,766 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,773 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,774 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,775 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,778 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,778 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,778 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,778 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,778 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,799 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,824 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,824 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,834 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,834 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,836 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,837 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,837 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,837 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,837 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,838 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,860 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,884 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,884 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,893 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,894 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,896 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,899 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,899 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,899 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,899 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,899 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,923 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:13,944 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:13,944 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:13,955 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,955 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:13,958 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:13,959 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:13,960 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:13,961 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:13,961 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:13,961 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:13,985 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,002 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,002 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,010 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,010 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,013 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,014 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,014 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,014 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,014 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,014 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,033 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,044 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,044 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,063 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,063 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,067 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,070 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,070 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,070 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,070 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,070 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,085 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,105 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,105 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,115 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,115 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,117 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,118 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,118 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,118 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,118 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,118 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,138 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,159 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,159 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,170 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,170 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,173 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,175 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,175 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,175 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,175 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,175 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,197 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,220 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,220 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,229 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,229 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,234 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,236 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,236 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,236 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,236 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,236 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,261 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,282 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,283 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,292 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,292 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,296 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,298 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,298 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,298 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,299 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,299 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,321 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,341 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,341 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,353 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,353 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,357 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,358 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,358 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,358 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,358 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,358 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,377 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,389 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,390 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,400 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,400 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,403 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,405 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,405 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,406 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,406 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,406 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,431 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,455 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,455 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,468 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,468 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,472 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,473 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,473 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,473 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,473 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,473 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,495 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,519 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,519 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,533 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,533 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,536 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,538 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,538 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,538 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,538 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,538 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,561 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,580 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,580 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,591 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,591 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,593 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,594 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,594 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,594 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,595 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,595 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,623 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,641 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,641 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,650 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,650 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,651 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,653 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,653 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,653 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,653 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,653 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,665 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,672 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,672 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-04 16:37:14,676 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,676 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+2023-04-04 16:37:14,679 [http-nio-8181-exec-10] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+2023-04-04 16:37:14,681 [http-nio-8181-exec-10] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2023-04-04 16:37:14,681 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/finalhealth]
+2023-04-04 16:37:14,681 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {password=****, user=root}
+2023-04-04 16:37:14,681 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+2023-04-04 16:37:14,681 [http-nio-8181-exec-10] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-04-04 16:37:14,691 [http-nio-8181-exec-10] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-04 16:37:14,700 [http-nio-8181-exec-10] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2023-04-04 16:37:14,700 [http-nio-8181-exec-10] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory

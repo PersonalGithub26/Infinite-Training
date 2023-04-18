@@ -1,7 +1,0 @@
-package infinite.jsfhib;
-
-public class EmployDAO {
-	
-	List<Employ> showEmployDao();
-
-}
